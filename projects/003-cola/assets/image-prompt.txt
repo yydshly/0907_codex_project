@@ -1,0 +1,29 @@
+Create a polished Chinese modular architecture infographic, landscape 1536x1024 or larger same ratio, for a GitHub README. This is an editorial overview, not screenshot. Extremely crisp accurate simplified Chinese typography, generous spacing, clean off-white background, navy text, restrained blue left column and teal right column, pale rounded module boxes, thin directional arrows, no logos, no decorative illustrations. Clear professional information design readable when scaled to README width. Exact visible text only as below.
+
+Top title large: "Cola｜产品架构与技能价值"
+Subtitle: "学习如何组织 AI 能力，沉淀值得复用的技能方法"
+
+Two equal columns with 4 vertically aligned modules each. Left header: "01  产品思路 · 值得借鉴"
+Left module 1 title: "用户表达目标" body: "调研 · 创作 · 办公 · 开发"
+Down arrow.
+Left module 2 title: "AI 组织任务" body: "理解需求 → 拆解任务 → 选择能力" small line "记忆与上下文提供支持"
+Down arrow.
+Left module 3 title: "组合能力，执行任务" body has three horizontally aligned small cells: "模型：理解与生成" / "Skills：规则与流程" / "工具：实际操作"
+Down arrow.
+Left module 4 title: "展示过程，交付结果" body: "查看进度 · 确认操作 · 检查成果"
+
+Right header: "02  技能资源 · 值得沉淀"
+Right module 1 title: "Cola Skill 目录" body: "发现候选技能 · 查看案例 · 追溯来源"
+Down arrow.
+Right module 2 title: "覆盖多类任务" body: "视觉创作 · 内容营销 · 知识调研" second line "职场办公 · 技术自动化"
+Down arrow.
+Right module 3 title: "提取可复用能力" body: "专业规则 · 操作步骤 · 模板脚本" second line "输入输出 · 依赖条件 · 验收标准"
+Down arrow.
+Right module 4 title: "去重与实测后采用" body: "参考方法 → 按需使用 → 自有技能"
+
+Across bottom a full width navy bar with two clear white text blocks:
+"产品层：借鉴能力组织与交付体验"
+"技能层：建立经过验证的可复用能力库"
+Small footer: "依据公开功能归纳的概念架构，非官方实现图；目录收录不等于效果已验证。"
+
+No extra text. Keep all Chinese exact and legible. Layout symmetric and modular, hierarchy title > column headings > module titles > body. Arrows never cross text.

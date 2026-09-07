@@ -10,6 +10,7 @@
 | --- | --- | --- | --- | --- | --- |
 | 001 | [Agents](projects/001-scarletkc-agents/README.md) | [scarletkc/agents](https://github.com/scarletkc/agents) | 从真实问题中沉淀规则、样本和检查，约束 AI 的工作与表达 | 已完成 | 暂无 |
 | 002 | [Open-Magiviz](projects/002-open-magiviz/README.md) | [ItusiAI/Open-Magiviz](https://github.com/ItusiAI/Open-Magiviz) | 将外部模型串成 AI 视频创作产品；留作视频工作流参考，暂不深挖 | 已完成 | 暂无 |
+| 003 | [Cola](projects/003-cola/README.md) | [官网与技能目录](https://cola.app/skills/zh/) | 借鉴 AI 产品能力组织方式，提取技能方法，经去重与实测后参考、使用和沉淀 | 已完成（概念研究） | 暂无 |
 
 状态约定：`待研究` → `研究中` → `已完成`，暂时搁置使用 `已暂停`。
 
@@ -35,6 +36,14 @@ flowchart LR
 ```
 
 **值得借鉴：发现问题 → 沉淀经验 → 加入具体约束 → 在后续任务中检验。** 约束主要靠模型遵守，脚本仅检查部分表达。深入研究优先级低，遇到类似问题时查阅 [场景与约束](projects/001-scarletkc-agents/README.md#场景与约束) 即可。
+
+### 003 · Cola 概述
+
+[![Cola 产品架构与技能价值：用户目标到结果交付，以及技能发现到自有能力沉淀的双主线概览](projects/003-cola/assets/cola-overview.png)](projects/003-cola/README.md)
+
+**产品层学习如何组织与交付 AI 能力；技能层提取专业规则、流程和模板，经验证后按需采用。** 本图为原创概念示意，非官方实现图；技能收录不等于效果已验证。
+
+[研究与能力摘要](projects/003-cola/README.md) · [详细理解图](projects/003-cola/notes/architecture.md)
 
 ## 目录导航
 
