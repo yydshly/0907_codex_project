@@ -21,6 +21,7 @@
 | 011 | [anyCreature](projects/011-anycreature/README.md) | [Ariescar/anyCreature](https://github.com/Ariescar/anyCreature) | 生成三维模型与骨骼动画；独立人形、蝴蝶、蜗牛及花园场景 | 已完成（18 份模型与交互实测） | [在线生物实验室](https://yydshly.github.io/0907_codex_project/demos/011-anycreature/) |
 | 012 | [Rome](projects/012-rome/README.md) | [rome-os/rome](https://github.com/rome-os/rome) | 多 Agent、工作流与应用能力封装；后续开发参考统一动作、任务状态和持久数据 | 已完成（架构研究，未部署实测） | 暂无 |
 | 013 | [FDE Interview Fieldbook](projects/013-fde-interview-fieldbook/README.md) | [dataPro-lgtm/fde-interview-fieldbook](https://github.com/dataPro-lgtm/fde-interview-fieldbook) | FDE 面试与工作准备资料、方法、案例和计划；按需参考 | 已完成（资料与价值整理；训练效果未实测） | [案例与技术导览](https://yydshly.github.io/0907_codex_project/demos/013-fde-interview-fieldbook/) |
+| 014 | [Claude Academy](projects/014-claude-academy/README.md) | [官方中文目录](https://academy.claude.com/zh-CN/all) | 293 项 AI 学习资源、五条建议路线、中文搜索与学习进度 | 已完成（初步整理，待深入研究） | 本地网页已完成，待发布 |
 
 状态约定：`待研究` → `研究中` → `已完成`，暂时搁置使用 `已暂停`。
 
