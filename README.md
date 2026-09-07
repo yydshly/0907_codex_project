@@ -11,6 +11,7 @@
 | 001 | [Agents](projects/001-scarletkc-agents/README.md) | [scarletkc/agents](https://github.com/scarletkc/agents) | 从真实问题中沉淀规则、样本和检查，约束 AI 的工作与表达 | 已完成 | 暂无 |
 | 002 | [Open-Magiviz](projects/002-open-magiviz/README.md) | [ItusiAI/Open-Magiviz](https://github.com/ItusiAI/Open-Magiviz) | 将外部模型串成 AI 视频创作产品；留作视频工作流参考，暂不深挖 | 已完成 | 暂无 |
 | 003 | [Cola](projects/003-cola/README.md) | [官网与技能目录](https://cola.app/skills/zh/) | 借鉴 AI 产品能力组织方式，提取技能方法，经去重与实测后参考、使用和沉淀 | 已完成（概念研究） | 暂无 |
+| 004 | [Awesome Grok Bot](projects/004-awesome-grok-bot/README.md) | [RongleCat/awesome-grok-bot](https://github.com/RongleCat/awesome-grok-bot) | 资料库介绍云端 AI 助手：托管云电脑执行任务，保存成果并复用流程 | 已完成（概念与源码结构研究） | 暂无 |
 
 状态约定：`待研究` → `研究中` → `已完成`，暂时搁置使用 `已暂停`。
 
@@ -44,6 +45,14 @@ flowchart LR
 **产品层学习如何组织与交付 AI 能力；技能层提取专业规则、流程和模板，经验证后按需采用。** 本图为原创概念示意，非官方实现图；技能收录不等于效果已验证。
 
 [研究与能力摘要](projects/003-cola/README.md) · [详细理解图](projects/003-cola/notes/architecture.md)
+
+### 004 · Awesome Grok Bot 概述
+
+[![Grok Bot 介绍引导图：资料库用于了解产品，产品在托管云电脑上执行研究、开发和办公任务，并沉淀成果与流程](projects/004-awesome-grok-bot/assets/grok-bot-overview.png)](projects/004-awesome-grok-bot/README.md)
+
+**Grok Bot 是云端执行任务的 AI 产品；这个仓库是它的资料、案例和提示词目录。** 不需要把该仓库部署成助手；我们主要借鉴任务场景与可复用方法。本图为原创概念示意，非官方架构或实测结果。
+
+[作用、能力与研究结论](projects/004-awesome-grok-bot/README.md)
 
 ## 目录导航
 
