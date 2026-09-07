@@ -1,0 +1,53 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1440" height="1020" viewBox="0 0 1440 1020" role="img" aria-labelledby="title desc">
+<title id="title">UX/UI Agent Skills：依据标准与设计经验，设置网页约束</title>
+<desc id="desc">公开标准、实践指南、设计方法和品牌经验，经 Skill 组织成视觉约束、交互要求和标准要求。模型据此实现网页，工具检查实际页面，人工判断业务与视觉效果。六个案例是规则效果示例，并非技能增益证明。</desc>
+<defs><marker id="arrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0 0L10 5L0 10Z" fill="#547462"/></marker></defs>
+<rect width="1440" height="1020" fill="#f7f7f2"/>
+<g font-family="'Segoe UI','Microsoft YaHei',sans-serif" fill="#24382d">
+<text x="54" y="46" font-size="15" letter-spacing="2" fill="#17624e">009 / UX/UI AGENT SKILLS</text>
+<text x="54" y="103" font-size="36" font-weight="700">依据标准与设计经验，设置网页约束</text>
+<text x="54" y="139" font-size="19" fill="#596b5e">核心：说明界面长什么样、怎样操作、如何检查；由 AI 遵循规则完成实现。</text>
+
+<rect x="54" y="175" width="1332" height="125" rx="14" fill="#e5eee2"/>
+<text x="78" y="207" font-size="16" font-weight="700">依据层 · 权威性与用途不同，不能全部等同于强制标准</text>
+<text x="78" y="242" font-size="19" font-weight="600">公开标准与社区规范</text><text x="78" y="273" font-size="16">WCAG 无障碍 · DTCG 数据格式</text>
+<text x="528" y="242" font-size="19" font-weight="600">实践指南与设计方法</text><text x="528" y="273" font-size="16">ARIA APG · 原子设计 · 可用性启发式</text>
+<text x="997" y="242" font-size="19" font-weight="600">品牌、项目与作者经验</text><text x="997" y="273" font-size="16">风格参考 · 组件约定 · 审美偏好</text>
+<path d="M720 301V327" stroke="#547462" stroke-width="2" marker-end="url(#arrow)"/>
+<text x="720" y="356" font-size="19" text-anchor="middle" font-weight="600">Skill 按任务读取依据，组织为三类网页要求</text>
+<path d="M720 370V384 M267 384H1173" fill="none" stroke="#547462" stroke-width="2"/>
+<path d="M267 384V405" stroke="#547462" stroke-width="2" marker-end="url(#arrow)"/>
+<path d="M720 384V405" stroke="#547462" stroke-width="2" marker-end="url(#arrow)"/>
+<path d="M1173 384V405" stroke="#547462" stroke-width="2" marker-end="url(#arrow)"/>
+
+<rect x="54" y="416" width="426" height="263" rx="13" fill="#fff" stroke="#cbd6c8"/>
+<text x="78" y="452" font-size="14" fill="#17624e">01 / 界面长什么样</text><text x="78" y="491" font-size="29" font-weight="700">视觉约束</text>
+<text x="78" y="531" font-size="18">统一整体风格、按钮样式、配色与间距</text>
+<text x="78" y="563" font-size="17">例如：明暗主题共享同一套语义 Token</text>
+<text x="78" y="606" font-size="15" fill="#596b5e">主要依据：设计系统、品牌与项目约定</text>
+<text x="78" y="640" font-size="15" fill="#17624e">design-tokens · apply-aesthetic</text>
+
+<rect x="507" y="416" width="426" height="263" rx="13" fill="#fff" stroke="#cbd6c8"/>
+<text x="531" y="452" font-size="14" fill="#17624e">02 / 界面怎样操作</text><text x="531" y="491" font-size="29" font-weight="700">交互要求</text>
+<text x="531" y="531" font-size="18">规定排序、选择、加载与确认如何工作</text>
+<text x="531" y="563" font-size="17">例如：点击排序后，数据行真的改变顺序</text>
+<text x="531" y="606" font-size="15" fill="#596b5e">主要依据：组件规范、业务目标与交互模式</text>
+<text x="531" y="640" font-size="15" fill="#17624e">design-component · design-code</text>
+
+<rect x="960" y="416" width="426" height="263" rx="13" fill="#fff" stroke="#cbd6c8"/>
+<text x="984" y="452" font-size="14" fill="#17624e">03 / 界面满足哪些底线</text><text x="984" y="491" font-size="29" font-weight="700">标准要求</text>
+<text x="984" y="531" font-size="18">文本可读、键盘可用、控件语义明确</text>
+<text x="984" y="563" font-size="17">例如：焦点可见，弹窗关闭后返回焦点</text>
+<text x="984" y="606" font-size="15" fill="#596b5e">主要依据：WCAG / ARIA；APG 补充实践</text>
+<text x="984" y="640" font-size="15" fill="#17624e">a11y-audit · design-qa</text>
+
+<path d="M267 680V706H1173V680 M720 680V706" fill="none" stroke="#547462" stroke-width="2"/>
+<path d="M720 706V733" stroke="#547462" stroke-width="2" marker-end="url(#arrow)"/>
+<rect x="54" y="746" width="1332" height="105" rx="13" fill="#24382d"/>
+<g fill="#fff"><text x="89" y="789" font-size="22" font-weight="600">AI 生成网页与组件</text><text x="89" y="821" font-size="16" fill="#ccdcca">统一主题 · 适用状态 · 实际代码</text>
+<text x="488" y="801" font-size="29">→</text><text x="555" y="789" font-size="22" font-weight="600">检查实际页面，发现问题后修正</text><text x="555" y="821" font-size="16" fill="#ccdcca">静态检查 · 浏览器渲染 · 真实操作</text>
+<text x="1031" y="801" font-size="29">→</text><text x="1090" y="789" font-size="22" font-weight="600">人工验收</text><text x="1090" y="821" font-size="16" fill="#ccdcca">视觉与业务是否合用</text></g>
+<text x="54" y="895" font-size="17" font-weight="600">三类要求会交叉：键盘操作既是交互要求，也涉及无障碍标准；有依据不等于结果自动达标。</text>
+<text x="54" y="931" font-size="17" fill="#596b5e">我们的定位：按需参考规范与检查方法，整套接入优先级低；六个现成案例不能证明相对强模型的增益。</text>
+<text x="54" y="982" font-size="14" fill="#596b5e">原创研究引导图 · 非官方架构图或效果认证 · 上游 v2.5.1 / 2ffb677 · 2026-09-07</text>
+</g></svg>

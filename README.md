@@ -16,6 +16,7 @@
 | 006 | [Doop](projects/006-doop/README.md) | [kgoedecke/doop](https://github.com/kgoedecke/doop) | 人与 AI 共用设计画布；与已有设计流程重叠，当前仅归档、暂不深挖 | 已完成（源码与对比归档） | 暂无 |
 | 007 | [CozyClay](projects/007-cozyclay/README.md) | [NomaDamas/CozyClay](https://github.com/NomaDamas/CozyClay) | 浏览器三维分镜与动作预演；实测动作播放、场景搭建及 MCP 自动构图 | 已完成（本地工作台与 MCP 实测） | [中文能力导览](docs/demos/007-cozyclay/index.html) |
 | 008 | [Visual Memory Translator](projects/008-visual-memory-translator/README.md) | [TanShilongMario/visual-memory-translator-SKILL](https://github.com/TanShilongMario/visual-memory-translator-SKILL) | 照片与文本的视觉转译技能；借鉴审美规则、风格选择与失败修正方法 | 已完成（简单记录，暂不深入） | [中文能力展示](docs/demos/008-visual-memory-translator/index.html) |
+| 009 | [UX/UI Agent Skills](projects/009-ux-ui-agent-skills/README.md) | [plugin87/ux-ui-agent-skills](https://github.com/plugin87/ux-ui-agent-skills) | 设计知识、主题 Token、组件规范与实际页面检查；借鉴可复用的设计与验证流程 | 已完成（能力整理与原始示例体验；生成效果未实测） | [能力导览](docs/demos/009-ux-ui-agent-skills/index.html) · [真实示例](docs/demos/009-ux-ui-agent-skills/effects.html) |
 
 状态约定：`待研究` → `研究中` → `已完成`，暂时搁置使用 `已暂停`。
 
@@ -87,6 +88,14 @@ flowchart LR
 **将照片和句子转译为艺术出版气质的视觉作品，核心是把审美判断组织成 AI 可复用的技能规则。** 支持风格预览、文本隐喻与多种视觉载体；生成依赖外部模型，坐标锁定、原图保真与质量检查尚无程序保证。照片路径可概括为“关键元素提取 → 艺术化简化 → 重新构图”。仅简单记录并保留展示，暂不深入研究，生图未实测。
 
 [能力、原理与研究结论](projects/008-visual-memory-translator/README.md) · [源码依据与能力边界](projects/008-visual-memory-translator/notes/capability-boundaries.md) · [中文能力展示](docs/demos/008-visual-memory-translator/index.html)
+
+### 009 · UX/UI Agent Skills 概述
+
+[![UX/UI Agent Skills 引导架构图：依据标准、设计方法和品牌经验，设置网页视觉约束、交互要求与标准要求，再由 AI 实现并检查](projects/009-ux-ui-agent-skills/assets/ux-ui-constraints.svg)](projects/009-ux-ui-agent-skills/README.md)
+
+**核心是把“界面长什么样、怎样操作、如何检查”组织成 AI 可遵循的规范。** 视觉约束统一风格、按钮和主题；交互要求规定排序、选择、加载与确认行为；标准要求覆盖可读性、键盘和语义。依据包括公开标准、设计方法与作者经验，不能全部视为强制标准。当前按需参考，整套接入优先级低；六个原始示例已体验，但未证明相对强模型的生成增益。本图为原创研究引导，非官方架构或效果认证。
+
+[能力与研究结论](projects/009-ux-ui-agent-skills/README.md) · [标准与技能关系](docs/demos/009-ux-ui-agent-skills/standards.html) · [六个原始示例](docs/demos/009-ux-ui-agent-skills/effects.html)
 
 ## 目录导航
 
