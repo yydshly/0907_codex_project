@@ -1,0 +1,710 @@
+[
+  {
+    "id": "human",
+    "name": "花园行者",
+    "tag": "从零设计 · 简化人形",
+    "description": "独立创建头、躯干、双臂和双腿；GLB 内含待机、行走与单手挥手动作。",
+    "level": 2,
+    "width": 1.24,
+    "height": 1,
+    "file": "human-2",
+    "metrics": {
+      "bytes": 139636,
+      "triangles": 2406,
+      "joints": 23,
+      "animations": [
+        "idle",
+        "move",
+        "wave"
+      ]
+    }
+  },
+  {
+    "id": "human",
+    "name": "花园行者",
+    "tag": "从零设计 · 简化人形",
+    "description": "独立创建头、躯干、双臂和双腿；GLB 内含待机、行走与单手挥手动作。",
+    "level": 1,
+    "width": 1.12,
+    "height": 1,
+    "file": "human-1",
+    "metrics": {
+      "bytes": 139636,
+      "triangles": 2406,
+      "joints": 23,
+      "animations": [
+        "idle",
+        "move",
+        "wave"
+      ]
+    }
+  },
+  {
+    "id": "human",
+    "name": "花园行者",
+    "tag": "从零设计 · 简化人形",
+    "description": "独立创建头、躯干、双臂和双腿；GLB 内含待机、行走与单手挥手动作。",
+    "level": 0,
+    "width": 1,
+    "height": 1,
+    "file": "human-0",
+    "metrics": {
+      "bytes": 139636,
+      "triangles": 2406,
+      "joints": 23,
+      "animations": [
+        "idle",
+        "move",
+        "wave"
+      ]
+    }
+  },
+  {
+    "id": "snail",
+    "name": "苔灯蜗牛",
+    "tag": "本次从零创作",
+    "description": "从空白参数设计腹足、螺壳、长触角与摆动动画，不读取官方狼的骨架或模型。",
+    "level": 2,
+    "width": 1.5,
+    "height": 1.2,
+    "file": "snail-2",
+    "metrics": {
+      "bytes": 369272,
+      "triangles": 5780,
+      "joints": 14,
+      "animations": [
+        "idle",
+        "move"
+      ]
+    }
+  },
+  {
+    "id": "snail",
+    "name": "苔灯蜗牛",
+    "tag": "本次从零创作",
+    "description": "从空白参数设计腹足、螺壳、长触角与摆动动画，不读取官方狼的骨架或模型。",
+    "level": 1,
+    "width": 1.25,
+    "height": 1.1,
+    "file": "snail-1",
+    "metrics": {
+      "bytes": 369452,
+      "triangles": 5780,
+      "joints": 14,
+      "animations": [
+        "idle",
+        "move"
+      ]
+    }
+  },
+  {
+    "id": "snail",
+    "name": "苔灯蜗牛",
+    "tag": "本次从零创作",
+    "description": "从空白参数设计腹足、螺壳、长触角与摆动动画，不读取官方狼的骨架或模型。",
+    "level": 0,
+    "width": 1,
+    "height": 1,
+    "file": "snail-0",
+    "metrics": {
+      "bytes": 372872,
+      "triangles": 5860,
+      "joints": 14,
+      "animations": [
+        "idle",
+        "move"
+      ]
+    }
+  },
+  {
+    "id": "wolf",
+    "name": "原野狼",
+    "tag": "官方样例",
+    "description": "官方四足样例：观察身体截面、左右肢体和两段骨骼动画。",
+    "level": 0,
+    "width": 1,
+    "height": 1,
+    "file": "wolf-0",
+    "metrics": {
+      "bytes": 206592,
+      "triangles": 3582,
+      "joints": 31,
+      "animations": [
+        "idle",
+        "move"
+      ]
+    },
+    "changes": {
+      "bodyWidth": 1,
+      "bodyHeight": 1,
+      "addedParts": 0,
+      "palette": {
+        "fur_body": {
+          "color": "#77705f",
+          "rough": 0.95
+        },
+        "fur_head": {
+          "color": "#b5561f",
+          "rough": 0.95
+        },
+        "fur_tail": {
+          "color": "#b5561f",
+          "rough": 0.95
+        },
+        "fur_leg": {
+          "color": "#5f594b",
+          "rough": 0.95
+        },
+        "fur_paw": {
+          "color": "#6b6455",
+          "rough": 0.95
+        },
+        "nose": {
+          "color": "#191a1d",
+          "rough": 0.6
+        },
+        "ear": {
+          "color": "#8c3c14",
+          "rough": 0.95
+        },
+        "eye": {
+          "color": "#f0a51e",
+          "rough": 0.25
+        }
+      }
+    }
+  },
+  {
+    "id": "wolf",
+    "name": "原野狼",
+    "tag": "官方样例",
+    "description": "官方四足样例：观察身体截面、左右肢体和两段骨骼动画。",
+    "level": 1,
+    "width": 1.15,
+    "height": 1.08,
+    "file": "wolf-1",
+    "metrics": {
+      "bytes": 205668,
+      "triangles": 3550,
+      "joints": 31,
+      "animations": [
+        "idle",
+        "move"
+      ]
+    },
+    "changes": {
+      "bodyWidth": 1.15,
+      "bodyHeight": 1.08,
+      "addedParts": 0,
+      "palette": {
+        "fur_body": {
+          "color": "#77705f",
+          "rough": 0.95
+        },
+        "fur_head": {
+          "color": "#b5561f",
+          "rough": 0.95
+        },
+        "fur_tail": {
+          "color": "#b5561f",
+          "rough": 0.95
+        },
+        "fur_leg": {
+          "color": "#5f594b",
+          "rough": 0.95
+        },
+        "fur_paw": {
+          "color": "#6b6455",
+          "rough": 0.95
+        },
+        "nose": {
+          "color": "#191a1d",
+          "rough": 0.6
+        },
+        "ear": {
+          "color": "#8c3c14",
+          "rough": 0.95
+        },
+        "eye": {
+          "color": "#f0a51e",
+          "rough": 0.25
+        }
+      }
+    }
+  },
+  {
+    "id": "wolf",
+    "name": "原野狼",
+    "tag": "官方样例",
+    "description": "官方四足样例：观察身体截面、左右肢体和两段骨骼动画。",
+    "level": 2,
+    "width": 1.3,
+    "height": 1.16,
+    "file": "wolf-2",
+    "metrics": {
+      "bytes": 204388,
+      "triangles": 3518,
+      "joints": 31,
+      "animations": [
+        "idle",
+        "move"
+      ]
+    },
+    "changes": {
+      "bodyWidth": 1.3,
+      "bodyHeight": 1.16,
+      "addedParts": 0,
+      "palette": {
+        "fur_body": {
+          "color": "#77705f",
+          "rough": 0.95
+        },
+        "fur_head": {
+          "color": "#b5561f",
+          "rough": 0.95
+        },
+        "fur_tail": {
+          "color": "#b5561f",
+          "rough": 0.95
+        },
+        "fur_leg": {
+          "color": "#5f594b",
+          "rough": 0.95
+        },
+        "fur_paw": {
+          "color": "#6b6455",
+          "rough": 0.95
+        },
+        "nose": {
+          "color": "#191a1d",
+          "rough": 0.6
+        },
+        "ear": {
+          "color": "#8c3c14",
+          "rough": 0.95
+        },
+        "eye": {
+          "color": "#f0a51e",
+          "rough": 0.25
+        }
+      }
+    }
+  },
+  {
+    "id": "frost",
+    "name": "冰原狼",
+    "tag": "配色变体",
+    "description": "保留同一套骨架，修改材质与身体色带，得到冷色角色变体。",
+    "level": 0,
+    "width": 1,
+    "height": 1,
+    "file": "frost-0",
+    "metrics": {
+      "bytes": 206592,
+      "triangles": 3582,
+      "joints": 31,
+      "animations": [
+        "idle",
+        "move"
+      ]
+    },
+    "changes": {
+      "bodyWidth": 1,
+      "bodyHeight": 1,
+      "addedParts": 0,
+      "palette": {
+        "fur_body": {
+          "color": "#719ba6",
+          "rough": 0.95
+        },
+        "fur_head": {
+          "color": "#abcad0",
+          "rough": 0.95
+        },
+        "fur_tail": {
+          "color": "#60949e",
+          "rough": 0.95
+        },
+        "fur_leg": {
+          "color": "#557b89",
+          "rough": 0.95
+        },
+        "fur_paw": {
+          "color": "#74929d",
+          "rough": 0.95
+        },
+        "nose": {
+          "color": "#20343f",
+          "rough": 0.6
+        },
+        "ear": {
+          "color": "#98bcc8",
+          "rough": 0.95
+        },
+        "eye": {
+          "color": "#f9df90",
+          "rough": 0.25
+        }
+      }
+    }
+  },
+  {
+    "id": "frost",
+    "name": "冰原狼",
+    "tag": "配色变体",
+    "description": "保留同一套骨架，修改材质与身体色带，得到冷色角色变体。",
+    "level": 1,
+    "width": 1.15,
+    "height": 1.08,
+    "file": "frost-1",
+    "metrics": {
+      "bytes": 205672,
+      "triangles": 3550,
+      "joints": 31,
+      "animations": [
+        "idle",
+        "move"
+      ]
+    },
+    "changes": {
+      "bodyWidth": 1.15,
+      "bodyHeight": 1.08,
+      "addedParts": 0,
+      "palette": {
+        "fur_body": {
+          "color": "#719ba6",
+          "rough": 0.95
+        },
+        "fur_head": {
+          "color": "#abcad0",
+          "rough": 0.95
+        },
+        "fur_tail": {
+          "color": "#60949e",
+          "rough": 0.95
+        },
+        "fur_leg": {
+          "color": "#557b89",
+          "rough": 0.95
+        },
+        "fur_paw": {
+          "color": "#74929d",
+          "rough": 0.95
+        },
+        "nose": {
+          "color": "#20343f",
+          "rough": 0.6
+        },
+        "ear": {
+          "color": "#98bcc8",
+          "rough": 0.95
+        },
+        "eye": {
+          "color": "#f9df90",
+          "rough": 0.25
+        }
+      }
+    }
+  },
+  {
+    "id": "frost",
+    "name": "冰原狼",
+    "tag": "配色变体",
+    "description": "保留同一套骨架，修改材质与身体色带，得到冷色角色变体。",
+    "level": 2,
+    "width": 1.3,
+    "height": 1.16,
+    "file": "frost-2",
+    "metrics": {
+      "bytes": 204388,
+      "triangles": 3518,
+      "joints": 31,
+      "animations": [
+        "idle",
+        "move"
+      ]
+    },
+    "changes": {
+      "bodyWidth": 1.3,
+      "bodyHeight": 1.16,
+      "addedParts": 0,
+      "palette": {
+        "fur_body": {
+          "color": "#719ba6",
+          "rough": 0.95
+        },
+        "fur_head": {
+          "color": "#abcad0",
+          "rough": 0.95
+        },
+        "fur_tail": {
+          "color": "#60949e",
+          "rough": 0.95
+        },
+        "fur_leg": {
+          "color": "#557b89",
+          "rough": 0.95
+        },
+        "fur_paw": {
+          "color": "#74929d",
+          "rough": 0.95
+        },
+        "nose": {
+          "color": "#20343f",
+          "rough": 0.6
+        },
+        "ear": {
+          "color": "#98bcc8",
+          "rough": 0.95
+        },
+        "eye": {
+          "color": "#f9df90",
+          "rough": 0.25
+        }
+      }
+    }
+  },
+  {
+    "id": "horn",
+    "name": "弯角兽",
+    "tag": "部件扩展",
+    "description": "在狼的结构上增加一对分段弯角；弯角跟随头部骨骼运动。",
+    "level": 0,
+    "width": 1,
+    "height": 1,
+    "file": "horn-0",
+    "metrics": {
+      "bytes": 218768,
+      "triangles": 3778,
+      "joints": 31,
+      "animations": [
+        "idle",
+        "move"
+      ]
+    },
+    "changes": {
+      "bodyWidth": 1,
+      "bodyHeight": 1,
+      "addedParts": 2,
+      "palette": {
+        "fur_body": {
+          "color": "#675247",
+          "rough": 0.95
+        },
+        "fur_head": {
+          "color": "#815143",
+          "rough": 0.95
+        },
+        "fur_tail": {
+          "color": "#715241",
+          "rough": 0.95
+        },
+        "fur_leg": {
+          "color": "#4d4543",
+          "rough": 0.95
+        },
+        "fur_paw": {
+          "color": "#655248",
+          "rough": 0.95
+        },
+        "nose": {
+          "color": "#211e22",
+          "rough": 0.6
+        },
+        "ear": {
+          "color": "#945f44",
+          "rough": 0.95
+        },
+        "eye": {
+          "color": "#ffd786",
+          "rough": 0.25
+        },
+        "horn": {
+          "color": "#d7bc8e",
+          "rough": 0.7
+        }
+      }
+    }
+  },
+  {
+    "id": "horn",
+    "name": "弯角兽",
+    "tag": "部件扩展",
+    "description": "在狼的结构上增加一对分段弯角；弯角跟随头部骨骼运动。",
+    "level": 1,
+    "width": 1.15,
+    "height": 1.08,
+    "file": "horn-1",
+    "metrics": {
+      "bytes": 217844,
+      "triangles": 3746,
+      "joints": 31,
+      "animations": [
+        "idle",
+        "move"
+      ]
+    },
+    "changes": {
+      "bodyWidth": 1.15,
+      "bodyHeight": 1.08,
+      "addedParts": 2,
+      "palette": {
+        "fur_body": {
+          "color": "#675247",
+          "rough": 0.95
+        },
+        "fur_head": {
+          "color": "#815143",
+          "rough": 0.95
+        },
+        "fur_tail": {
+          "color": "#715241",
+          "rough": 0.95
+        },
+        "fur_leg": {
+          "color": "#4d4543",
+          "rough": 0.95
+        },
+        "fur_paw": {
+          "color": "#655248",
+          "rough": 0.95
+        },
+        "nose": {
+          "color": "#211e22",
+          "rough": 0.6
+        },
+        "ear": {
+          "color": "#945f44",
+          "rough": 0.95
+        },
+        "eye": {
+          "color": "#ffd786",
+          "rough": 0.25
+        },
+        "horn": {
+          "color": "#d7bc8e",
+          "rough": 0.7
+        }
+      }
+    }
+  },
+  {
+    "id": "horn",
+    "name": "弯角兽",
+    "tag": "部件扩展",
+    "description": "在狼的结构上增加一对分段弯角；弯角跟随头部骨骼运动。",
+    "level": 2,
+    "width": 1.3,
+    "height": 1.16,
+    "file": "horn-2",
+    "metrics": {
+      "bytes": 216560,
+      "triangles": 3714,
+      "joints": 31,
+      "animations": [
+        "idle",
+        "move"
+      ]
+    },
+    "changes": {
+      "bodyWidth": 1.3,
+      "bodyHeight": 1.16,
+      "addedParts": 2,
+      "palette": {
+        "fur_body": {
+          "color": "#675247",
+          "rough": 0.95
+        },
+        "fur_head": {
+          "color": "#815143",
+          "rough": 0.95
+        },
+        "fur_tail": {
+          "color": "#715241",
+          "rough": 0.95
+        },
+        "fur_leg": {
+          "color": "#4d4543",
+          "rough": 0.95
+        },
+        "fur_paw": {
+          "color": "#655248",
+          "rough": 0.95
+        },
+        "nose": {
+          "color": "#211e22",
+          "rough": 0.6
+        },
+        "ear": {
+          "color": "#945f44",
+          "rough": 0.95
+        },
+        "eye": {
+          "color": "#ffd786",
+          "rough": 0.25
+        },
+        "horn": {
+          "color": "#d7bc8e",
+          "rough": 0.7
+        }
+      }
+    }
+  },
+  {
+    "id": "butterfly",
+    "name": "蓝金蝴蝶",
+    "tag": "从零设计 · 骨骼振翅",
+    "description": "独立设计的膜状前后翅，振翅动作写进 GLB；花园飞行路线由场景驱动。",
+    "level": 0,
+    "width": 1,
+    "height": 1,
+    "file": "butterfly-0",
+    "metrics": {
+      "bytes": 148780,
+      "triangles": 2256,
+      "joints": 53,
+      "animations": [
+        "idle",
+        "move"
+      ]
+    }
+  },
+  {
+    "id": "butterfly",
+    "name": "蓝金蝴蝶",
+    "tag": "从零设计 · 骨骼振翅",
+    "description": "独立设计的膜状前后翅，振翅动作写进 GLB；花园飞行路线由场景驱动。",
+    "level": 1,
+    "width": 1.25,
+    "height": 1,
+    "file": "butterfly-1",
+    "metrics": {
+      "bytes": 148516,
+      "triangles": 2256,
+      "joints": 53,
+      "animations": [
+        "idle",
+        "move"
+      ]
+    }
+  },
+  {
+    "id": "butterfly",
+    "name": "蓝金蝴蝶",
+    "tag": "从零设计 · 骨骼振翅",
+    "description": "独立设计的膜状前后翅，振翅动作写进 GLB；花园飞行路线由场景驱动。",
+    "level": 2,
+    "width": 1.5,
+    "height": 1,
+    "file": "butterfly-2",
+    "metrics": {
+      "bytes": 147556,
+      "triangles": 2256,
+      "joints": 53,
+      "animations": [
+        "idle",
+        "move"
+      ]
+    }
+  }
+]

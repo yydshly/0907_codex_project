@@ -1,0 +1,625 @@
+{
+  "name": "azure_gold_butterfly",
+  "smooth_angle": 65,
+  "ao": {
+    "strength": 0.22,
+    "samples": 16
+  },
+  "shading": {
+    "gradient": {
+      "top": 0.12,
+      "bottom": -0.18
+    },
+    "noise": {
+      "size": 0.015,
+      "amount": 0.05
+    }
+  },
+  "palette": {
+    "body": {
+      "color": "#294851",
+      "rough": 0.8
+    },
+    "wing": {
+      "color": "#1d9dbc",
+      "rough": 0.65
+    },
+    "gold": {
+      "color": "#efb956",
+      "rough": 0.7
+    },
+    "eye": {
+      "color": "#172928",
+      "rough": 0.2
+    },
+    "vein": {
+      "color": "#264859",
+      "rough": 0.8
+    }
+  },
+  "joints": {
+    "Tail": [
+      0,
+      0.25,
+      -0.58
+    ],
+    "Abdomen": [
+      0,
+      0.25,
+      -0.2
+    ],
+    "Thorax": [
+      0,
+      0.25,
+      0.06
+    ],
+    "Head": [
+      0,
+      0.25,
+      0.38
+    ],
+    "Face": [
+      0,
+      0.25,
+      0.51
+    ],
+    "LFrontRoot": [
+      0.055,
+      0.28,
+      0.1
+    ],
+    "LBackRoot": [
+      0.055,
+      0.28,
+      -0.12
+    ],
+    "LFrontTip0": [
+      1.03,
+      0.28,
+      1.03
+    ],
+    "LFrontTip1": [
+      1.48,
+      0.28,
+      0.82
+    ],
+    "LFrontTip2": [
+      1.65,
+      0.28,
+      0.39
+    ],
+    "LFrontTip3": [
+      1.42,
+      0.28,
+      0.03
+    ],
+    "LFrontTip4": [
+      0.75,
+      0.28,
+      -0.16
+    ],
+    "LFrontTip5": [
+      0.08,
+      0.28,
+      -0.08
+    ],
+    "LFrontMark0": [
+      0.7180000000000001,
+      0.28900000000000003,
+      0.7324
+    ],
+    "LFrontMark1": [
+      1.024,
+      0.28900000000000003,
+      0.5896
+    ],
+    "LFrontMark2": [
+      1.1396,
+      0.28900000000000003,
+      0.2972
+    ],
+    "LFrontMark3": [
+      0.9832000000000001,
+      0.28900000000000003,
+      0.052399999999999995
+    ],
+    "LFrontMark4": [
+      0.5276000000000001,
+      0.28900000000000003,
+      -0.07680000000000001
+    ],
+    "LBackTip0": [
+      0.74,
+      0.28,
+      -0.1
+    ],
+    "LBackTip1": [
+      1.22,
+      0.28,
+      -0.46
+    ],
+    "LBackTip2": [
+      1.13,
+      0.28,
+      -0.82
+    ],
+    "LBackTip3": [
+      0.79,
+      0.28,
+      -1.02
+    ],
+    "LBackTip4": [
+      0.31,
+      0.28,
+      -0.84
+    ],
+    "LBackTip5": [
+      0.06,
+      0.28,
+      -0.33
+    ],
+    "LBackMark0": [
+      0.5208,
+      0.28900000000000003,
+      -0.1064
+    ],
+    "LBackMark1": [
+      0.8472000000000002,
+      0.28900000000000003,
+      -0.35120000000000007
+    ],
+    "LBackMark2": [
+      0.786,
+      0.28900000000000003,
+      -0.596
+    ],
+    "LBackMark3": [
+      0.5548000000000001,
+      0.28900000000000003,
+      -0.7320000000000001
+    ],
+    "LBackMark4": [
+      0.22840000000000002,
+      0.28900000000000003,
+      -0.6096
+    ]
+  },
+  "chains": {
+    "body": [
+      "Tail",
+      "Abdomen",
+      "Thorax",
+      "Head",
+      "Face"
+    ],
+    "LFrontRib0": [
+      "LFrontRoot",
+      "LFrontTip0"
+    ],
+    "LFrontRib1": [
+      "LFrontRoot",
+      "LFrontTip1"
+    ],
+    "LFrontRib2": [
+      "LFrontRoot",
+      "LFrontTip2"
+    ],
+    "LFrontRib3": [
+      "LFrontRoot",
+      "LFrontTip3"
+    ],
+    "LFrontRib4": [
+      "LFrontRoot",
+      "LFrontTip4"
+    ],
+    "LFrontRib5": [
+      "LFrontRoot",
+      "LFrontTip5"
+    ],
+    "LFrontPatch0": [
+      "LFrontRoot",
+      "LFrontMark0"
+    ],
+    "LFrontPatch1": [
+      "LFrontRoot",
+      "LFrontMark1"
+    ],
+    "LFrontPatch2": [
+      "LFrontRoot",
+      "LFrontMark2"
+    ],
+    "LFrontPatch3": [
+      "LFrontRoot",
+      "LFrontMark3"
+    ],
+    "LFrontPatch4": [
+      "LFrontRoot",
+      "LFrontMark4"
+    ],
+    "LBackRib0": [
+      "LBackRoot",
+      "LBackTip0"
+    ],
+    "LBackRib1": [
+      "LBackRoot",
+      "LBackTip1"
+    ],
+    "LBackRib2": [
+      "LBackRoot",
+      "LBackTip2"
+    ],
+    "LBackRib3": [
+      "LBackRoot",
+      "LBackTip3"
+    ],
+    "LBackRib4": [
+      "LBackRoot",
+      "LBackTip4"
+    ],
+    "LBackRib5": [
+      "LBackRoot",
+      "LBackTip5"
+    ],
+    "LBackPatch0": [
+      "LBackRoot",
+      "LBackMark0"
+    ],
+    "LBackPatch1": [
+      "LBackRoot",
+      "LBackMark1"
+    ],
+    "LBackPatch2": [
+      "LBackRoot",
+      "LBackMark2"
+    ],
+    "LBackPatch3": [
+      "LBackRoot",
+      "LBackMark3"
+    ],
+    "LBackPatch4": [
+      "LBackRoot",
+      "LBackMark4"
+    ]
+  },
+  "attach": {
+    "LFrontRib0": "Thorax",
+    "LFrontRib1": "Thorax",
+    "LFrontRib2": "Thorax",
+    "LFrontRib3": "Thorax",
+    "LFrontRib4": "Thorax",
+    "LFrontRib5": "Thorax",
+    "LFrontPatch0": "Thorax",
+    "LFrontPatch1": "Thorax",
+    "LFrontPatch2": "Thorax",
+    "LFrontPatch3": "Thorax",
+    "LFrontPatch4": "Thorax",
+    "LBackRib0": "Abdomen",
+    "LBackRib1": "Abdomen",
+    "LBackRib2": "Abdomen",
+    "LBackRib3": "Abdomen",
+    "LBackRib4": "Abdomen",
+    "LBackRib5": "Abdomen",
+    "LBackPatch0": "Abdomen",
+    "LBackPatch1": "Abdomen",
+    "LBackPatch2": "Abdomen",
+    "LBackPatch3": "Abdomen",
+    "LBackPatch4": "Abdomen"
+  },
+  "mirror": [
+    "LFrontRib0",
+    "LFrontRib1",
+    "LFrontRib2",
+    "LFrontRib3",
+    "LFrontRib4",
+    "LFrontRib5",
+    "LFrontPatch0",
+    "LFrontPatch1",
+    "LFrontPatch2",
+    "LFrontPatch3",
+    "LFrontPatch4",
+    "LBackRib0",
+    "LBackRib1",
+    "LBackRib2",
+    "LBackRib3",
+    "LBackRib4",
+    "LBackRib5",
+    "LBackPatch0",
+    "LBackPatch1",
+    "LBackPatch2",
+    "LBackPatch3",
+    "LBackPatch4"
+  ],
+  "volumes": [
+    {
+      "chain": "body",
+      "material": "body",
+      "frame": "up",
+      "sides": 14,
+      "ring_step": 0.06,
+      "profile": [
+        [
+          0,
+          0.025,
+          0.025
+        ],
+        [
+          0.22,
+          0.09,
+          0.09
+        ],
+        [
+          0.5,
+          0.14,
+          0.13
+        ],
+        [
+          0.74,
+          0.16,
+          0.15
+        ],
+        [
+          0.88,
+          0.11,
+          0.11
+        ],
+        [
+          1,
+          0.07,
+          0.07
+        ]
+      ],
+      "caps": [
+        "dome",
+        "dome"
+      ]
+    }
+  ],
+  "parts": [
+    {
+      "type": "eye",
+      "host": "Head",
+      "face": 0.075,
+      "spread": 0.073,
+      "size": 0.042,
+      "material": "eye"
+    },
+    {
+      "type": "curve",
+      "host": "Head",
+      "material": "gold",
+      "mirrored": true,
+      "offset": [
+        0.065,
+        0.035,
+        0.04
+      ],
+      "dir": [
+        0.35,
+        0.22,
+        1
+      ],
+      "sides": 8,
+      "segments": [
+        {
+          "len": 0.2,
+          "r": 0.012
+        },
+        {
+          "len": 0.17,
+          "r": 0.009,
+          "rise": 28
+        },
+        {
+          "len": 0.06,
+          "r": 0.023
+        }
+      ]
+    },
+    {
+      "type": "membrane",
+      "name": "FrontWing",
+      "material": "wing",
+      "mirrored": true,
+      "along": 8,
+      "across": 3,
+      "cusp": 0.04,
+      "ribs": [
+        {
+          "chain": "LFrontRib0"
+        },
+        {
+          "chain": "LFrontRib1"
+        },
+        {
+          "chain": "LFrontRib2"
+        },
+        {
+          "chain": "LFrontRib3"
+        },
+        {
+          "chain": "LFrontRib4"
+        },
+        {
+          "chain": "LFrontRib5"
+        }
+      ]
+    },
+    {
+      "type": "membrane",
+      "name": "FrontMark",
+      "material": "gold",
+      "mirrored": true,
+      "along": 6,
+      "across": 3,
+      "cusp": 0.08,
+      "ribs": [
+        {
+          "chain": "LFrontPatch0"
+        },
+        {
+          "chain": "LFrontPatch1"
+        },
+        {
+          "chain": "LFrontPatch2"
+        },
+        {
+          "chain": "LFrontPatch3"
+        },
+        {
+          "chain": "LFrontPatch4"
+        }
+      ]
+    },
+    {
+      "type": "membrane",
+      "name": "BackWing",
+      "material": "gold",
+      "mirrored": true,
+      "along": 8,
+      "across": 3,
+      "cusp": 0.04,
+      "ribs": [
+        {
+          "chain": "LBackRib0"
+        },
+        {
+          "chain": "LBackRib1"
+        },
+        {
+          "chain": "LBackRib2"
+        },
+        {
+          "chain": "LBackRib3"
+        },
+        {
+          "chain": "LBackRib4"
+        },
+        {
+          "chain": "LBackRib5"
+        }
+      ]
+    },
+    {
+      "type": "membrane",
+      "name": "BackMark",
+      "material": "wing",
+      "mirrored": true,
+      "along": 6,
+      "across": 3,
+      "cusp": 0.08,
+      "ribs": [
+        {
+          "chain": "LBackPatch0"
+        },
+        {
+          "chain": "LBackPatch1"
+        },
+        {
+          "chain": "LBackPatch2"
+        },
+        {
+          "chain": "LBackPatch3"
+        },
+        {
+          "chain": "LBackPatch4"
+        }
+      ]
+    }
+  ],
+  "animations": {
+    "idle": {
+      "duration": 2.2,
+      "loop": true,
+      "mirror_phase": 0,
+      "tracks": {
+        "LFrontRoot": {
+          "rz": [
+            [
+              0,
+              8
+            ],
+            [
+              0.5,
+              24
+            ],
+            [
+              1,
+              8
+            ]
+          ]
+        },
+        "LBackRoot": {
+          "rz": [
+            [
+              0,
+              8
+            ],
+            [
+              0.5,
+              24
+            ],
+            [
+              1,
+              8
+            ]
+          ]
+        }
+      }
+    },
+    "move": {
+      "duration": 0.65,
+      "loop": true,
+      "mirror_phase": 0,
+      "tracks": {
+        "LFrontRoot": {
+          "rz": [
+            [
+              0,
+              -22
+            ],
+            [
+              0.24,
+              58
+            ],
+            [
+              0.5,
+              -22
+            ],
+            [
+              0.74,
+              58
+            ],
+            [
+              1,
+              -22
+            ]
+          ]
+        },
+        "LBackRoot": {
+          "rz": [
+            [
+              0,
+              -22
+            ],
+            [
+              0.24,
+              58
+            ],
+            [
+              0.5,
+              -22
+            ],
+            [
+              0.74,
+              58
+            ],
+            [
+              1,
+              -22
+            ]
+          ]
+        }
+      }
+    }
+  }
+}

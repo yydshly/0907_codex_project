@@ -1,0 +1,3 @@
+info: WARN volume "body": profile slope 1.48 at t=1.00 (ring spacing 0.080 vs radius ~0.250) — rings are crowded relative to how fast the radius changes; this is the shape that flips triangles once it bends. Raise "ring_step" on this volume, or soften the profile row there.
+info: shading: body-Y ramp top 0.14 / bottom -0.22, grain 0.0513 (2.0% of the 2.56 diagonal) — applied to all 11 meshes
+{"ok":true,"out":"F:\\codex_project\\0907_codex_project\\projects\\011-anycreature\\demo\\assets\\human-0.glb","bytes":139636,"verts":1447,"faces":1337,"joints":23,"anims":["idle","move","wave"],"checks":"all green","uv":"off","ao":{"meanOcc":0.232}}

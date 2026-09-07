@@ -1,0 +1,3 @@
+info: curve 'Head': steering accumulated to 28° — starts fwd, finishes up-fwd, far end +0.19 in y
+info: shading: body-Y ramp top 0.12 / bottom -0.18, grain 0.0586 (1.5% of the 3.90 diagonal) — applied to all 13 meshes
+{"ok":true,"out":"F:\\codex_project\\0907_codex_project\\projects\\011-anycreature\\demo\\assets\\butterfly-2.glb","bytes":147556,"verts":1666,"faces":1182,"joints":53,"anims":["idle","move"],"checks":"all green","uv":"off","ao":{"meanOcc":0.449}}

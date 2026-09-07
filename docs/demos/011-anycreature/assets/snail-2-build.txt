@@ -1,0 +1,5 @@
+info: WARN volume "body": profile slope 1.17 at t=0.94 (ring spacing 0.060 vs radius ~0.075) — rings are crowded relative to how fast the radius changes; this is the shape that flips triangles once it bends. Raise "ring_step" on this volume, or soften the profile row there.
+info: WARN volume "shell": profile slope 2.05 at t=1.00 (ring spacing 0.120 vs radius ~0.060) — rings are crowded relative to how fast the radius changes; this is the shape that flips triangles once it bends. Raise "ring_step" on this volume, or soften the profile row there.
+info: shading: body-Y ramp top 0.18 / bottom -0.35, grain 0.0539 (1.8% of the 3.00 diagonal) — applied to all 102 meshes
+
+{"ok":true,"out":"F:\\codex_project\\0907_codex_project\\projects\\011-anycreature\\demo\\assets\\snail-2.glb","bytes":369272,"verts":4709,"faces":3346,"joints":14,"anims":["idle","move"],"checks":"all green","uv":"off","ao":{"meanOcc":0.442}}
