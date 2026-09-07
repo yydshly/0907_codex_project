@@ -15,6 +15,7 @@
 | 005 | [Effective HTML](projects/005-effective-html/README.md) | [plannotator/effective-html](https://github.com/plannotator/effective-html) | 面向场景的 HTML 生成技能；借鉴输入、生成规则与验收标准，沉淀可复用能力 | 已完成（规则、演示与价值整理） | [六技能场景演示](docs/demos/005-effective-html/showcase.html) |
 | 006 | [Doop](projects/006-doop/README.md) | [kgoedecke/doop](https://github.com/kgoedecke/doop) | 人与 AI 共用设计画布；与已有设计流程重叠，当前仅归档、暂不深挖 | 已完成（源码与对比归档） | 暂无 |
 | 007 | [CozyClay](projects/007-cozyclay/README.md) | [NomaDamas/CozyClay](https://github.com/NomaDamas/CozyClay) | 浏览器三维分镜与动作预演；实测动作播放、场景搭建及 MCP 自动构图 | 已完成（本地工作台与 MCP 实测） | [中文能力导览](docs/demos/007-cozyclay/index.html) |
+| 008 | [Visual Memory Translator](projects/008-visual-memory-translator/README.md) | [TanShilongMario/visual-memory-translator-SKILL](https://github.com/TanShilongMario/visual-memory-translator-SKILL) | 照片与文本的视觉转译技能；借鉴审美规则、风格选择与失败修正方法 | 已完成（简单记录，暂不深入） | [中文能力展示](docs/demos/008-visual-memory-translator/index.html) |
 
 状态约定：`待研究` → `研究中` → `已完成`，暂时搁置使用 `已暂停`。
 
@@ -80,6 +81,12 @@ flowchart LR
 **核心是编辑和复用兼容三维角色上的姿态、动作、场景与镜头数据，视频是其中一种输出。** 已有动作可经适配导入；自定义三维模型与系统复用链路需另行适配。图片／视频动作提取效果尚未验收，外部视频生成需接入。本图为经讨论确认的原创能力引导，非官方架构或全部功能的实测证明。
 
 [能力范围与研究结论](projects/007-cozyclay/README.md) · [源码核对依据](projects/007-cozyclay/notes/capability-boundaries.md) · [中文能力导览](docs/demos/007-cozyclay/index.html)
+
+### 008 · Visual Memory Translator 概述
+
+**将照片和句子转译为艺术出版气质的视觉作品，核心是把审美判断组织成 AI 可复用的技能规则。** 支持风格预览、文本隐喻与多种视觉载体；生成依赖外部模型，坐标锁定、原图保真与质量检查尚无程序保证。照片路径可概括为“关键元素提取 → 艺术化简化 → 重新构图”。仅简单记录并保留展示，暂不深入研究，生图未实测。
+
+[能力、原理与研究结论](projects/008-visual-memory-translator/README.md) · [源码依据与能力边界](projects/008-visual-memory-translator/notes/capability-boundaries.md) · [中文能力展示](docs/demos/008-visual-memory-translator/index.html)
 
 ## 目录导航
 
