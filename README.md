@@ -73,6 +73,14 @@ flowchart LR
 
 [研究结论、架构与产品对比](projects/006-doop/README.md)
 
+### 007 · CozyClay 概述
+
+[![CozyClay 能力引导图：兼容角色与动作资产输入、姿态动作和镜头编辑、可复用数据沉淀，以及外部动作来源和视频生成的边界](projects/007-cozyclay/assets/cozyclay-architecture.svg)](projects/007-cozyclay/README.md)
+
+**核心是编辑和复用兼容三维角色上的姿态、动作、场景与镜头数据，视频是其中一种输出。** 已有动作可经适配导入；自定义三维模型与系统复用链路需另行适配。图片／视频动作提取效果尚未验收，外部视频生成需接入。本图为经讨论确认的原创能力引导，非官方架构或全部功能的实测证明。
+
+[能力范围与研究结论](projects/007-cozyclay/README.md) · [源码核对依据](projects/007-cozyclay/notes/capability-boundaries.md) · [中文能力导览](docs/demos/007-cozyclay/index.html)
+
 ## 目录导航
 
 - [子项目目录](projects/README.md)：按编号组织的研究资料。
