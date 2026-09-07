@@ -6,14 +6,14 @@
 2. 将 `templates/project/` 复制到 `projects/001-project-name/`，后续项目依次使用 `002-…`。
 3. 替换模板中的 `{{占位内容}}`，填写原仓库、研究版本、研究日期、状态及摘要。
 4. 检查资料导航中的相对链接；模板与子项目层级一致，保留默认结构即可继续使用。
-5. 添加笔记与真实截图；没有图片或演示时明确标记“暂无”，不添加无效链接。
+5. 按需添加笔记、真实截图或能力流程图；简短记录可直接写在项目 README 中，无需创建空目录。示意图须注明并非产品截图，不添加无效链接。
 6. 在主 README 按编号升序添加索引行；首个项目添加时删除“暂无研究项目”行。
 7. 有静态 Web 演示时，按 [部署指南](DEPLOYMENT.md) 添加发布文件和站点导航。
 
 索引行参考（用真实值替换，路径和文件应已存在）：
 
 ```markdown
-| 001 | [项目名称](projects/001-project-name/README.md) | [owner/repo](https://github.com/owner/repo) | 一句话摘要 | 研究中 | [截图](projects/001-project-name/README.md#图片与说明) | 暂无 |
+| 001 | [项目名称](projects/001-project-name/README.md) | [owner/repo](https://github.com/owner/repo) | 一句话摘要 | 研究中 | 暂无 |
 ```
 
 ## 顺序与命名
