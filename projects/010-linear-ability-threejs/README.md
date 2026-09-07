@@ -12,7 +12,7 @@
 | 许可 | 上游代码 MIT；角色、HDR 与纹理保留各自许可 |
 | 上游源码 | `../../upstream/linear-ability-threejs`，不纳入研究仓库提交 |
 | 中文体验页 | [打开演示](https://yydshly.github.io/0907_codex_project/demos/010-linear-ability-threejs/) |
-| 原版界面 | [打开原版](http://127.0.0.1:5190/) |
+| 原版界面 | [打开原版](https://yydshly.github.io/0907_codex_project/demos/010-linear-ability-threejs/original.html) |
 
 ## 实际效果预览
 
@@ -22,7 +22,7 @@
 
 ![人物演出：程序化关节与手部光迹](assets/03-performance.png)
 
-2026-09-07 本机运行本项目新增演示后截取，非官方宣传图。点击首图进入动态实验室；[截图来源与帧位置](assets/README.md)。在线版提供新增特效和场景，原版游戏技能需按下文在本地启动。
+2026-09-07 本机运行本项目新增演示后截取，非官方宣传图。点击首图进入动态实验室；[截图来源与帧位置](assets/README.md)。在线版同时提供新增实验室与原版七种技能，右上角可直接切换。
 
 ## 新增特效与应用场景
 
@@ -54,7 +54,7 @@ node node_modules/vite/bin/vite.js build --config vite.showcase.config.js
 
 ## 原版技能
 
-[原版技能体验页](http://127.0.0.1:5190/skills.html)左侧点击七种技能，右侧直接运行对应效果。默认每次选择都会清空上一效果并恢复播放，方便单独观察；预览模式重置所选技能冷却，并通过原版施法事件在前方 8 米处释放。勾选“自己瞄准”可体验原版范围提示与手动释放。
+[原版技能体验页](https://yydshly.github.io/0907_codex_project/demos/010-linear-ability-threejs/skills.html)左侧点击七种技能，右侧直接运行对应效果。默认每次选择都会清空上一效果并恢复播放，方便单独观察；预览模式重置所选技能冷却，并通过原版施法事件在前方 8 米处释放。勾选“自己瞄准”可体验原版范围提示与手动释放。
 
 | 技能 | 观察重点 |
 | --- | --- |
@@ -84,7 +84,7 @@ powershell -NoProfile -File projects/010-linear-ability-threejs/start.ps1
 powershell -NoProfile -File projects/010-linear-ability-threejs/build-publish.ps1
 ```
 
-发布结果位于 `docs/demos/010-linear-ability-threejs/`，只包含本项目新增场景及 Three.js 依赖，不分发上游角色、HDR 和纹理。[第三方来源说明](demo/THIRD_PARTY_NOTICES.md)。推送 `main` 后由现有 GitHub Pages 配置发布。
+发布结果位于 `docs/demos/010-linear-ability-threejs/`，包含实验室首页、skills.html 原版中文入口、original.html 原版场景，以及模型、HDR、纹理和依赖；资源保持上游文件内容并保留许可说明。[第三方来源说明](demo/THIRD_PARTY_NOTICES.md)。推送 `main` 后由现有 GitHub Pages 配置发布。
 
 启动器首次获取固定版本并安装依赖，将演示 HTML、样式、脚本和构建配置同步到上游根目录，再启动仅监听本机的 5190 服务。端口被占用时保留已有进程。日志存于本子项目，已由工作区忽略规则排除。
 
