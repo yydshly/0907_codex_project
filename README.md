@@ -17,6 +17,7 @@
 | 007 | [CozyClay](projects/007-cozyclay/README.md) | [NomaDamas/CozyClay](https://github.com/NomaDamas/CozyClay) | 浏览器三维分镜与动作预演；实测动作播放、场景搭建及 MCP 自动构图 | 已完成（本地工作台与 MCP 实测） | [中文能力导览](https://yydshly.github.io/0907_codex_project/demos/007-cozyclay/index.html) |
 | 008 | [Visual Memory Translator](projects/008-visual-memory-translator/README.md) | [TanShilongMario/visual-memory-translator-SKILL](https://github.com/TanShilongMario/visual-memory-translator-SKILL) | 照片与文本的视觉转译技能；借鉴审美规则、风格选择与失败修正方法 | 已完成（简单记录，暂不深入） | [中文能力展示](https://yydshly.github.io/0907_codex_project/demos/008-visual-memory-translator/index.html) |
 | 009 | [UX/UI Agent Skills](projects/009-ux-ui-agent-skills/README.md) | [plugin87/ux-ui-agent-skills](https://github.com/plugin87/ux-ui-agent-skills) | 设计知识、主题 Token、组件规范与实际页面检查；借鉴可复用的设计与验证流程 | 已完成（能力整理与原始示例体验；生成效果未实测） | [能力导览](https://yydshly.github.io/0907_codex_project/demos/009-ux-ui-agent-skills/index.html) · [真实示例](https://yydshly.github.io/0907_codex_project/demos/009-ux-ui-agent-skills/effects.html) |
+| 010 | [LinearAbilityExtThreeJS](projects/010-linear-ability-threejs/README.md) | [achrefelouafi/LinearAbilityExtThreeJS](https://github.com/achrefelouafi/LinearAbilityExtThreeJS) | Three.js 原版技能与新增特效；10 个特效示例、5 个非游戏场景及扩展说明 | 已完成（效果与场景演示） | [在线实验室](https://yydshly.github.io/0907_codex_project/demos/010-linear-ability-threejs/) |
 
 状态约定：`待研究` → `研究中` → `已完成`，暂时搁置使用 `已暂停`。
 
@@ -96,6 +97,14 @@ flowchart LR
 **核心是把“界面长什么样、怎样操作、如何检查”组织成 AI 可遵循的规范。** 视觉约束统一风格、按钮和主题；交互要求规定排序、选择、加载与确认行为；标准要求覆盖可读性、键盘和语义。依据包括公开标准、设计方法与作者经验，不能全部视为强制标准。当前按需参考，整套接入优先级低；六个原始示例已体验，但未证明相对强模型的生成增益。本图为原创研究引导，非官方架构或效果认证。
 
 [能力与研究结论](projects/009-ux-ui-agent-skills/README.md) · [标准与技能关系](https://yydshly.github.io/0907_codex_project/demos/009-ux-ui-agent-skills/standards.html) · [六个原始示例](https://yydshly.github.io/0907_codex_project/demos/009-ux-ui-agent-skills/effects.html)
+
+### 010 · Three.js 特效与场景实验室
+
+[![互动展览的实际效果：星群与光环，支持指针交互和时间进度控制](projects/010-linear-ability-threejs/assets/01-exhibition.png)](https://yydshly.github.io/0907_codex_project/demos/010-linear-ability-threejs/)
+
+**从游戏技能特效延伸到产品展示、品牌揭幕、教学流程、人物演出和互动展览。** 新增 10 个特效示例、5 个应用场景，并提供用途、扩展方向与接入条件。图为本项目实际运行截图，非上游官方效果图；真实产品数据、骨骼动作及摄像头输入仍需适配。当前作为效果参考与原型素材，按具体需求复用。
+
+[在线交互实验室](https://yydshly.github.io/0907_codex_project/demos/010-linear-ability-threejs/) · [项目说明与更多效果截图](projects/010-linear-ability-threejs/README.md)
 
 ## 目录导航
 

@@ -1,0 +1,2 @@
+# Bundled Three.js embeds upstream GLSL with intentional whitespace.
+assets/* linguist-generated=true -whitespace
