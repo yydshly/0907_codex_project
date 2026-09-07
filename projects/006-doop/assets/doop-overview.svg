@@ -1,0 +1,87 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1800" height="1540" viewBox="0 0 1800 1540"><title>Doop 架构与类似产品对比</title><desc>人确定目标和验收，AI 操作 HTML 画板。对比四种设计工作方式，当前仅归档。</desc><rect width="100%" height="100%" fill="#F3F5F8"/>
+<text x="60" y="38" dominant-baseline="text-before-edge" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="23" font-weight="700" fill="#536780">006  /  开源项目研究</text>
+<text x="60" y="83" dominant-baseline="text-before-edge" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="48" font-weight="700" fill="#233047">Doop：设计协作画布，当前仅归档</text>
+<text x="60" y="152" dominant-baseline="text-before-edge" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="28" font-weight="400" fill="#58667A">人确定目标与验收，AI 执行设计任务；协作体验有增量，暂不引入新平台。</text>
+<rect x="45" y="217" width="1710" height="514" rx="16" fill="#FFFFFF" stroke="none" stroke-width="2"/>
+<text x="65" y="235" dominant-baseline="text-before-edge" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="30" font-weight="700" fill="#233047">01  架构：同一份 HTML 画板，连接人和 AI</text>
+<rect x="70" y="307" width="320" height="95" rx="16" fill="#EFF5FF" stroke="#DDE3EC" stroke-width="2"/>
+<text x="92" y="324" dominant-baseline="text-before-edge" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="29" font-weight="700" fill="#233047">人：目标与反馈</text>
+<text x="92" y="365" dominant-baseline="text-before-edge" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="23" font-weight="400" fill="#58667A">浏览器编辑 / 评论 / 任务卡</text>
+<rect x="70" y="424" width="320" height="95" rx="16" fill="#EFF5FF" stroke="#DDE3EC" stroke-width="2"/>
+<text x="92" y="441" dominant-baseline="text-before-edge" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="29" font-weight="700" fill="#233047">外部 AI Agent</text>
+<text x="92" y="482" dominant-baseline="text-before-edge" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="23" font-weight="400" fill="#58667A">MCP 读取、修改、截图</text>
+<rect x="70" y="541" width="320" height="95" rx="16" fill="#EFF5FF" stroke="#DDE3EC" stroke-width="2"/>
+<text x="92" y="558" dominant-baseline="text-before-edge" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="29" font-weight="700" fill="#233047">内置 AI Agent</text>
+<text x="92" y="599" dominant-baseline="text-before-edge" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="23" font-weight="400" fill="#58667A">领取任务 / 按角色接续</text>
+<rect x="462" y="404" width="290" height="145" rx="16" fill="#E8EEFF" stroke="#C5D3F1" stroke-width="2"/>
+<text x="486" y="427" dominant-baseline="text-before-edge" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="34" font-weight="700" fill="#233047">统一操作层</text>
+<text x="486" y="476" dominant-baseline="text-before-edge" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="22" font-weight="400" fill="#58667A">actions：修改与活动记录</text>
+<polyline points="390,355 423,355 423,475 462,475" fill="none" stroke="#8794A8" stroke-width="3"/>
+<polygon points="462,475 451.4690092573155,480.75310646325045 451.4690092573155,469.24689353674955" fill="#8794A8"/>
+<polyline points="390,472 462,472" fill="none" stroke="#8794A8" stroke-width="3"/>
+<polygon points="462,472 451.4690092573155,477.75310646325045 451.4690092573155,466.24689353674955" fill="#8794A8"/>
+<polyline points="390,588 423,588 423,485 462,485" fill="none" stroke="#8794A8" stroke-width="3"/>
+<polygon points="462,485 451.4690092573155,490.75310646325045 451.4690092573155,479.24689353674955" fill="#8794A8"/>
+<rect x="836" y="316" width="340" height="103" rx="16" fill="#FFFFFF" stroke="#DDE3EC" stroke-width="2"/>
+<text x="858" y="333" dominant-baseline="text-before-edge" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="29" font-weight="700" fill="#233047">状态与持久化</text>
+<text x="858" y="374" dominant-baseline="text-before-edge" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="23" font-weight="400" fill="#58667A">内存 + PGlite / PostgreSQL</text>
+<rect x="836" y="463" width="340" height="103" rx="16" fill="#FFFFFF" stroke="#DDE3EC" stroke-width="2"/>
+<text x="858" y="480" dominant-baseline="text-before-edge" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="29" font-weight="700" fill="#233047">WebSocket 广播</text>
+<text x="858" y="521" dominant-baseline="text-before-edge" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="23" font-weight="400" fill="#58667A">画板更新 / 在线状态 / 活动</text>
+<polyline points="752,457 794,457 794,367 836,367" fill="none" stroke="#8794A8" stroke-width="3"/>
+<polygon points="836,367 825.4690092573155,372.75310646325045 825.4690092573155,361.24689353674955" fill="#8794A8"/>
+<polyline points="752,490 794,490 794,515 836,515" fill="none" stroke="#8794A8" stroke-width="3"/>
+<polygon points="836,515 825.4690092573155,520.7531064632504 825.4690092573155,509.24689353674955" fill="#8794A8"/>
+<rect x="1270" y="463" width="420" height="103" rx="16" fill="#ECF7F3" stroke="#CCE7DA" stroke-width="2"/>
+<text x="1292" y="480" dominant-baseline="text-before-edge" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="29" font-weight="700" fill="#233047">共享设计画布</text>
+<text x="1292" y="521" dominant-baseline="text-before-edge" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="23" font-weight="400" fill="#58667A">HTML / CSS → 沙箱 iframe</text>
+<polyline points="1176,515 1270,515" fill="none" stroke="#8794A8" stroke-width="3"/>
+<polygon points="1270,515 1259.4690092573155,520.7531064632504 1259.4690092573155,509.24689353674955" fill="#8794A8"/>
+<rect x="1270" y="316" width="420" height="103" rx="16" fill="#FFFFFF" stroke="#DDE3EC" stroke-width="2"/>
+<text x="1292" y="333" dominant-baseline="text-before-edge" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="29" font-weight="700" fill="#233047">浏览器截图</text>
+<text x="1292" y="374" dominant-baseline="text-before-edge" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="23" font-weight="400" fill="#58667A">Puppeteer → Agent 视觉反馈</text>
+<polyline points="1176,367 1270,367" fill="none" stroke="#8794A8" stroke-width="3"/>
+<polygon points="1270,367 1259.4690092573155,372.75310646325045 1259.4690092573155,361.24689353674955" fill="#8794A8"/>
+<text x="844" y="594" dominant-baseline="text-before-edge" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="24" font-weight="700" fill="#276853">修改 → 渲染 → 截图 → AI 检查 → 修正</text>
+<text x="844" y="632" dominant-baseline="text-before-edge" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="22" font-weight="400" fill="#58667A">截图自检不等于结果必然正确；最终由人验收。</text>
+<text x="70" y="676" dominant-baseline="text-before-edge" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="25" font-weight="400" fill="#435A7B">设计记忆：反馈与样稿 → 规则建议 → 人工确认 → 后续任务上下文（不训练模型）</text>
+<text x="65" y="777" dominant-baseline="text-before-edge" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="32" font-weight="700" fill="#233047">02  同类产品：工作中心不同，能力有所重叠</text>
+<text x="65" y="823" dominant-baseline="text-before-edge" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="24" font-weight="400" fill="#58667A">OpenDesign 指 nexu-io/open-design；以下比较定位，不是生成效果排名。</text>
+<rect x="45" y="875" width="1710" height="62" rx="12" fill="#233047" stroke="none" stroke-width="2"/>
+<text x="65" y="890" dominant-baseline="text-before-edge" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="25" font-weight="700" fill="#FFFFFF">产品</text>
+<text x="362" y="890" dominant-baseline="text-before-edge" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="25" font-weight="700" fill="#FFFFFF">工作中心</text>
+<text x="740" y="890" dominant-baseline="text-before-edge" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="25" font-weight="700" fill="#FFFFFF">主要工作方式</text>
+<text x="1290" y="890" dominant-baseline="text-before-edge" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="25" font-weight="700" fill="#FFFFFF">产物 / 可借鉴点</text>
+<rect x="45" y="940" width="1710" height="92" rx="9" fill="#EAF0FD" stroke="none" stroke-width="2"/>
+<text x="65" y="960" dominant-baseline="text-before-edge" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="29" font-weight="700" fill="#233047">Doop</text>
+<text x="362" y="952" dominant-baseline="text-before-edge" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="26" font-weight="700" fill="#233047">共享 HTML 画板</text>
+<text x="362" y="989" dominant-baseline="text-before-edge" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="23" font-weight="400" fill="#58667A">评论、任务、参与者</text>
+<text x="740" y="965" dominant-baseline="text-before-edge" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="25" font-weight="400" fill="#233047">人 / AI 修改 → 实时广播</text>
+<text x="1290" y="952" dominant-baseline="text-before-edge" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="25" font-weight="700" fill="#233047">HTML、图片</text>
+<text x="1290" y="989" dominant-baseline="text-before-edge" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="22" font-weight="400" fill="#58667A">反馈转任务 / 设计记忆</text>
+<rect x="45" y="1038" width="1710" height="92" rx="9" fill="#FFFFFF" stroke="none" stroke-width="2"/>
+<text x="65" y="1058" dominant-baseline="text-before-edge" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="29" font-weight="700" fill="#233047">OpenDesign</text>
+<text x="362" y="1050" dominant-baseline="text-before-edge" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="26" font-weight="700" fill="#233047">本地项目文件</text>
+<text x="362" y="1087" dominant-baseline="text-before-edge" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="23" font-weight="400" fill="#58667A">规则、模板与插件</text>
+<text x="740" y="1063" dominant-baseline="text-before-edge" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="25" font-weight="400" fill="#233047">Skill + DESIGN.md → Agent 生成</text>
+<text x="1290" y="1050" dominant-baseline="text-before-edge" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="25" font-weight="700" fill="#233047">原型、演示、媒体</text>
+<text x="1290" y="1087" dominant-baseline="text-before-edge" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="22" font-weight="400" fill="#58667A">本地工作室 / 工具适配</text>
+<rect x="45" y="1136" width="1710" height="92" rx="9" fill="#FFFFFF" stroke="none" stroke-width="2"/>
+<text x="65" y="1156" dominant-baseline="text-before-edge" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="29" font-weight="700" fill="#233047">Claude Design</text>
+<text x="362" y="1148" dominant-baseline="text-before-edge" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="26" font-weight="700" fill="#233047">托管对话与画布</text>
+<text x="362" y="1185" dominant-baseline="text-before-edge" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="23" font-weight="400" fill="#58667A">品牌系统与交接</text>
+<text x="740" y="1161" dominant-baseline="text-before-edge" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="25" font-weight="400" fill="#233047">描述 → 生成 → 编辑 → 交付</text>
+<text x="1290" y="1148" dominant-baseline="text-before-edge" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="25" font-weight="700" fill="#233047">原型、演示、文档</text>
+<text x="1290" y="1185" dominant-baseline="text-before-edge" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="22" font-weight="400" fill="#58667A">设计系统 / 编辑体验</text>
+<rect x="45" y="1234" width="1710" height="92" rx="9" fill="#FFFFFF" stroke="none" stroke-width="2"/>
+<text x="65" y="1254" dominant-baseline="text-before-edge" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="29" font-weight="700" fill="#233047">M3E Canvas</text>
+<text x="362" y="1246" dominant-baseline="text-before-edge" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="26" font-weight="700" fill="#233047">结构化组件与导航</text>
+<text x="362" y="1283" dominant-baseline="text-before-edge" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="23" font-weight="400" fill="#58667A">布局、主题与流程</text>
+<text x="740" y="1259" dominant-baseline="text-before-edge" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="25" font-weight="400" fill="#233047">人搭建 → 规则编译 → AI 实现</text>
+<text x="1290" y="1246" dominant-baseline="text-before-edge" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="25" font-weight="700" fill="#233047">Prompt、JSON、PNG</text>
+<text x="1290" y="1283" dominant-baseline="text-before-edge" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="22" font-weight="400" fill="#58667A">实现规格 / 可点击预览</text>
+<rect x="45" y="1352" width="1710" height="115" rx="16" fill="#E5EFE9" stroke="#CEDFD4" stroke-width="2"/>
+<text x="70" y="1371" dominant-baseline="text-before-edge" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="31" font-weight="700" fill="#245C45">我们的取舍：了解定位即可，暂不部署、不继续深挖。</text>
+<text x="70" y="1420" dominant-baseline="text-before-edge" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="25" font-weight="400" fill="#3F6856">已有设计规则、Agent 工作流和浏览器验证；遇到实际多人协作问题时，再评估 Doop。</text>
+<text x="60" y="1490" dominant-baseline="text-before-edge" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="22" font-weight="400" fill="#637083">2026-09-07 · Doop 86a42f1 · 原创概念示意，非产品截图 · 源码 / 文档研究，Doop 未部署实测</text>
+</svg>
