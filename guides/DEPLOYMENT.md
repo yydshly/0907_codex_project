@@ -10,7 +10,9 @@ docs/demos/001-project-name/index.html  → /0907_codex_project/demos/001-projec
 docs/demos/002-project-name/index.html  → /0907_codex_project/demos/002-project-name/
 ```
 
-默认站点地址预计为 `https://yydshly.github.io/0907_codex_project/`。当前仅准备目录和首页，尚未启用 GitHub Pages，不能将该地址视为已上线。
+站点地址：[GitHub 项目研究](https://yydshly.github.io/0907_codex_project/)。2026-09-07 已启用 GitHub Pages，发布源为 `main` 分支的 `/docs`；推送后的部署完成状态以 GitHub Pages 构建记录为准。
+
+README 中供用户体验的网页链接应指向 `https://yydshly.github.io/0907_codex_project/demos/…`；仓库相对 HTML 链接打开的是源码页。`127.0.0.1` 仅用于本地预览。
 
 ## 首次启用
 

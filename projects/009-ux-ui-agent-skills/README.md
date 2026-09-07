@@ -12,7 +12,7 @@
 | 状态 | 已完成（能力整理与六个原始示例体验；新需求生成效果未实测） |
 | 技术构成 | Markdown 指令与知识、JSON Token、Node 安装器与浏览器检查、Python 静态检查 |
 | 上游许可证 | package.json 声明 MIT；本次检出的根目录未见独立 LICENSE 文件，复用源码前应核对许可正文 |
-| Web 演示 | [中文能力导览](../../docs/demos/009-ux-ui-agent-skills/index.html)（静态研究展示，未声明上线） |
+| Web 演示 | [中文能力导览](https://yydshly.github.io/0907_codex_project/demos/009-ux-ui-agent-skills/index.html)（GitHub Pages 在线展示） |
 
 ## 项目定位
 
@@ -84,7 +84,7 @@ flowchart LR
 
 **当前判断：普通界面任务的整套接入优先级低，优先按需提取。** 如果模型和现有组件库已能完成通用页面，这套通用知识可能增益有限。项目专有规则和有效回归检查仍有价值，但不必依赖此库；须通过同模型同任务的对照验证收益。六个现成示例没有提供无 Skill 基线，也没有逐案例的生成调用记录。
 
-网页已补充 [标准层级、案例与 Skill 映射及价值判断](../../docs/demos/009-ux-ui-agent-skills/standards.html)。映射是根据规则内容整理的多对多关系，不是技能执行溯源。WCAG、DTCG、APG、设计方法和作者偏好已分别说明。
+网页已补充 [标准层级、案例与 Skill 映射及价值判断](https://yydshly.github.io/0907_codex_project/demos/009-ux-ui-agent-skills/standards.html)。映射是根据规则内容整理的多对多关系，不是技能执行溯源。WCAG、DTCG、APG、设计方法和作者偏好已分别说明。
 
 优先提取 **Token、适用状态规范、实际页面验证**，再补充我们自己的品牌、组件和业务规则。品牌风格目录作为参考资料；审美偏好应与产品场景匹配。
 
@@ -92,7 +92,7 @@ flowchart LR
 
 ## 验证范围
 
-新增 [六个原始示例体验](../../docs/demos/009-ux-ui-agent-skills/effects.html)：完整页面、品牌主题、按钮状态、表单、数据表和弹窗。已验证主要交互；这证明所选示例可运行，不代表用新需求执行技能的效果。具体记录见 [展示验证说明](demo/README.md)。
+新增 [六个原始示例体验](https://yydshly.github.io/0907_codex_project/demos/009-ux-ui-agent-skills/effects.html)：完整页面、品牌主题、按钮状态、表单、数据表和弹窗。已验证主要交互；这证明所选示例可运行，不代表用新需求执行技能的效果。具体记录见 [展示验证说明](demo/README.md)。
 
 已读取入口、17 个技能的目录清单、代表性技能、框架协议、安装器、检查入口及作者评测记录；未逐项执行技能，未运行完整检查，未验证生成质量、跨框架一致性或团队效率提升。
 
@@ -100,7 +100,7 @@ flowchart LR
 
 ## 资料导航
 
-- [中文 Web 能力导览](../../docs/demos/009-ux-ui-agent-skills/index.html)：技能筛选、原理、主题示意与场景切换。
+- [中文 Web 能力导览](https://yydshly.github.io/0907_codex_project/demos/009-ux-ui-agent-skills/index.html)：技能筛选、原理、主题示意与场景切换。
 - [展示源码与复现方式](demo/README.md)
 - [17 项技能与能力边界](notes/capabilities.md)
 - [源码依据、评测与工程限制](notes/evidence.md)

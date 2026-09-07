@@ -22,7 +22,7 @@
 python -m http.server 8099 --bind 127.0.0.1 --directory docs
 ```
 
-本地访问 `http://127.0.0.1:8099/demos/009-ux-ui-agent-skills/`。页面为纯静态文件，资源采用相对路径，可放入 GitHub Pages 子路径；当前不声明已上线。
+本地访问 `http://127.0.0.1:8099/demos/009-ux-ui-agent-skills/`。页面为纯静态文件，资源采用相对路径，可放入 GitHub Pages 子路径；GitHub Pages 已配置从 main 分支的 /docs 自动发布。
 
 另开终端运行：
 
@@ -38,7 +38,7 @@ Playwright 需在 Node 的模块搜索路径中。可传入另一个本地页面
 
 研究结论与本页功能验证分开：本页可交互不意味着上游技能效果已实测。
 
-新增的 [真实示例体验](../../../docs/demos/009-ux-ui-agent-skills/effects.html) 直接加载上游页面，可体验其已有产物，不是用新需求执行技能的生成实验。模拟邮件、删除、保存及固定状态均在中文侧栏标注。样例原始内容中的 verified 等措辞不代表本研究认证。
+新增的 [真实示例体验](https://yydshly.github.io/0907_codex_project/demos/009-ux-ui-agent-skills/effects.html) 直接加载上游页面，可体验其已有产物，不是用新需求执行技能的生成实验。模拟邮件、删除、保存及固定状态均在中文侧栏标注。样例原始内容中的 verified 等措辞不代表本研究认证。
 
 `verify-effects.cjs` 已检查六个样例加载、明暗主题、模拟导出、输入确认、表单选择、真实排序、全选、弹窗焦点约束与返回、窄屏预览及重置；四种窗口宽度下外层页面无横向溢出，未捕获脚本或 HTTP 错误。已检查桌面与手机截图。未运行上游完整 gate 或全面无障碍审计。
 
@@ -46,4 +46,4 @@ Playwright 需在 Node 的模块搜索路径中。可传入另一个本地页面
 
 已通过浏览器检查：17 项技能及六类筛选结果、关键词搜索、无结果提示、重置、详情展开和键盘操作、三种主题、示例按钮、五个场景、试验详情、页内锚点及导航高亮。1440、1024、768、390、320 像素宽度下未发现页面横向溢出，未捕获页面脚本异常。已查看桌面、手机和原理区域截图。此记录不包含完整无障碍审计或上游功能实测。
 
-[打开发布版](../../../docs/demos/009-ux-ui-agent-skills/index.html) · [返回研究概览](../README.md)
+[打开发布版](https://yydshly.github.io/0907_codex_project/demos/009-ux-ui-agent-skills/index.html) · [返回研究概览](../README.md)
