@@ -1,0 +1,58 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="1200" viewBox="0 0 1600 1200" role="img" aria-labelledby="title desc"><title id="title">Effective HTML：从场景生成到能力沉淀</title><desc id="desc">场景与资料输入技能规则，模型生成代码，浏览器运行检查，交付 HTML 成果；我们提取场景、输入、生成规则和验收标准，复用到架构图、流程图与 UML 等任务。</desc><rect width="1600" height="1200" fill="#f3f6f8"/>
+<text x="60" y="83.2" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="48" font-weight="700" fill="#183747">Effective HTML</text>
+<text x="60" y="130.2" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="28" font-weight="400" fill="#183747">把特定场景下的 HTML 制作方法，整理成 AI 可复用的技能。</text>
+<text x="60" y="172.9" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="21" font-weight="400" fill="#506977">宏观理解  /  技能提供方法 · 模型完成生成 · 浏览器承载成果</text>
+<rect x="60" y="230" width="270" height="290" rx="14" fill="#ffffff" stroke="#c4d3dc" stroke-width="2"/>
+<text x="85" y="280.2" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="28" font-weight="700" fill="#183747">场景与输入</text>
+<text x="85" y="333.9" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="21" font-weight="400" fill="#183747">谁使用、要解决什么</text>
+<text x="85" y="376.9" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="21" font-weight="400" fill="#183747">原始内容与权威来源</text>
+<text x="85" y="419.9" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="21" font-weight="400" fill="#183747">已有设计与业务约束</text>
+<text x="85" y="462.9" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="21" font-weight="400" fill="#183747">需要审阅的关键问题</text>
+<path d="M332 375L367 375" fill="none" stroke="#126777" stroke-width="3"/><polygon points="367,375 357,369 357,381" fill="#126777"/>
+<rect x="370" y="215" width="750" height="340" rx="14" fill="#e6f0f3" stroke="#9bbbc6" stroke-width="2"/>
+<text x="397" y="265.2" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="28" font-weight="700" fill="#183747">Effective HTML · 六个技能入口</text>
+<rect x="397" y="291" width="333" height="83" rx="14" fill="#ffffff" stroke="#c4d3dc" stroke-width="2"/>
+<text x="414" y="323.7" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="23" font-weight="700" fill="#183747">html · 综合与分流</text>
+<text x="414" y="354.1" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="19" font-weight="400" fill="#506977">先选适合问题的成果形式</text>
+<rect x="748" y="291" width="344" height="83" rx="14" fill="#ffffff" stroke="#c4d3dc" stroke-width="2"/>
+<text x="765" y="322.8" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="22" font-weight="700" fill="#183747">design-artifact · 设计方法</text>
+<text x="765" y="354.1" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="19" font-weight="400" fill="#506977">配色、字体、布局服从主题</text>
+<rect x="397" y="397" width="163" height="83" rx="14" fill="#ffffff" stroke="#c4d3dc" stroke-width="2"/>
+<text x="415" y="431.5" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="25" font-weight="700" fill="#183747">线框</text>
+<text x="415" y="464.0" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="20" font-weight="400" fill="#506977">结构与导航</text>
+<rect x="574" y="397" width="163" height="83" rx="14" fill="#ffffff" stroke="#c4d3dc" stroke-width="2"/>
+<text x="592" y="431.5" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="25" font-weight="700" fill="#183747">原型</text>
+<text x="592" y="464.0" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="20" font-weight="400" fill="#506977">流程与状态</text>
+<rect x="751" y="397" width="163" height="83" rx="14" fill="#ffffff" stroke="#c4d3dc" stroke-width="2"/>
+<text x="769" y="431.5" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="25" font-weight="700" fill="#183747">计划</text>
+<text x="769" y="464.0" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="20" font-weight="400" fill="#506977">承诺与依赖</text>
+<rect x="928" y="397" width="163" height="83" rx="14" fill="#ffffff" stroke="#c4d3dc" stroke-width="2"/>
+<text x="946" y="431.5" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="25" font-weight="700" fill="#183747">图解</text>
+<text x="946" y="464.0" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="20" font-weight="400" fill="#506977">关系与时序</text>
+<text x="397" y="527.9" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="21" font-weight="400" fill="#183747">共同要求：内容忠实 · 表达清楚 · 范围明确 · 结果可检查</text>
+<path d="M1124 375L1158 375" fill="none" stroke="#126777" stroke-width="3"/><polygon points="1158,375 1148,369 1148,381" fill="#126777"/>
+<rect x="1160" y="230" width="380" height="290" rx="14" fill="#ffffff" stroke="#c4d3dc" stroke-width="2"/>
+<text x="1185" y="280.2" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="28" font-weight="700" fill="#183747">执行与检查</text>
+<text x="1185" y="331.5" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="25" font-weight="700" fill="#183747">大模型</text>
+<text x="1185" y="363.1" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="19" font-weight="400" fill="#183747">理解材料，生成 HTML / CSS / JS</text>
+<text x="1185" y="423.5" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="25" font-weight="700" fill="#183747">浏览器与评审</text>
+<text x="1185" y="455.1" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="19" font-weight="400" fill="#183747">运行、检查布局与交互，反馈修改</text>
+<path d="M1350 523L1350 589" fill="none" stroke="#126777" stroke-width="3"/><polygon points="1350,589 1344,579 1356,579" fill="#126777"/>
+<rect x="60" y="595" width="1480" height="130" rx="14" fill="#183e50" stroke="#183e50" stroke-width="2"/>
+<text x="86" y="644.0" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="30" font-weight="700" fill="#ffffff">HTML 成果</text>
+<text x="320" y="642.3" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="27" font-weight="400" fill="#ffffff">报告与工具  /  视觉专题  /  线框与原型  /  计划  /  架构与流程图</text>
+<text x="86" y="689.9" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="21" font-weight="400" fill="#d0e1e9">单文件交付为默认目标；具体布局按任务设计。规则不等于自动质量保证，效果仍依赖模型、资料与验证。</text>
+<text x="60" y="798.9" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="31" font-weight="700" fill="#183747">对我们的意义：复用制作方法，沉淀自己的场景能力。</text>
+<rect x="60" y="834" width="700" height="206" rx="14" fill="#ffffff" stroke="#c4d3dc" stroke-width="2"/>
+<text x="85" y="882.3" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="27" font-weight="700" fill="#183747">值得提取</text>
+<text x="85" y="926.7" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="23" font-weight="400" fill="#183747">场景与目标  →  输入要求  →  生成规则  →  验收标准</text>
+<text x="85" y="974.7" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="23" font-weight="400" fill="#506977">把反复纠正的问题写成明确要求，</text>
+<text x="85" y="1011.7" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="23" font-weight="400" fill="#506977">在真实任务中验证后，再纳入可复用能力。</text>
+<rect x="792" y="834" width="748" height="206" rx="14" fill="#ffffff" stroke="#c4d3dc" stroke-width="2"/>
+<text x="817" y="882.3" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="27" font-weight="700" fill="#183747">参考与扩展方向</text>
+<text x="817" y="926.7" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="23" font-weight="400" fill="#183747">架构图：职责、边界、连接、依据</text>
+<text x="817" y="967.7" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="23" font-weight="400" fill="#183747">流程图：起止、判断、异常、回路</text>
+<text x="817" y="1008.7" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="23" font-weight="400" fill="#183747">UML：图种与符号语义；严格校验需另行补充</text>
+<text x="60" y="1093.8" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="22" font-weight="700" fill="#183747">采用判断：按需参考、去重适配、实测后沉淀。输出可选 HTML，也可按维护需求选 Mermaid / PlantUML / SVG。</text>
+<text x="60" y="1144.1" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="19" font-weight="400" fill="#506977">本研究原创概念图，非官方架构或效果排名。上游版本 d95debbaef15 · 2026-09-07</text>
+</svg>

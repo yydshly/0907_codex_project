@@ -12,6 +12,7 @@
 | 002 | [Open-Magiviz](projects/002-open-magiviz/README.md) | [ItusiAI/Open-Magiviz](https://github.com/ItusiAI/Open-Magiviz) | 将外部模型串成 AI 视频创作产品；留作视频工作流参考，暂不深挖 | 已完成 | 暂无 |
 | 003 | [Cola](projects/003-cola/README.md) | [官网与技能目录](https://cola.app/skills/zh/) | 借鉴 AI 产品能力组织方式，提取技能方法，经去重与实测后参考、使用和沉淀 | 已完成（概念研究） | 暂无 |
 | 004 | [Awesome Grok Bot](projects/004-awesome-grok-bot/README.md) | [RongleCat/awesome-grok-bot](https://github.com/RongleCat/awesome-grok-bot) | 资料库介绍云端 AI 助手：托管云电脑执行任务，保存成果并复用流程 | 已完成（概念与源码结构研究） | 暂无 |
+| 005 | [Effective HTML](projects/005-effective-html/README.md) | [plannotator/effective-html](https://github.com/plannotator/effective-html) | 面向场景的 HTML 生成技能；借鉴输入、生成规则与验收标准，沉淀可复用能力 | 已完成（规则、演示与价值整理） | [六技能场景演示](docs/demos/005-effective-html/showcase.html) |
 | 006 | [Doop](projects/006-doop/README.md) | [kgoedecke/doop](https://github.com/kgoedecke/doop) | 人与 AI 共用设计画布；与已有设计流程重叠，当前仅归档、暂不深挖 | 已完成（源码与对比归档） | 暂无 |
 
 状态约定：`待研究` → `研究中` → `已完成`，暂时搁置使用 `已暂停`。
@@ -54,6 +55,14 @@ flowchart LR
 **Grok Bot 是云端执行任务的 AI 产品；这个仓库是它的资料、案例和提示词目录。** 不需要把该仓库部署成助手；我们主要借鉴任务场景与可复用方法。本图为原创概念示意，非官方架构或实测结果。
 
 [作用、能力与研究结论](projects/004-awesome-grok-bot/README.md)
+
+### 005 · Effective HTML 概述
+
+[![Effective HTML 宏观引导图：场景输入、六技能规则、模型与浏览器执行、HTML 成果，以及可复用能力的沉淀](projects/005-effective-html/assets/effective-html-overview.png)](projects/005-effective-html/README.md)
+
+**核心是用技能指导 HTML 成果生成；我们借鉴的是“场景与目标 → 输入要求 → 生成规则 → 验收标准”的组织方法。** 可按需沉淀架构图、流程图、计划和原型能力；严格 UML 规范与校验需要补充。图为原创概念引导，非官方架构或效果排名。
+
+[核心能力、意义与参考价值](projects/005-effective-html/README.md) · [六技能场景演示](docs/demos/005-effective-html/showcase.html)
 
 ### 006 · Doop 概述
 
