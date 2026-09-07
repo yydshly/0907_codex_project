@@ -1,0 +1,127 @@
+{
+	"app": "cozyclay",
+	"kind": "project",
+	"version": 3,
+	"name": "CozyClay 能力演示",
+	"scenes": {
+		"version": 4,
+		"activeSceneId": "scene-mtqtmwcq-3",
+		"scenes": [
+			{
+				"id": "scene-mtqtmwcq-3",
+				"name": "SCENE 01",
+				"objects": [
+					{
+						"id": "car",
+						"name": "Car",
+						"renderer": "car",
+						"x": 3,
+						"y": 0,
+						"z": 1,
+						"rot": 0,
+						"rotX": 0,
+						"rotZ": 0,
+						"scaleX": 1,
+						"scaleY": 1,
+						"scaleZ": 1,
+						"path": null,
+						"color": "#d98770",
+						"parent": null,
+						"attach": null,
+						"footprint": {
+							"width": 1.8,
+							"depth": 4.5
+						},
+						"height": 1.4
+					}
+				],
+				"shotDocument": {
+					"version": 4,
+					"frameCount": 432,
+					"waypoints": [],
+					"shots": [
+						{
+							"id": "shot-mtqtozh3-2",
+							"name": "Shot 1",
+							"startFrame": 174,
+							"endFrame": 213,
+							"cameraKeys": [
+								{
+									"id": "camera-key-mtqtozh3-1",
+									"frame": 174,
+									"framing": {
+										"pos": {
+											"x": 2.9511214942707302,
+											"y": 1.688295316208877,
+											"z": 6.3287004677280905
+										},
+										"yaw": 0.4363323129985824,
+										"pitch": -0.06981317007977318,
+										"fovDeg": 38
+									}
+								}
+							],
+							"camera": {
+								"mode": "keys",
+								"followCam": {
+									"distance": 3,
+									"height": 1.6,
+									"response": 0.7,
+									"lead": 0.25,
+									"railStartMode": "head",
+									"maxDollySpeed": 4,
+									"pitchOffsetDeg": 0,
+									"orbitOffsetDeg": 0
+								},
+								"cameraRail": null,
+								"railFollow": null,
+								"craneHeight": null,
+								"dollyTiming": null
+							}
+						}
+					]
+				},
+				"stage": {
+					"characters": [
+						{
+							"id": "char-a",
+							"model": "y-bot-tpose",
+							"x": 0,
+							"y": 0,
+							"z": 0,
+							"rot": 0,
+							"hidden": false,
+							"tint": null,
+							"pose": null,
+							"scale": 1,
+							"subject": "a young woman in a tan coat",
+							"layer": {
+								"waypoints": [],
+								"promptClips": []
+							},
+							"motionRef": null
+						}
+					],
+					"hasCharSheet": false,
+					"shotAspect": "16:9",
+					"sensorId": "fullFrame",
+					"keyLight": {
+						"x": 6,
+						"y": 9,
+						"z": 4,
+						"intensity": 1.12,
+						"warmth": 0.5
+					}
+				}
+			}
+		]
+	},
+	"workspace": null,
+	"poseLibrary": [],
+	"assets": [],
+	"workflow": {
+		"version": 1,
+		"nodes": [],
+		"edges": []
+	}
+}

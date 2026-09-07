@@ -1,0 +1,47 @@
+{
+  "date": "2026-09-07T05:54:27.979Z",
+  "toolCount": 25,
+  "status": {
+    "content": [
+      {
+        "type": "text",
+        "text": "Live editor connected. Workspaces:\n  6d010595-d9aa-4f94-9d0a-46b8c60044dd — CozyClay 能力演示 / SCENE 01 / 1 in cast"
+      }
+    ]
+  },
+  "results": [
+    {
+      "name": "frame_shot",
+      "result": {
+        "content": [
+          {
+            "type": "text",
+            "text": "Framed.\n\nWIDE SHOT · FRONT ¾ R · EYE LEVEL · 35MM\n\nsize      wide shot — the subject fills 41% of frame height\nview      a three-quarter front view from the right\nlevel     eye level\nlens      35mm (exact 35mm)\ndistance  7.59m\nelevation -0.3deg\n\ntexture guidance: full body in a richly detailed environment, deep focus"
+          }
+        ]
+      }
+    },
+    {
+      "name": "describe_shot",
+      "result": {
+        "content": [
+          {
+            "type": "text",
+            "text": "WIDE SHOT · FRONT ¾ R · EYE LEVEL · 35MM\n\nsize      wide shot — the subject fills 41% of frame height\nview      a three-quarter front view from the right\nlevel     eye level\nlens      35mm (exact 35mm)\ndistance  7.59m\nelevation -0.3deg\n\ntexture guidance: full body in a richly detailed environment, deep focus"
+          }
+        ]
+      }
+    },
+    {
+      "name": "save_project",
+      "result": {
+        "content": [
+          {
+            "type": "text",
+            "text": "Saved \"CozyClay 能力演示\" to F:\\codex_project\\0907_codex_project\\projects\\007-cozyclay\\capability-demo.cclayproject (1 scene(s))."
+          }
+        ]
+      }
+    }
+  ]
+}

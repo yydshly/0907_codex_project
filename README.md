@@ -14,6 +14,7 @@
 | 004 | [Awesome Grok Bot](projects/004-awesome-grok-bot/README.md) | [RongleCat/awesome-grok-bot](https://github.com/RongleCat/awesome-grok-bot) | 资料库介绍云端 AI 助手：托管云电脑执行任务，保存成果并复用流程 | 已完成（概念与源码结构研究） | 暂无 |
 | 005 | [Effective HTML](projects/005-effective-html/README.md) | [plannotator/effective-html](https://github.com/plannotator/effective-html) | 面向场景的 HTML 生成技能；借鉴输入、生成规则与验收标准，沉淀可复用能力 | 已完成（规则、演示与价值整理） | [六技能场景演示](docs/demos/005-effective-html/showcase.html) |
 | 006 | [Doop](projects/006-doop/README.md) | [kgoedecke/doop](https://github.com/kgoedecke/doop) | 人与 AI 共用设计画布；与已有设计流程重叠，当前仅归档、暂不深挖 | 已完成（源码与对比归档） | 暂无 |
+| 007 | [CozyClay](projects/007-cozyclay/README.md) | [NomaDamas/CozyClay](https://github.com/NomaDamas/CozyClay) | 浏览器三维分镜与动作预演；实测动作播放、场景搭建及 MCP 自动构图 | 已完成（本地工作台与 MCP 实测） | [中文能力导览](docs/demos/007-cozyclay/index.html) |
 
 状态约定：`待研究` → `研究中` → `已完成`，暂时搁置使用 `已暂停`。
 
