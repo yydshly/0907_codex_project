@@ -20,6 +20,7 @@
 | 010 | [LinearAbilityExtThreeJS](projects/010-linear-ability-threejs/README.md) | [achrefelouafi/LinearAbilityExtThreeJS](https://github.com/achrefelouafi/LinearAbilityExtThreeJS) | Three.js 原版技能与新增特效；10 个特效示例、5 个非游戏场景及扩展说明 | 已完成（效果与场景演示） | [在线实验室](https://yydshly.github.io/0907_codex_project/demos/010-linear-ability-threejs/) |
 | 011 | [anyCreature](projects/011-anycreature/README.md) | [Ariescar/anyCreature](https://github.com/Ariescar/anyCreature) | 生成三维模型与骨骼动画；独立人形、蝴蝶、蜗牛及花园场景 | 已完成（18 份模型与交互实测） | [在线生物实验室](https://yydshly.github.io/0907_codex_project/demos/011-anycreature/) |
 | 012 | [Rome](projects/012-rome/README.md) | [rome-os/rome](https://github.com/rome-os/rome) | 多 Agent、工作流与应用能力封装；后续开发参考统一动作、任务状态和持久数据 | 已完成（架构研究，未部署实测） | 暂无 |
+| 013 | [FDE Interview Fieldbook](projects/013-fde-interview-fieldbook/README.md) | [dataPro-lgtm/fde-interview-fieldbook](https://github.com/dataPro-lgtm/fde-interview-fieldbook) | FDE 面试与工作准备资料、方法、案例和计划；按需参考 | 已完成（资料与价值整理；训练效果未实测） | [案例与技术导览](https://yydshly.github.io/0907_codex_project/demos/013-fde-interview-fieldbook/) |
 
 状态约定：`待研究` → `研究中` → `已完成`，暂时搁置使用 `已暂停`。
 
@@ -123,6 +124,14 @@ flowchart LR
 **支持多 Agent 的应用平台，将判断、代码执行、界面与持久数据组织起来，供人、AI 和自动化复用。** 后续开发重点参考统一动作接口、角色权限、任务状态、取消与审批、能力沉淀。当前仅作架构参考，未部署实测；自动评估与递归改进仍属建设方向。本图为原创研究概括，非官方架构或实测证明。
 
 [研究结论与源码依据](projects/012-rome/README.md)
+
+### 013 · FDE Interview Fieldbook 概述
+
+[![FDE 引导架构图：准备资料、FIELD 方法与练习产物，以及我们的案例、技术和实践清单整理](projects/013-fde-interview-fieldbook/assets/fde-overview.png)](https://yydshly.github.io/0907_codex_project/demos/013-fde-interview-fieldbook/)
+
+**面向 FDE 的面试与工作准备资料库；我们将有参考价值的案例、技术和方法整理成可直接阅读的中文网页。** 包含十套案例精读、六组技术速查和可填写的项目清单。求职时系统使用，项目交付时按需借鉴。图为原创研究引导，非运行系统架构；真人训练与生产效果未实测。
+
+[研究结论](projects/013-fde-interview-fieldbook/README.md) · [在线案例与技术导览](https://yydshly.github.io/0907_codex_project/demos/013-fde-interview-fieldbook/)
 
 ## 目录导航
 
