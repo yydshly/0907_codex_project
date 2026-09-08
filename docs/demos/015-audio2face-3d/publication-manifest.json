@@ -210,6 +210,11 @@
     "sha256": "a69dc0c7ad6a03f83538a3664f878a7f8de499979cd5dfc136e808ed18edcec6"
   },
   {
+    "path": "dialogue-entry.html",
+    "bytes": 1946,
+    "sha256": "ec0e1a22d6a6c4e3d25e0b5f01b3ab331b04692d96816686535ce8b03f3ab873"
+  },
+  {
     "path": "effects.css",
     "bytes": 6128,
     "sha256": "81bad88446680f4899b013371f672634f1284d0006f3849588605b6f055e7e6b"
@@ -226,8 +231,8 @@
   },
   {
     "path": "experience.html",
-    "bytes": 2571,
-    "sha256": "96cb4421e7f3a7dca63cfe19cfe21bca5084f426ee9eb7f7d6c8f13a8d7bc02e"
+    "bytes": 2634,
+    "sha256": "78a94c261d29a03b69f280f0f9992bd9e750b883960e4f68a04a380e960653d3"
   },
   {
     "path": "experience.js",
@@ -241,8 +246,8 @@
   },
   {
     "path": "index.html",
-    "bytes": 16007,
-    "sha256": "d6c66d3ac3fa355f1984f7c6097b3d9cd980bf32808ac5d43b0035c163d2ece7"
+    "bytes": 16147,
+    "sha256": "1a4b3d607c8893489ffc6cc6452b8da68b45fc188c1ad7b3cc382c9cf1a02e3d"
   },
   {
     "path": "licenses/Audio2Face-SDK-MIT.txt",

@@ -15,4 +15,4 @@ def build(root,target,copy):
    motions.append({'id':state,'label':label,'video':dest})
   people.append({'id':key,'name':name,'reply':reply,'motions':motions})
  (target/'experience-data.json').write_text(json.dumps(people,ensure_ascii=False),encoding='utf-8')
- for name in ['experience.html','experience.js']:copy(root/'demo'/name,name)
+ for name in ['experience.html','experience.js','dialogue-entry.html']:copy(root/'demo'/name,name)
