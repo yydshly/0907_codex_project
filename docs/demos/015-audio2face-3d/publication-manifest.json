@@ -261,8 +261,8 @@
   },
   {
     "path": "index.html",
-    "bytes": 16295,
-    "sha256": "d540c1ffe0b399cb02b3b4dcbb38c5edc9a0339b575a0f0109ca3674658f234d"
+    "bytes": 16508,
+    "sha256": "e36ef0465f6fb91fda665828ef2d39bf2bb0745633087bb290580ebc67b427c0"
   },
   {
     "path": "licenses/Audio2Face-SDK-MIT.txt",
@@ -473,6 +473,11 @@
     "path": "public-workflow.js",
     "bytes": 2115,
     "sha256": "3ba8ee26631d0dbcc20a806270319ac1169c18252ba53f2c7cf023a153c7f087"
+  },
+  {
+    "path": "review.html",
+    "bytes": 14549,
+    "sha256": "f54f53a122f49d010e79da0a46db935a798bc41e623a91d7b7627636403c81e5"
   },
   {
     "path": "style.css",

@@ -43,6 +43,9 @@ def main():
  build(ROOT,TARGET,copy,REPO)
  from build_experience import build as build_experience
  build_experience(ROOT,TARGET,copy)
+ from build_review_page import build as build_review
+ review=build_review().replace('href="effects.html"','href="index.html"')
+ (TARGET/'review.html').write_text(review,encoding='utf-8',newline='\n')
  (TARGET/'.gitattributes').write_text('* text=auto eol=lf\n*.bin binary\n*.wav binary\n*.mp4 binary\n*.png binary\n*.jpg binary\n',encoding='utf-8',newline='\n')
  manifest=[]
  for p in sorted(TARGET.rglob('*')):

@@ -1,0 +1,159 @@
+<!doctype html><html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>后续分析与复现 · 数字人物实验室</title><link rel="icon" href="data:,"><link rel="stylesheet" href="effects.css"><style>
+ .review{max-width:1150px;line-height:1.85}.review h1{font-size:clamp(27px,4vw,44px)}.review h2{margin-top:55px;scroll-margin-top:24px}.review a{text-decoration:underline}.review code{overflow-wrap:anywhere;font-size:.9em}.review li{margin:10px 0}.table-scroll{overflow:auto;border:1px solid #ccd5ca;border-radius:12px;margin:20px 0}table{width:100%;border-collapse:collapse;min-width:680px}td,th{text-align:left;padding:14px;vertical-align:top;border-bottom:1px solid #ccd5ca}th{background:#e6eddf}.flow{display:grid;grid-template-columns:1fr 1fr;gap:18px}.flow article{border:1px solid #a7bba2;border-radius:16px;text-align:center;padding:20px;background:#edf2e8}.flow p{background:white;border-radius:8px;padding:12px}.review-nav{display:flex;flex-wrap:wrap;gap:12px;padding:20px;background:#e6eddf;border-radius:12px}.review-nav a{padding:6px}header{height:auto;min-height:76px;gap:15px;flex-wrap:wrap}header nav{flex-wrap:wrap}@media(max-width:640px){.flow{grid-template-columns:1fr}.review{padding:0 16px}td,th{padding:10px}}
+ </style></head><body><header><a class="brand" href="effects.html">数字人物实验室</a><nav><a href="effects.html">效果首页</a><a href="implementation-guide.html">完整架构与实施</a></nav></header><main class="review"><p class="eyebrow">REVISIT / RESTORE / VERIFY</p><nav class="review-nav" aria-label="本文目录"><a href="#section-1">1. 页面与能力对应表</a><a href="#section-2">2. 一次准备与每轮对话，分别发生什么</a><a href="#section-3">3. 恢复与验证顺序</a><a href="#section-4">4. 下一轮分析应该验证什么</a><a href="#section-5">5. 远端上线还有什么缺口</a></nav><h1>后续分析入口：能力、页面、代码与复现</h1>
+<p>状态记录：2026-09-08。本文是当前集成的阅读索引，不是上游模型能力承诺。先看本表，再按问题进入专题；历史实验记录中的“最新”只代表记录当时。</p>
+<h2 id="section-1">1. 页面与能力对应表</h2>
+<p>以下本地路径以 <code>127.0.0.1:8022</code> 为根；在项目目录用 <code>./start-performance.ps1</code> 启动已有环境。</p>
+<div class="table-scroll" tabindex="0" role="region" aria-label="可横向滚动的索引表"><table>
+<thead>
+<tr>
+<th>能力</th>
+<th>本地页面</th>
+<th>远端保留形式</th>
+<th>主要代码</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>选择 / 上传人物</td>
+<td><code>/characters</code></td>
+<td><a href="https://yydshly.github.io/0907_codex_project/demos/015-audio2face-3d/characters.html">人物选择页</a>：预设选择可用，上传禁用</td>
+<td><a href="https://github.com/yydshly/0907_codex_project/blob/main/projects/015-audio2face-3d/demo/characters.js">characters.js</a>、<a href="https://github.com/yydshly/0907_codex_project/blob/main/projects/015-audio2face-3d/scripts/avatar_service.py">avatar_service.py</a>、<a href="https://github.com/yydshly/0907_codex_project/blob/main/projects/015-audio2face-3d/scripts/prepare_user_avatar.py">prepare_user_avatar.py</a></td>
+</tr>
+<tr>
+<td>上下文对话</td>
+<td><code>/chat?avatar=人物ID</code></td>
+<td><a href="https://yydshly.github.io/0907_codex_project/demos/015-audio2face-3d/chat.html">对话页</a>：保留原界面，发送禁用，可播已有片段</td>
+<td><a href="https://github.com/yydshly/0907_codex_project/blob/main/projects/015-audio2face-3d/scripts/dialogue_service.py">dialogue_service.py</a>、<a href="https://github.com/yydshly/0907_codex_project/blob/main/projects/015-audio2face-3d/scripts/minimax_dialogue.py">minimax_dialogue.py</a>、<a href="https://github.com/yydshly/0907_codex_project/blob/main/projects/015-audio2face-3d/demo/dialogue-segmented.js">dialogue-segmented.js</a></td>
+</tr>
+<tr>
+<td>六种动作 / 指定台词</td>
+<td><code>/?avatar=人物ID</code></td>
+<td><a href="https://yydshly.github.io/0907_codex_project/demos/015-audio2face-3d/experience.html">动作回放</a>：十二段动作与已有成片</td>
+<td><a href="https://github.com/yydshly/0907_codex_project/blob/main/projects/015-audio2face-3d/demo/performance.js">performance.js</a>、<a href="https://github.com/yydshly/0907_codex_project/blob/main/projects/015-audio2face-3d/scripts/performance_worker.py">performance_worker.py</a></td>
+</tr>
+<tr>
+<td>半身优化对照</td>
+<td><code>/body-comparison.html</code></td>
+<td><a href="https://yydshly.github.io/0907_codex_project/demos/015-audio2face-3d/body-comparison.html">同音频对照</a></td>
+<td><a href="https://github.com/yydshly/0907_codex_project/blob/main/projects/015-audio2face-3d/scripts/build_body_assets.py">build_body_assets.py</a>、<a href="https://github.com/yydshly/0907_codex_project/blob/main/projects/015-audio2face-3d/notes/natural-body-v2.md">natural-body-v2.md</a></td>
+</tr>
+<tr>
+<td>完整演出、句尾优化</td>
+<td>8020，<code>./start-complete.ps1</code></td>
+<td><a href="https://yydshly.github.io/0907_codex_project/demos/015-audio2face-3d/complete.html">四种模式回放</a></td>
+<td><a href="https://github.com/yydshly/0907_codex_project/blob/main/projects/015-audio2face-3d/demo/complete-v5.js">complete-v5.js</a>、<a href="https://github.com/yydshly/0907_codex_project/blob/main/projects/015-audio2face-3d/notes/speech-tail-fix.md">speech-tail-fix.md</a></td>
+</tr>
+<tr>
+<td>3D 面部</td>
+<td>8015，<code>./start.ps1</code></td>
+<td><a href="https://yydshly.github.io/0907_codex_project/demos/015-audio2face-3d/mark.html">Mark 三维交互</a>，Camila 仅本地评估</td>
+<td><a href="https://github.com/yydshly/0907_codex_project/blob/main/projects/015-audio2face-3d/scripts/inference.py">inference.py</a>、<a href="https://github.com/yydshly/0907_codex_project/blob/main/projects/015-audio2face-3d/scripts/retarget.py">retarget.py</a>、<a href="https://github.com/yydshly/0907_codex_project/blob/main/projects/015-audio2face-3d/demo/app.js">app.js</a></td>
+</tr>
+<tr>
+<td>全部成果与原理</td>
+<td><code>/effects.html</code>、<code>/implementation-guide.html</code></td>
+<td><a href="https://yydshly.github.io/0907_codex_project/demos/015-audio2face-3d/">效果与架构首页</a></td>
+<td><a href="https://github.com/yydshly/0907_codex_project/blob/main/projects/015-audio2face-3d/scripts/build_public_sections.py">build_public_sections.py</a>、<a href="https://github.com/yydshly/0907_codex_project/blob/main/projects/015-audio2face-3d/scripts/build_experience.py">build_experience.py</a></td>
+</tr>
+</tbody>
+</table></div>
+<p>当前优先看 8022 对话 / 工作台、8020 接受版本和半身对照。8017 照片口播、8018 伙伴原型、8019 动作探索、8021 基线、<code>/chat-classic</code> 整段对话均作为历史参考，入口集中在本地总览。不要同时启动所有历史服务来判断当前系统。</p>
+<h2 id="section-2">2. 一次准备与每轮对话，分别发生什么</h2>
+<div class="flow" aria-label="首次准备与每轮对话流程"><article><h3>首次准备 · 可复用</h3><p>上传照片，选择动作来源</p><b>↓</b><p>LivePortrait 本地面部<br>或 Hailuo 远端半身（视频额度）</p><b>↓</b><p>本地检测框、蒙版、VAE 缓存</p><b>↓</b><p>保存人物动作包 → 供多轮口型生成复用</p></article><article><h3>每轮对话 · 按新音频生成</h3><p>用户输入消息</p><b>↓</b><p>MiniMax 对话 → TTS（远端额度）</p><b>↓</b><p>已有动作包 + 新音频 → 本地 MuseTalk</p><b>↓</b><p>稳定、句尾处理、编码 → 分段播放</p></article></div>
+
+<ul>
+<li>六种动作工作台输入的是“人物要说的台词”，通常跳过对话模型组织回复；聊天页输入的是“用户消息”。</li>
+<li>人物准备不是重新训练；每句也不是重新调用 Hailuo 生成身体动作。选择已有素材后，口型仍须根据新音频推理。</li>
+<li>当前新人物默认准备六种动作，因此尝试多个半身人物可能较快使用视频额度。少量动作先验收、按需补齐尚未落实。</li>
+<li>3D 是独立路线：音频 → Audio2Face → 面部还原 / 适配 → Three.js；不经过 MuseTalk。当前 3D 演示没有完整聊天与身体骨骼链路。</li>
+<li>额度价格、可用量与服务状态需执行时确认。这里不估算实时费用，也不把取消本地任务等同于撤销云端计费。</li>
+</ul>
+<h2 id="section-3">3. 恢复与验证顺序</h2>
+<p>参考环境为 Windows、Python 3.10、RTX 4070 Laptop 8GB；这是已验证机器，不能视为通用最低配置。依赖清单见 <a href="https://github.com/yydshly/0907_codex_project/blob/main/projects/015-audio2face-3d/notes/revisit-inventory.json">revisit-inventory.json</a>，恢复步骤见 <a href="https://github.com/yydshly/0907_codex_project/blob/main/projects/015-audio2face-3d/notes/START-HERE.md#8-以后重启与恢复先做什么">START-HERE 第 8 节</a>。</p>
+<ol>
+<li>保存代码版本，检查 <code>vendor/</code> 模型、FFmpeg、Python 环境与所选人物素材；只 clone Git 不能恢复全部运行数据。</li>
+<li>配置后端 <code>.env.companion</code> 或其共享配置引用，参考 <a href="https://github.com/yydshly/0907_codex_project/blob/main/projects/015-audio2face-3d/.env.companion.example">.env.companion.example</a>。不把密钥写进页面或文档。</li>
+<li><code>./start-performance.ps1</code> 启动服务与模型进程。脚本依赖已有 <code>.cache/sadtalker-venv/Scripts/python.exe</code>；此目录名是历史遗留，当前口型核心是 MuseTalk。</li>
+<li>先检查 <code>/characters</code>、<code>/chat</code>、工作台能打开，已有片段能播放，人物选择能传递；这一步不发送生成请求。</li>
+<li>确认工作台模型就绪，再用已有音频验证本地推理；最后做一次短消息的完整生成，记录首句等待、总耗时和成片质量。不要只以页面可访问判断后端已完成。</li>
+</ol>
+<p>故障优先查看 <code>.cache/performance-server-error.log</code>、<code>.cache/performance-worker-error.log</code>；视觉问题按 <a href="https://github.com/yydshly/0907_codex_project/blob/main/projects/015-audio2face-3d/notes/START-HERE.md#9-出问题时按现象定位">START-HERE 第 9 节</a> 排查。</p>
+<div class="table-scroll" tabindex="0" role="region" aria-label="可横向滚动的索引表"><table>
+<thead>
+<tr>
+<th>数据</th>
+<th>位置</th>
+<th>是否由公开 Git 完整恢复</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>上游、权重与部分资产</td>
+<td><code>vendor/</code></td>
+<td>否，需要重新获取并检查版本 / 许可</td>
+</tr>
+<tr>
+<td>人物与动作缓存</td>
+<td><code>.cache/avatars/</code>、内置 <code>.cache/performance/</code></td>
+<td>否，需另外备份</td>
+</tr>
+<tr>
+<td>对话及生成任务</td>
+<td><code>.cache/dialogue-sessions/</code>、<code>.cache/performance-jobs/</code></td>
+<td>否，可能含私人内容，不公开</td>
+</tr>
+<tr>
+<td>已接受基线</td>
+<td><code>.cache/complete/</code>、<code>.cache/releases/</code></td>
+<td>不完整，公开站仅选择部分演示素材</td>
+</tr>
+<tr>
+<td>公开展示</td>
+<td>仓库 <code>docs/demos/015-audio2face-3d/</code></td>
+<td>是，但不能代替完整模型运行环境</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="section-4">4. 下一轮分析应该验证什么</h2>
+<div class="table-scroll" tabindex="0" role="region" aria-label="可横向滚动的索引表"><table>
+<thead>
+<tr>
+<th>问题</th>
+<th>目前边界</th>
+<th>建议保留的证据</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>换人物是否通用</td>
+<td>流程复用已实现；任意照片质量未证明</td>
+<td>固定音频、固定动作模式，记录照片条件与各人物缺陷；自然半身第二人物还需完成验证</td>
+</tr>
+<tr>
+<td>嘴部是否稳定</td>
+<td>句尾修正改善既有样例，不保证所有输入</td>
+<td>同音频优化前后成片、句尾静音帧、缓存 / 参数版本；见 <a href="https://github.com/yydshly/0907_codex_project/blob/main/projects/015-audio2face-3d/notes/mouth-stability.md">嘴部稳定</a>、<a href="https://github.com/yydshly/0907_codex_project/blob/main/projects/015-audio2face-3d/notes/speech-tail-fix.md">句尾处理</a></td>
+</tr>
+<tr>
+<td>动作是否自然</td>
+<td>片段有限，存在循环、接缝，非语义手势</td>
+<td>原动作与口型成片并排观察，避免把动作源缺陷归到口型算法</td>
+</tr>
+<tr>
+<td>延迟是否可用</td>
+<td>异步生成、分段播放，不是实时通话</td>
+<td>分别记录对话、TTS、GPU、编码、首句可播放与总耗时</td>
+</tr>
+<tr>
+<td>是否可从零复现</td>
+<td>当前启动脚本使用已准备环境</td>
+<td>新环境恢复日志、模型版本、缺失步骤和实际耗时；尚未做新的完整冷启动验收</td>
+</tr>
+</tbody>
+</table></div>
+<p>下一次先固定一组对照素材、明确验收项，再改变一个因素。不要通过不断生成新人物或新语音来替代受控比较。</p>
+<h2 id="section-5">5. 远端上线还有什么缺口</h2>
+<p>当前 GitHub Pages 提供静态页面留档和回放；人物选择会把预设 ID 带入静态对话页。没有部署上传处理、会话服务、MiniMax 服务端调用或 GPU 推理。</p>
+<p>真正上线还需：应用 API 与服务端密钥配置、GPU 工作进程、人物 / 会话存储、任务队列与容量限制、用户访问与资源隔离、用量控制、故障恢复及数据删除策略。它们是部署与产品化工作，不能通过启用静态页面的发送按钮完成。</p>
+<p>公开页由 <a href="https://github.com/yydshly/0907_codex_project/blob/main/projects/015-audio2face-3d/scripts/publish_static.py">publish_static.py</a> 构建；保留本地模板，使用专门的静态交互脚本，避免公开页误调用本地 API。修改页面时同步维护构建脚本，勿只改生成后的 <code>docs/</code>。发布范围与录屏方式见 <a href="https://github.com/yydshly/0907_codex_project/blob/main/projects/015-audio2face-3d/notes/public-release.md">public-release.md</a>。</p><p>本文从 <a href="https://github.com/yydshly/0907_codex_project/blob/main/projects/015-audio2face-3d/notes/REVIEW-MAP.md">版本化原文</a> 自动构建，修改原文后重新发布，避免网页与文档脱节。</p></main></body></html>

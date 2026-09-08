@@ -55,7 +55,7 @@ def build(root,target,copy,repo):
  write('body-comparison.json',json.dumps(comparison,ensure_ascii=False,indent=2));copy(root/'demo/characters.css','characters.css')
  # Restore original effect tabs and the unabridged architecture/ownership content.
  full=(root/'demo/effects.html').read_text(encoding='utf-8')
- full=re.sub(r'<nav>.*?</nav>','<nav><a href="characters.html">人物选择页</a><a href="chat.html">人物对话页</a><a href="experience.html">六种动作回放</a><a href="#showcase">按效果浏览</a><a href="#architecture">完整架构</a><a href="implementation-guide.html">从零实施</a><a href="#recording-demo">网页录像</a></nav>',full,count=1)
+ full=re.sub(r'<nav>.*?</nav>','<nav><a href="review.html">后续分析</a><a href="characters.html">人物选择页</a><a href="chat.html">人物对话页</a><a href="experience.html">六种动作回放</a><a href="#showcase">按效果浏览</a><a href="#architecture">完整架构</a><a href="implementation-guide.html">从零实施</a><a href="#recording-demo">网页录像</a></nav>',full,count=1)
  full=full.replace('href="effects.html"','href="./"')
  full=portable(full)
  full=full.replace('人物库 / 上传 / 选择 ↗','打开人物选择页 ↗').replace('进入人物对话 ↗','打开人物对话页（静态预览） ↗').replace('进入 8022 工作台 ↗','六种动作工作台回放 ↗')
@@ -73,7 +73,7 @@ def build(root,target,copy,repo):
  recording=recording.replace('id="demo"','id="recording-demo"')
  full=full.replace('<section id="showcase">',recording+'<section id="showcase">',1)
  full=full.replace('</head>','<style>.recording{background:#19251e;padding:10px;border-radius:14px}.recording video{display:block;width:100%;max-height:70vh}.record-actions{display:flex;gap:22px;flex-wrap:wrap}.source-note{color:var(--muted);font-size:12px;margin:15px 0 35px}</style></head>')
- full=full.replace('</main>','<section class="notice"><strong>静态与本地能力的区别：</strong>公开页保留效果预览、同音频对照、8020 全部回放模式、Mark 交互和完整原理。上传人物与新回复生成需要本地服务。<a href="'+repo+'notes/REVIEW-MAP.md">后续分析与复现索引 ↗</a> · <a href="'+repo+'notes/START-HERE.md">重读与维护手册 ↗</a> · <a href="THIRD_PARTY_NOTICES.md">来源说明 ↗</a></section></main>')
+ full=full.replace('</main>','<section class="notice"><strong>静态与本地能力的区别：</strong>公开页保留效果预览、同音频对照、8020 全部回放模式、Mark 交互和完整原理。上传人物与新回复生成需要本地服务。<a href="review.html">后续分析与复现索引 ↗</a> · <a href="'+repo+'notes/START-HERE.md">重读与维护手册 ↗</a> · <a href="THIRD_PARTY_NOTICES.md">来源说明 ↗</a></section></main>')
  write('index.html',full)
  js=(root/'demo/effects.js').read_text(encoding='utf-8')
  js=re.sub(r'const views=.*?;',"const views={mark:'mark.html#lab'};",js,count=1)
