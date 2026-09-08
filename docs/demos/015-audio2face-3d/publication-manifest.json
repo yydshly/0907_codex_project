@@ -230,6 +230,11 @@
     "sha256": "3f58a594a2aecd1976031178deeecbbe1da43901bcb72e4ffbf6a386dfedb9d5"
   },
   {
+    "path": "directories.html",
+    "bytes": 13759,
+    "sha256": "fa97e0be42867a7c32d2cdaf640496bee6520d0ed7b98f59abc691aa2314ca39"
+  },
+  {
     "path": "effects.css",
     "bytes": 6128,
     "sha256": "81bad88446680f4899b013371f672634f1284d0006f3849588605b6f055e7e6b"
@@ -261,8 +266,8 @@
   },
   {
     "path": "index.html",
-    "bytes": 16508,
-    "sha256": "e36ef0465f6fb91fda665828ef2d39bf2bb0745633087bb290580ebc67b427c0"
+    "bytes": 16589,
+    "sha256": "a663d546f4204a8e3272cef8a31146e5908fe13b9f968f3a59a2d30ad2300a32"
   },
   {
     "path": "licenses/Audio2Face-SDK-MIT.txt",
@@ -476,8 +481,8 @@
   },
   {
     "path": "review.html",
-    "bytes": 14549,
-    "sha256": "f54f53a122f49d010e79da0a46db935a798bc41e623a91d7b7627636403c81e5"
+    "bytes": 14864,
+    "sha256": "d4eb77fa75999933b4e9a4d1628baf471bac114b0c09c4892ac1313910fc80c7"
   },
   {
     "path": "style.css",

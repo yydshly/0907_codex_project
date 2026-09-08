@@ -137,6 +137,8 @@ flowchart LR
 
 ### 015 · 数字人物：3D 与视频两条路线
 
+[项目目录与重新下载指南](https://yydshly.github.io/0907_codex_project/demos/015-audio2face-3d/directories.html)：说明哪些随 Git 保存、哪些需下载、哪些人物素材需要另行备份。
+
 [网页内阅读：后续分析与复现指南](https://yydshly.github.io/0907_codex_project/demos/015-audio2face-3d/review.html) · [文档原文](projects/015-audio2face-3d/notes/REVIEW-MAP.md)
 
 **3D 路线：音频驱动已适配的三维人物面部，再通过渲染器显示口型与表情。**<br>

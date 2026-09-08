@@ -57,6 +57,12 @@ flowchart TB
 
 Whisper / VAE / U-Net 是 MuseTalk 使用的模型组件。ImageGen 用于开发时制作示例人物；用户上传照片后并不需要调用它。现有权重做推理，没有按每个人物重新训练。
 
+## 项目目录与重新下载
+
+[网页目录指南](https://yydshly.github.io/0907_codex_project/demos/015-audio2face-3d/directories.html) · [目录说明原文](notes/DIRECTORY-GUIDE.md) · [占用与清理记录](notes/LOCAL-STORAGE.md)
+
+Git 保存源码、说明与精选演示；`vendor/`、`.venv/`、`.cache/` 和真实配置不随 Git 恢复。重新使用需要下载相应库与权重、安装环境；人物和生成素材应另行备份。当前 F 盘项目未删除，已清理的是 C 盘 pip 下载缓存。
+
 ## 本地使用与复现边界
 
 本机已验证环境：Windows、RTX 4070 Laptop 8GB、Python 3.10。公开网站只回放结果；新台词、上传人物和模型推理依赖本地环境与云服务配置。

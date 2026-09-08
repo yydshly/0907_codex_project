@@ -1,0 +1,213 @@
+<!doctype html><html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>目录与重新下载指南 · 数字人物实验室</title><link rel="icon" href="data:,"><link rel="stylesheet" href="effects.css"><style>
+ .review{max-width:1150px;line-height:1.85}.review h1{font-size:clamp(27px,4vw,44px)}.review h2{margin-top:55px;scroll-margin-top:24px}.review a{text-decoration:underline}.review code{overflow-wrap:anywhere;font-size:.9em}.review li{margin:10px 0}.table-scroll{overflow:auto;border:1px solid #ccd5ca;border-radius:12px;margin:20px 0}table{width:100%;border-collapse:collapse;min-width:680px}td,th{text-align:left;padding:14px;vertical-align:top;border-bottom:1px solid #ccd5ca}th{background:#e6eddf}.flow{display:grid;grid-template-columns:1fr 1fr;gap:18px}.flow article{border:1px solid #a7bba2;border-radius:16px;text-align:center;padding:20px;background:#edf2e8}.flow p{background:white;border-radius:8px;padding:12px}.review-nav{display:flex;flex-wrap:wrap;gap:12px;padding:20px;background:#e6eddf;border-radius:12px}.review-nav a{padding:6px}header{height:auto;min-height:76px;gap:15px;flex-wrap:wrap}header nav{flex-wrap:wrap}@media(max-width:640px){.flow{grid-template-columns:1fr}.review{padding:0 16px}td,th{padding:10px}}
+ </style></head><body><header><a class="brand" href="index.html">数字人物实验室</a><nav><a href="index.html">效果首页</a><a href="directories.html">目录与重新下载</a><a href="review.html">后续分析</a><a href="implementation-guide.html">完整架构与实施</a></nav></header><main class="review"><p class="eyebrow">REVISIT / RESTORE / VERIFY</p><nav class="review-nav" aria-label="本文目录"><a href="#section-1">1. 根目录分别存什么</a><a href="#section-2">2. vendor：哪些库与模型需要重新下载</a><a href="#section-3">3. cache：哪些能重建，哪些应备份</a><a href="#section-4">4. 以后恢复的最短路径</a><a href="#section-5">5. 当前清理状态与占用</a></nav><h1>项目目录与重新下载指南</h1>
+<p>本地项目位置：<code>F:\codex_project\0907_codex_project\projects\015-audio2face-3d</code>。记录日期：2026-09-08。</p>
+<p><strong>GitHub 保存代码、说明和精选演示，并未保存完整的本地模型与运行环境。</strong> 换电脑或删除本地依赖后，需要重新获取上游库、权重并安装环境；自己生成的人物素材则要从备份恢复，不能靠下载原库恢复。</p>
+<h2 id="section-1">1. 根目录分别存什么</h2>
+<div class="table-scroll" tabindex="0" role="region" aria-label="可横向滚动的索引表"><table>
+<thead>
+<tr>
+<th>目录 / 文件</th>
+<th>内容</th>
+<th>Git 是否保存</th>
+<th>重新使用时怎么办</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>scripts/</code></td>
+<td>下载、推理、人物准备、服务、后处理与发布脚本</td>
+<td>是，源码</td>
+<td>按选择的链路执行；不要把所有历史脚本依次运行</td>
+</tr>
+<tr>
+<td><code>demo/</code></td>
+<td>页面模板、播放器、本地及公开交互代码</td>
+<td>页面源码是；大部分生成资产不是</td>
+<td>页面可恢复；本地素材要下载、重建或从备份恢复</td>
+</tr>
+<tr>
+<td><code>assets/</code></td>
+<td>项目说明用图片</td>
+<td>当前已跟踪的文件是</td>
+<td>随 Git 获取</td>
+</tr>
+<tr>
+<td><code>config/</code></td>
+<td>模型版本 / 散列清单与时序参数</td>
+<td>是</td>
+<td>作为下载和验证依据</td>
+</tr>
+<tr>
+<td><code>notes/</code></td>
+<td>原理、决策、恢复、效果与清理说明</td>
+<td>Markdown 等已跟踪文件是；多数运行 JSON 不公开</td>
+<td>先看 REVIEW-MAP 与 START-HERE，勿把历史状态当作当前状态</td>
+</tr>
+<tr>
+<td><code>vendor/</code></td>
+<td>上游代码、模型权重、三维角色资产</td>
+<td><strong>否</strong></td>
+<td>根据下一表重新获取固定版本</td>
+</tr>
+<tr>
+<td><code>.venv/</code></td>
+<td>Audio2Face 的 Python / ONNX / CUDA 依赖</td>
+<td><strong>否</strong></td>
+<td>重新创建环境、安装 <code>requirements.txt</code></td>
+</tr>
+<tr>
+<td><code>.cache/</code></td>
+<td>视频运行环境、人物、生成任务、中间缓存与基线</td>
+<td><strong>否</strong></td>
+<td>区分可重建依赖和不可直接恢复的个人素材，见第 3 节</td>
+</tr>
+<tr>
+<td><code>.env.companion</code></td>
+<td>本机服务配置或共享配置引用</td>
+<td><strong>否</strong></td>
+<td>由 <code>.env.companion.example</code> 创建，重新配置 MiniMax；不提交真实密钥</td>
+</tr>
+<tr>
+<td><code>start*.ps1</code></td>
+<td>各版本服务启动入口</td>
+<td>是</td>
+<td>仅启动已准备环境，不能自动补齐所有模型</td>
+</tr>
+<tr>
+<td><code>requirements.txt</code></td>
+<td>3D 路线依赖版本</td>
+<td>是</td>
+<td>视频路线另看 <code>scripts/*requirements.txt</code></td>
+</tr>
+</tbody>
+</table></div>
+<p>仓库外层 <code>docs/demos/015-audio2face-3d/</code> 保存精选静态页面与演示素材，是公开回放包；它不能替代 <code>vendor/</code>、人物缓存和后端环境。</p>
+<h2 id="section-2">2. vendor：哪些库与模型需要重新下载</h2>
+<div class="table-scroll" tabindex="0" role="region" aria-label="可横向滚动的索引表"><table>
+<thead>
+<tr>
+<th>本地目标目录</th>
+<th>用途</th>
+<th>获取入口 / 版本依据</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>vendor/Audio2Face-3D</code></td>
+<td>NVIDIA 原库入口</td>
+<td><a href="https://github.com/yydshly/0907_codex_project/blob/main/projects/015-audio2face-3d/scripts/setup.ps1">setup.ps1</a> 内固定提交</td>
+</tr>
+<tr>
+<td><code>vendor/Audio2Face-3D-SDK</code>、<code>Audio2Face-3D-training-framework</code></td>
+<td>SDK、训练参考资料；当前不运行训练</td>
+<td>同上，按脚本固定版本</td>
+</tr>
+<tr>
+<td><code>vendor/Maya-ACE</code></td>
+<td>Mark 几何来源</td>
+<td>同上；需要 Git LFS 获取指定几何文件</td>
+</tr>
+<tr>
+<td><code>vendor/models/mark-v2.3</code></td>
+<td>Audio2Face 推理权重与数据</td>
+<td><a href="https://github.com/yydshly/0907_codex_project/blob/main/projects/015-audio2face-3d/scripts/download_model.py">download_model.py</a>，由 setup.ps1 调用</td>
+</tr>
+<tr>
+<td><code>vendor/Camila</code></td>
+<td>写实三维角色，仅本地评估</td>
+<td><a href="https://github.com/yydshly/0907_codex_project/blob/main/projects/015-audio2face-3d/scripts/setup_camila.py">setup_camila.py</a>，先读其来源与许可</td>
+</tr>
+<tr>
+<td><code>vendor/MuseTalk</code></td>
+<td>视频口型算法代码</td>
+<td>从 <code>https://github.com/TMElyralab/MuseTalk</code> 获取；实际 checkout 提交见 <a href="https://github.com/yydshly/0907_codex_project/blob/main/projects/015-audio2face-3d/notes/revisit-inventory.json">版本索引</a></td>
+</tr>
+<tr>
+<td><code>vendor/musetalk-models</code></td>
+<td>U-Net、VAE、Whisper 权重</td>
+<td><a href="https://github.com/yydshly/0907_codex_project/blob/main/projects/015-audio2face-3d/scripts/download_musetalk.py">download_musetalk.py</a>，脚本内固定 Hugging Face revisions</td>
+</tr>
+<tr>
+<td><code>vendor/LivePortrait</code></td>
+<td>本地表情与头部动作代码</td>
+<td>从 <code>https://github.com/KwaiVGI/LivePortrait</code> 获取；实际提交见版本索引</td>
+</tr>
+<tr>
+<td><code>vendor/LivePortrait/pretrained_weights</code></td>
+<td>LivePortrait 权重</td>
+<td><a href="https://github.com/yydshly/0907_codex_project/blob/main/projects/015-audio2face-3d/scripts/download_liveportrait.py">download_liveportrait.py</a> 与 <a href="https://github.com/yydshly/0907_codex_project/blob/main/projects/015-audio2face-3d/config/liveportrait-models.json">模型清单</a>，校验 SHA-256</td>
+</tr>
+<tr>
+<td><code>vendor/photo-models</code></td>
+<td>共享人脸检测、对齐、分割；另有旧 SadTalker 权重</td>
+<td><a href="https://github.com/yydshly/0907_codex_project/blob/main/projects/015-audio2face-3d/scripts/download_photo_models.py">download_photo_models.py</a>；当前脚本同时下载新旧路线所需文件，不是最小下载器</td>
+</tr>
+<tr>
+<td><code>vendor/SadTalker</code></td>
+<td>旧版 8017/8018 照片说话实验</td>
+<td><a href="https://github.com/yydshly/0907_codex_project/blob/main/projects/015-audio2face-3d/scripts/setup_photo.py">setup_photo.py</a> 获取旧路线代码及环境；当前主口型链路是 MuseTalk</td>
+</tr>
+</tbody>
+</table></div>
+<p>版本索引记录的是当时本机 checkout 和清单，不保证上游链接永久有效。下载脚本存在不代表已验证空白机器一键安装。恢复时应核对代码提交、依赖和权重完整性。</p>
+<p>MiniMax 对话、TTS、Hailuo 使用远端 API，本项目不下载它们的模型权重。LTX-Video 是早期远端生成动作素材的来源，也不应预期在本地找到完整 LTX 权重。</p>
+<h2 id="section-3">3. cache：哪些能重建，哪些应备份</h2>
+<div class="table-scroll" tabindex="0" role="region" aria-label="可横向滚动的索引表"><table>
+<thead>
+<tr>
+<th>子目录</th>
+<th>内容与恢复方式</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>.cache/sadtalker-venv/</code></td>
+<td><strong>当前视频运行环境</strong>，名称遗留；不要按名称认定已废弃。需要重新安装 Python/PyTorch 与视频依赖，不能用下载单个库替代</td>
+</tr>
+<tr>
+<td><code>.cache/avatars/</code></td>
+<td>用户人物、动作、状态、口型缓存；应单独备份。丢失后重新准备可能需要再次调用 Hailuo 并消耗额度</td>
+</tr>
+<tr>
+<td><code>.cache/performance/</code></td>
+<td>内置小晴动作与缓存；公开构建和工作台会读取。备份或按历史准备流程重建</td>
+</tr>
+<tr>
+<td><code>.cache/performance-jobs/</code>、<code>.cache/dialogue-sessions/</code></td>
+<td>生成音频、视频、任务与会话；可能含私人内容，不公开上传，按需求私下备份</td>
+</tr>
+<tr>
+<td><code>.cache/complete/</code>、<code>.cache/motion/</code></td>
+<td>8020 完整效果与早期动作素材；保留原素材才能重新比较优化效果</td>
+</tr>
+<tr>
+<td><code>.cache/releases/</code></td>
+<td>阶段基线，不能当作完整环境镜像</td>
+</tr>
+<tr>
+<td><code>.cache/camila/</code>、<code>demo/assets/</code></td>
+<td>三维角色处理结果、几何、音频与动画数据；按相应脚本重建或备份；公开站只保留选定 Mark 样例</td>
+</tr>
+<tr>
+<td><code>.cache/public-recording/</code></td>
+<td>录屏、原始帧和发布所需素材；当前发布脚本直接读取，删除前应保留所需文件</td>
+</tr>
+<tr>
+<td><code>demo/public-preview/</code></td>
+<td>公开站的额外本地预览副本，可从 <code>docs/demos/015-audio2face-3d/</code> 重建</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="section-4">4. 以后恢复的最短路径</h2>
+<ol>
+<li><strong>只回顾效果</strong>：直接打开公开站，无须重新下载模型。也可回放 Git 内的精选素材。</li>
+<li><strong>恢复 3D 推理</strong>：准备 Python 3.10、Git / Git LFS，在项目目录执行 <code>./scripts/setup.ps1</code>，检查权重和几何后执行 <code>./start.ps1</code>。Camila 属于额外步骤。</li>
+<li><strong>恢复视频与对话</strong>：获取 MuseTalk / LivePortrait 对应代码及权重、共享辅助模型，恢复视频 Python 环境和 FFmpeg，再恢复人物动作包、配置 MiniMax，最后执行 <code>./start-performance.ps1</code>。历史 <code>setup_photo.py</code> 仅是旧环境基础步骤，不能单独完成当前全链路安装；依赖参考 <code>scripts/photo-requirements.txt</code>、<code>scripts/musetalk-requirements.txt</code> 等和 <a href="https://github.com/yydshly/0907_codex_project/blob/main/projects/015-audio2face-3d/notes/START-HERE.md">START-HERE</a>。</li>
+<li><strong>先验证回放再生成</strong>：确认人物选择、动作视频和模型就绪，再做短台词测试，最后测试完整聊天。云端调用只在需要新结果时进行。</li>
+<li><strong>重新发布静态站</strong>：需要保留本地精选素材，执行 <code>python scripts/publish_static.py</code>；网页文档构建还需要 Python <code>markdown</code> 包。仅 clone 后缺少这些素材时，不能直接重建全部公开包，但已提交的公开包可以回放。</li>
+</ol>
+<h2 id="section-5">5. 当前清理状态与占用</h2>
+<p>F 盘项目曾测得约 <strong>18.18 GiB</strong>（硬链接去重后的逻辑大小），主要为环境、权重和生成素材。<strong>本项目 F 盘目录尚未清理。</strong> 已执行的只是 C 盘 19 个匹配 pip 下载缓存及配套元数据，约 7.20 GiB；它们不是项目运行环境，删除后当前环境仍保留，以后重装需要重新下载包。</p>
+<p>详细占用与已执行范围见 <a href="https://github.com/yydshly/0907_codex_project/blob/main/projects/015-audio2face-3d/notes/LOCAL-STORAGE.md">本地存储记录</a>。该记录是时间点快照，不是未来删除授权。后续清理模型 / 人物 / 环境应先确认具体目录及影响。</p>
+<p>继续分析见 <a href="https://github.com/yydshly/0907_codex_project/blob/main/projects/015-audio2face-3d/notes/REVIEW-MAP.md">能力与复现索引</a>。原库许可、模型许可与人物素材许可分别查看 <a href="https://github.com/yydshly/0907_codex_project/blob/main/projects/015-audio2face-3d/demo/THIRD_PARTY_NOTICES.md">第三方说明</a>。</p><p>本文从 <a href="https://github.com/yydshly/0907_codex_project/blob/main/projects/015-audio2face-3d/notes/DIRECTORY-GUIDE.md">版本化原文</a> 自动构建，修改原文后重新发布，避免网页与文档脱节。</p></main></body></html>
