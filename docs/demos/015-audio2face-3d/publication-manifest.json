@@ -261,8 +261,8 @@
   },
   {
     "path": "index.html",
-    "bytes": 16143,
-    "sha256": "73254a7405270a60db7b2e723a058230063ac88473a346487893609a9289613d"
+    "bytes": 16295,
+    "sha256": "d540c1ffe0b399cb02b3b4dcbb38c5edc9a0339b575a0f0109ca3674658f234d"
   },
   {
     "path": "licenses/Audio2Face-SDK-MIT.txt",

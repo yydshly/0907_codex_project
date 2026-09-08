@@ -9,7 +9,7 @@
 
 ## 先看实际效果
 
-[![本地网页中的人物动作与声音效果](../../docs/demos/015-audio2face-3d/media/showcase-poster.jpg)](https://yydshly.github.io/0907_codex_project/demos/015-audio2face-3d/#demo)
+[![本地网页中的人物动作与声音效果](../../docs/demos/015-audio2face-3d/media/showcase-poster.jpg)](https://yydshly.github.io/0907_codex_project/demos/015-audio2face-3d/#recording-demo)
 
 - **[约 20 秒网页演示录像](https://yydshly.github.io/0907_codex_project/demos/015-audio2face-3d/media/showcase-8020.mp4)**：真实录制本地 8020 页的原照片、原动作、三段说话和待机切换；声音按播放器时钟对齐原片音轨。不是实时生成过程。
 - **[三段原始成片合集](https://yydshly.github.io/0907_codex_project/demos/015-audio2face-3d/media/performance-clips.mp4)**：直接观察口型、身体动作和句尾效果。
@@ -84,6 +84,8 @@ Whisper / VAE / U-Net 是 MuseTalk 使用的模型组件。ImageGen 用于开发
 历史 JSON 审计可能含本地会话内容，默认不发布。公开发布检查与录屏说明见 [发布记录](notes/public-release.md)，模型版本见 [依赖索引](notes/revisit-inventory.json)。
 
 ## 以后怎么重新理解
+
+优先阅读 [后续分析索引：能力—页面—代码—复现](notes/REVIEW-MAP.md)，再进入下面的专题。
 
 - [START-HERE：重读、关键选择、代码地图、恢复与排查](notes/START-HERE.md)
 - [组件架构与归属](notes/component-architecture.md)
