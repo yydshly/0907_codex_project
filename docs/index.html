@@ -1,53 +1,43 @@
 <!doctype html>
-<html lang="zh-CN">
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="优秀 GitHub 项目的研究记录与有序 Web 演示索引。">
-  <title>GitHub 项目研究 · Web 演示</title>
-  <style>
-    :root { color-scheme: light; font-family: system-ui, -apple-system, "Segoe UI", sans-serif; color: #172b3a; background: #f3f6f8; }
-    * { box-sizing: border-box; }
-    body { margin: 0; }
-    main { max-width: 880px; margin: 0 auto; padding: 72px 24px; }
-    .eyebrow { color: #496776; font-size: .85rem; letter-spacing: .12em; }
-    h1 { font-size: clamp(2rem, 6vw, 3.4rem); line-height: 1.2; }
-    p { line-height: 1.8; }
-    a { color: #075e77; text-underline-offset: 4px; }
-    a:focus-visible { outline: 3px solid #075e77; outline-offset: 5px; }
-    section { margin-top: 40px; padding: 24px; border: 1px solid #ccdbe2; border-radius: 16px; background: #fff; }
-    h2 { margin-top: 0; font-size: 1.3rem; }
-    .empty { color: #526672; }
-    footer { margin-top: 32px; font-size: .9rem; color: #526672; }
-  </style>
-</head>
-<body>
-  <main>
-    <p class="eyebrow">GITHUB PROJECT RESEARCH</p>
-    <h1>从优秀项目中，<br>理解实现与设计。</h1>
-    <p>这里汇集研究过程中制作的 Web 演示，按项目编号排列。项目背景、截图与研究结论保存在仓库中。</p>
-    <a href="https://github.com/yydshly/0907_codex_project#项目索引">查看研究总索引 →</a>
-    <section aria-labelledby="demo-title">
-      <h2 id="demo-title">Web 演示索引</h2>
-      <p><a href="./demos/005-effective-html/showcase.html">005 · Effective HTML：六技能场景作品展厅 →</a></p>
-      <p>研究简报、海岸专题、客服线框、内容审核、迁移计划与系统图解；借鉴面向场景的生成规则与验收方法。</p>
-      <p><a href="./demos/007-cozyclay/">007 · CozyClay：三维分镜与动作预演 →</a></p>
-      <p>真实截图、官方演示与中文操作路径；本地体验动作播放、场景搭建和 AI 自动构图。</p>
-      <p><a href="./demos/008-visual-memory-translator/">008 · Visual Memory Translator：影像转译能力展示 →</a></p>
-      <p>照片与文本的创作流程、上游公开样张、适用场景与扩展建议；简单记录，暂不深入，生图未实测。</p>
-      <p><a href="./demos/009-ux-ui-agent-skills/">009 · UX/UI Agent Skills：中文能力导览 →</a></p>
-      <p>17 项技能筛选、工作原理与场景建议；新增 <a href="./demos/009-ux-ui-agent-skills/effects.html">六个原始示例体验</a>，直接操作主题、表单、排序和确认弹窗。</p>
-      <p><a href="./demos/010-linear-ability-threejs/">010 · Three.js：特效与场景实验室 →</a></p>
-      <p>10 个实时特效示例和 5 个非游戏应用场景，支持暂停、调参和进度控制；覆盖产品展示、品牌揭幕、教学流程、人物演出与互动展览。</p>
-      <p><a href="./demos/011-anycreature/">011 · anyCreature：生物制造实验室 →</a></p>
-      <p><a href="./demos/011-anycreature/"><img src="./demos/011-anycreature/assets/human-wave.png" alt="anyCreature 实际生成的人形角色挥手效果" style="display:block;width:100%;max-width:480px;border-radius:12px" loading="lazy"></a></p><p>实际生成的人形、蝴蝶与蜗牛，支持三档体型、骨骼动画和花园路线；点击效果图进入演示。</p>
-      <p><a href="./demos/013-fde-interview-fieldbook/">013 · FDE Interview Fieldbook：面试与工作准备导览 →</a></p>
-      <p><a href="./demos/013-fde-interview-fieldbook/"><img src="./demos/013-fde-interview-fieldbook/assets/fde-overview.svg" width="1440" height="970" alt="FDE 资料、准备方法与我们的实践整理引导图" style="display:block;width:100%;height:auto;border-radius:12px" loading="lazy"></a></p>
-      <p>本页精读 10 套案例的背景、处理顺序与验收证据；包含六组技术速查、知识助手实践示例及库内笔记下载。</p>
-      <p><a href="./demos/014-claude-academy/">014 · Claude Academy：AI 学习地图 →</a></p>
-      <p>293 项官方课程、教程与使用案例；五条建议学习路线，支持中文搜索、产品筛选与本地完成记录。</p>
-    </section>
-    <footer>项目编号与研究仓库保持一致 · 每个演示独立维护</footer>
-  </main>
-</body>
-</html>
+<html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="description" content="AI 项目研究与实践的统一入口：14 个项目、8 个网页导览，按学习、设计、视觉创作与智能体协作探索。"><title>项目研究室 · 学习、探索与实践</title><link rel="stylesheet" href="./assets/home.css"><script src="./assets/home.js" defer></script></head>
+<body><a class="skip" href="#projects">跳到项目目录</a><header><a class="brand" href="./"><span class="brand-mark" aria-hidden="true">r.</span>项目研究室 <small>RESEARCH / EXPLORE / BUILD</small></a><nav aria-label="主导航"><a href="#start">从这里开始</a><a href="#projects">全部项目</a><a href="https://github.com/yydshly/0907_codex_project" target="_blank" rel="noopener noreferrer">GitHub ↗</a></nav></header>
+<main><section class="hero" aria-labelledby="hero-title"><div><p class="eyebrow">A SMALL LIBRARY OF BIG IDEAS</p><h1 id="hero-title">发现好项目，<br><em>把想法变成实践。</em></h1><p class="intro">这里收录 AI 工具、设计技能与学习资料的研究记录。选择一个方向，浏览网页导览，再按需阅读实现与实践笔记。</p><div class="actions"><a class="button" href="#projects">浏览全部项目 <span aria-hidden="true">↓</span></a><a href="#start">不知道从哪开始？ →</a></div></div>
+<aside class="feature" aria-label="最近整理的项目"><div class="feature-head"><span>最近整理 / 014</span><span>学习与实践</span></div><div class="feature-graphic"><span class="feature-symbol" aria-hidden="true">✳</span><div><h2>Claude Academy</h2><p>你的 AI 学习地图</p></div></div><div class="resource-numbers"><div><b>26</b><span>课程</span></div><div><b>119</b><span>教程</span></div><div><b>148</b><span>案例</span></div></div><div class="feature-bottom"><a href="./demos/014-claude-academy/">进入学习地图 ↗</a><small>初步整理完成 · 后续深入研究</small></div></aside></section>
+<div class="overview" aria-label="站点概览"><span><strong>14</strong> 个研究项目</span><span><strong>8</strong> 个网页导览</span><span><strong>4</strong> 个探索方向</span><span>持续积累 · 按需深入</span></div>
+<section id="start"><div class="section-head"><div><p class="eyebrow">01 / START WITH A GOAL</p><h2>你现在想做什么？</h2></div><p>根据当前目标，直接进入对应内容。</p></div><div class="paths">
+<article class="path"><span aria-hidden="true">01</span><div><h3>系统学习 AI</h3><p>先建立协作方法，再选择适合自己的课程与案例。</p><div class="path-links"><a href="./demos/014-claude-academy/">AI 学习地图 →</a><a href="./demos/013-fde-interview-fieldbook/">FDE 实践 →</a></div></div></article>
+<article class="path"><span aria-hidden="true">02</span><div><h3>寻找设计与创作灵感</h3><p>看网页作品、设计示例，动手体验三维效果。</p><div class="path-links"><a href="./demos/005-effective-html/showcase.html">网页作品 →</a><a href="./demos/010-linear-ability-threejs/">三维特效 →</a></div></div></article>
+<article class="path"><span aria-hidden="true">03</span><div><h3>研究智能体与工作流</h3><p>理解任务规则、应用能力与多智能体协作架构。</p><div class="path-links"><a href="https://github.com/yydshly/0907_codex_project/blob/main/projects/001-scarletkc-agents/README.md" target="_blank" rel="noopener noreferrer">协作规则 ↗</a><a href="https://github.com/yydshly/0907_codex_project/blob/main/projects/012-rome/README.md" target="_blank" rel="noopener noreferrer">Rome 架构 ↗</a></div></div></article>
+</div></section>
+<section id="projects"><div class="catalog-top"><div class="section-head"><div><p class="eyebrow">02 / PROJECT DIRECTORY</p><h2>全部项目，一处找到。</h2></div></div><label class="search progressive" hidden for="search">搜索项目<input id="search" type="search" placeholder="输入名称或关键词，如 Claude、3D、设计"></label></div>
+<div class="filter-bar progressive" hidden><div class="filters" role="group" aria-label="筛选项目"><button type="button" data-filter="all" aria-pressed="true">全部 14</button><button type="button" data-filter="web" aria-pressed="false">有网页导览 8</button><button type="button" data-filter="learning" aria-pressed="false">学习与实践</button><button type="button" data-filter="design" aria-pressed="false">设计与前端</button><button type="button" data-filter="creative" aria-pressed="false">视觉与创作</button><button type="button" data-filter="agents" aria-pressed="false">智能体与协作</button></div><span id="count" role="status" aria-live="polite">显示 14 / 14 个项目</span></div>
+<div class="grid"><article class="project" data-category="agents" data-web="false" data-keywords="任务约束 Skill 经验">
+ <div class="project-body"><div class="project-top"><span class="project-number">001</span><span class="tag">智能体与协作</span></div><h3>Agents</h3><p class="project-subtitle">从问题沉淀协作规则</p><p class="project-desc">从真实问题中沉淀规则、样本和检查，约束 AI 的工作与表达</p><div class="project-status">规则与方法整理完成</div></div><div class="project-footer"><a class="primary-link" href="https://github.com/yydshly/0907_codex_project/blob/main/projects/001-scarletkc-agents/README.md" target="_blank" rel="noopener noreferrer">阅读研究笔记 ↗</a><span class="text-note">暂无独立网页</span></div></article>
+<article class="project" data-category="creative" data-web="false" data-keywords="视频 多模型">
+ <div class="project-body"><div class="project-top"><span class="project-number">002</span><span class="tag">视觉与创作</span></div><h3>Open-Magiviz</h3><p class="project-subtitle">AI 视频创作工作流</p><p class="project-desc">将外部模型串成 AI 视频创作产品；留作视频工作流参考，暂不深挖</p><div class="project-status">概念归档 · 暂不深挖</div></div><div class="project-footer"><a class="primary-link" href="https://github.com/yydshly/0907_codex_project/blob/main/projects/002-open-magiviz/README.md" target="_blank" rel="noopener noreferrer">阅读研究笔记 ↗</a><span class="text-note">暂无独立网页</span></div></article>
+<article class="project" data-category="agents" data-web="false" data-keywords="技能 skills 产品">
+ <div class="project-body"><div class="project-top"><span class="project-number">003</span><span class="tag">智能体与协作</span></div><h3>Cola</h3><p class="project-subtitle">理解 AI 产品与技能组织</p><p class="project-desc">借鉴 AI 产品能力组织方式，提取技能方法，经去重与实测后参考、使用和沉淀</p><div class="project-status">概念研究 · 能力待验证</div></div><div class="project-footer"><a class="primary-link" href="https://github.com/yydshly/0907_codex_project/blob/main/projects/003-cola/README.md" target="_blank" rel="noopener noreferrer">阅读研究笔记 ↗</a><span class="text-note">暂无独立网页</span></div></article>
+<article class="project" data-category="agents" data-web="false" data-keywords="自动化 云电脑">
+ <div class="project-body"><div class="project-top"><span class="project-number">004</span><span class="tag">智能体与协作</span></div><h3>Awesome Grok Bot</h3><p class="project-subtitle">了解云端 AI 助手的任务流程</p><p class="project-desc">资料库介绍云端 AI 助手：托管云电脑执行任务，保存成果并复用流程</p><div class="project-status">资料与结构整理 · 未部署</div></div><div class="project-footer"><a class="primary-link" href="https://github.com/yydshly/0907_codex_project/blob/main/projects/004-awesome-grok-bot/README.md" target="_blank" rel="noopener noreferrer">阅读研究笔记 ↗</a><span class="text-note">暂无独立网页</span></div></article>
+<article class="project" data-category="design" data-web="true" data-keywords="网页 设计 线框 原型">
+ <div class="project-body"><div class="project-top"><span class="project-number">005</span><span class="tag">设计与前端</span></div><h3>Effective HTML</h3><p class="project-subtitle">六类 HTML 场景作品</p><p class="project-desc">面向场景的 HTML 生成技能；借鉴输入、生成规则与验收标准，沉淀可复用能力</p><div class="project-status">规则与演示已整理</div></div><div class="project-footer"><a class="primary-link" href="./demos/005-effective-html/showcase.html">打开网页 <span aria-hidden="true">↗</span></a><a class="secondary" href="https://github.com/yydshly/0907_codex_project/blob/main/projects/005-effective-html/README.md" target="_blank" rel="noopener noreferrer">研究笔记 ↗</a></div></article>
+<article class="project" data-category="design" data-web="false" data-keywords="画布 设计">
+ <div class="project-body"><div class="project-top"><span class="project-number">006</span><span class="tag">设计与前端</span></div><h3>Doop</h3><p class="project-subtitle">人与 AI 共用设计画布</p><p class="project-desc">人与 AI 共用设计画布；与已有设计流程重叠，当前仅归档、暂不深挖</p><div class="project-status">概念与对比归档 · 暂不深挖</div></div><div class="project-footer"><a class="primary-link" href="https://github.com/yydshly/0907_codex_project/blob/main/projects/006-doop/README.md" target="_blank" rel="noopener noreferrer">阅读研究笔记 ↗</a><span class="text-note">暂无独立网页</span></div></article>
+<article class="project" data-category="creative" data-web="true" data-keywords="3D 动画 场景">
+ <div class="project-body"><div class="project-top"><span class="project-number">007</span><span class="tag">视觉与创作</span></div><h3>CozyClay</h3><p class="project-subtitle">三维分镜与动作预演</p><p class="project-desc">浏览器三维分镜与动作预演；实测动作播放、场景搭建及 MCP 自动构图</p><div class="project-status">本地工作台与 MCP 已实测</div></div><div class="project-footer"><a class="primary-link" href="./demos/007-cozyclay/">打开网页 <span aria-hidden="true">↗</span></a><a class="secondary" href="https://github.com/yydshly/0907_codex_project/blob/main/projects/007-cozyclay/README.md" target="_blank" rel="noopener noreferrer">研究笔记 ↗</a></div></article>
+<article class="project" data-category="creative" data-web="true" data-keywords="照片 艺术 图片">
+ <div class="project-body"><div class="project-top"><span class="project-number">008</span><span class="tag">视觉与创作</span></div><h3>Visual Memory Translator</h3><p class="project-subtitle">将影像转译为视觉作品</p><p class="project-desc">照片与文本的视觉转译技能；借鉴审美规则、风格选择与失败修正方法</p><div class="project-status">能力整理 · 生图未实测</div></div><div class="project-footer"><a class="primary-link" href="./demos/008-visual-memory-translator/">打开网页 <span aria-hidden="true">↗</span></a><a class="secondary" href="https://github.com/yydshly/0907_codex_project/blob/main/projects/008-visual-memory-translator/README.md" target="_blank" rel="noopener noreferrer">研究笔记 ↗</a></div></article>
+<article class="project" data-category="design" data-web="true" data-keywords="UI UX 前端 组件">
+ <div class="project-body"><div class="project-top"><span class="project-number">009</span><span class="tag">设计与前端</span></div><h3>UX/UI Agent Skills</h3><p class="project-subtitle">设计技能与真实示例</p><p class="project-desc">设计知识、主题 Token、组件规范与实际页面检查；借鉴可复用的设计与验证流程</p><div class="project-status">原始示例已体验 · 生成效果未实测</div></div><div class="project-footer"><a class="primary-link" href="./demos/009-ux-ui-agent-skills/">打开网页 <span aria-hidden="true">↗</span></a><a class="secondary" href="https://github.com/yydshly/0907_codex_project/blob/main/projects/009-ux-ui-agent-skills/README.md" target="_blank" rel="noopener noreferrer">研究笔记 ↗</a></div></article>
+<article class="project" data-category="creative" data-web="true" data-keywords="3D threejs 动画">
+ <div class="project-body"><div class="project-top"><span class="project-number">010</span><span class="tag">视觉与创作</span></div><h3>Three.js / LinearAbility</h3><p class="project-subtitle">Three.js 特效与场景实验室</p><p class="project-desc">Three.js 原版技能与新增特效；10 个特效示例、5 个非游戏场景及扩展说明</p><div class="project-status">特效与场景演示已整理</div></div><div class="project-footer"><a class="primary-link" href="./demos/010-linear-ability-threejs/">打开网页 <span aria-hidden="true">↗</span></a><a class="secondary" href="https://github.com/yydshly/0907_codex_project/blob/main/projects/010-linear-ability-threejs/README.md" target="_blank" rel="noopener noreferrer">研究笔记 ↗</a></div></article>
+<article class="project" data-category="creative" data-web="true" data-keywords="3D 蝴蝶 模型">
+ <div class="project-body"><div class="project-top"><span class="project-number">011</span><span class="tag">视觉与创作</span></div><h3>anyCreature</h3><p class="project-subtitle">三维生物与骨骼动画</p><p class="project-desc">生成三维模型与骨骼动画；独立人形、蝴蝶、蜗牛及花园场景</p><div class="project-status">18 份模型与交互已实测</div></div><div class="project-footer"><a class="primary-link" href="./demos/011-anycreature/">打开网页 <span aria-hidden="true">↗</span></a><a class="secondary" href="https://github.com/yydshly/0907_codex_project/blob/main/projects/011-anycreature/README.md" target="_blank" rel="noopener noreferrer">研究笔记 ↗</a></div></article>
+<article class="project" data-category="agents" data-web="false" data-keywords="Agent 工作流 应用">
+ <div class="project-body"><div class="project-top"><span class="project-number">012</span><span class="tag">智能体与协作</span></div><h3>Rome</h3><p class="project-subtitle">多智能体工作流与应用架构</p><p class="project-desc">多 Agent、工作流与应用能力封装；后续开发参考统一动作、任务状态和持久数据</p><div class="project-status">架构参考 · 未部署实测</div></div><div class="project-footer"><a class="primary-link" href="https://github.com/yydshly/0907_codex_project/blob/main/projects/012-rome/README.md" target="_blank" rel="noopener noreferrer">阅读研究笔记 ↗</a><span class="text-note">暂无独立网页</span></div></article>
+<article class="project" data-category="learning" data-web="true" data-keywords="面试 技术 FIELD 职业">
+ <div class="project-body"><div class="project-top"><span class="project-number">013</span><span class="tag">学习与实践</span></div><h3>FDE Interview Fieldbook</h3><p class="project-subtitle">FDE 面试与工作准备</p><p class="project-desc">FDE 面试与工作准备资料、方法、案例和计划；按需参考</p><div class="project-status">资料与案例已整理 · 训练未实测</div></div><div class="project-footer"><a class="primary-link" href="./demos/013-fde-interview-fieldbook/">打开网页 <span aria-hidden="true">↗</span></a><a class="secondary" href="https://github.com/yydshly/0907_codex_project/blob/main/projects/013-fde-interview-fieldbook/README.md" target="_blank" rel="noopener noreferrer">研究笔记 ↗</a></div></article>
+<article class="project" data-category="learning" data-web="true" data-keywords="课程 教程 案例 Anthropic 学院">
+ <div class="project-body"><div class="project-top"><span class="project-number">014</span><span class="tag">学习与实践</span></div><h3>Claude Academy</h3><p class="project-subtitle">Claude Academy · AI 学习地图</p><p class="project-desc">293 项 AI 学习资源、五条建议路线、中文搜索与学习进度</p><div class="project-status">初步整理完成 · 待深入研究</div></div><div class="project-footer"><a class="primary-link" href="./demos/014-claude-academy/">打开网页 <span aria-hidden="true">↗</span></a><a class="secondary" href="https://github.com/yydshly/0907_codex_project/blob/main/projects/014-claude-academy/README.md" target="_blank" rel="noopener noreferrer">研究笔记 ↗</a></div></article></div><div id="empty" hidden><h3>没有找到匹配的项目</h3><p>换一个关键词，或清除筛选查看全部项目。</p><button id="reset" class="button" type="button">清除筛选</button></div><p class="catalog-note">按固定编号排列，编号代表收录顺序。每个项目标注当前研究深度；“打开网页”进入导览或演示，“研究笔记”前往 GitHub 查看资料。</p></section>
+<section class="about" aria-labelledby="about-title"><div><p class="eyebrow">KEEP EXPLORING</p><h2 id="about-title">从浏览，到真正用起来。</h2><a href="https://github.com/yydshly/0907_codex_project#项目索引" target="_blank" rel="noopener noreferrer">查看完整研究索引 ↗</a></div><p><strong>先看用途，再看证据，最后动手验证。</strong><br>网页导览帮助快速理解项目价值，研究笔记保存来源、方法和验证记录。资料整理完成不等于能力全部验证，适用边界请以每个项目的记录为准。找到值得借鉴的内容后，再围绕真实任务深入研究。</p></section></main>
+<footer><span>项目研究室 · AI 工具、技能与学习资料</span><span>14 个项目 / 2026.09.07 整理</span></footer></body></html>

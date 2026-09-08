@@ -9,7 +9,7 @@
 | 状态 | 已完成（初步整理，待深入研究；课程未逐一学习） |
 | 范围 | 293 项公开资源：26 门课程、119 篇教程、148 个案例 |
 | 技术 | HTML / CSS / JavaScript，无构建依赖 |
-| Web 页面 | 本地已完成，已准备 GitHub Pages 发布文件，尚未发布 |
+| Web 页面 | [已发布：AI 学习地图](https://yydshly.github.io/0907_codex_project/demos/014-claude-academy/) |
 
 ## 内容与价值
 
@@ -32,7 +32,7 @@
 
 直接打开 [网页入口](demo/index.html)，或从仓库根目录运行 `python -m http.server 8014 --directory docs`，访问 `http://localhost:8014/demos/014-claude-academy/`。
 
-发布文件位于 `docs/demos/014-claude-academy/`；推送并完成 GitHub Pages 构建后，预期地址为 https://yydshly.github.io/0907_codex_project/demos/014-claude-academy/ 。当前未执行推送。
+发布文件位于 `docs/demos/014-claude-academy/`。已发布至 [AI 学习地图](https://yydshly.github.io/0907_codex_project/demos/014-claude-academy/)，也可从 [站点首页](https://yydshly.github.io/0907_codex_project/) 进入。
 
 ## 资料
 
