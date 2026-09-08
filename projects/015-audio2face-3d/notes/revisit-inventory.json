@@ -1,0 +1,45 @@
+{
+  "recorded_date": "2026-09-08",
+  "repositories": {
+    "Audio2Face-3D": {
+      "commit": "4d61b6b81ad7b5108512ea0eab10d8712ea4a236"
+    },
+    "Audio2Face-3D-SDK": {
+      "commit": "1ca0f02535ed774f5dbcd724a31cd486368dc783"
+    },
+    "Audio2Face-3D-training-framework": {
+      "commit": "112c5eb3408afd065ac8974b2c6ea9ab0e3965c6"
+    },
+    "Maya-ACE": {
+      "commit": "f0dc13670952c495450dab1655c94e9056c9d7d9"
+    },
+    "LivePortrait": {
+      "commit": "9b294b3d0536135442ea73cb01e6cb3ca7029dd3"
+    },
+    "MuseTalk": {
+      "commit": "0a89dec45a0192b824e3cf4daf96c239440c5ed8"
+    },
+    "SadTalker": {
+      "commit": "cd4c0465ae0b54a6f85af57f5c65fec9fe23e7f8"
+    }
+  },
+  "model_manifests": [
+    {
+      "path": "config/liveportrait-models.json",
+      "sha256": "af5357a6b13ee705cd57c7f31c3b216d7c4e14b6024dfe4bf4565f22b7acac73"
+    },
+    {
+      "path": "notes/model-download-manifest.json",
+      "sha256": "bf45fd52a62a40dd1b303bd3c253aa7374e9067d047840c39986386e24d8326d"
+    },
+    {
+      "path": "vendor/musetalk-models/manifest.json",
+      "sha256": "bf5285632d2391914fa22478997300b6d85fcff57185ae3dce0866e9706a8486"
+    },
+    {
+      "path": "vendor/photo-models/manifest.json",
+      "sha256": "df80890648fd64bd151d67c20506d6ba056d83e9fce46dea2c44f936edaade22"
+    }
+  ],
+  "note": "Read-only inventory; commit identifies checkout, not proof of clean tree or reproducible fresh install."
+}

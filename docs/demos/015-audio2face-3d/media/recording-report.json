@@ -1,0 +1,27 @@
+{
+  "source_page": "http://127.0.0.1:8020/",
+  "method": "Actual browser viewport screenshots with wall-clock timestamps; source audio aligned to captured HTML media clocks.",
+  "duration_s": 19.881,
+  "captured_frames": 286,
+  "capture_average_fps": 14.39,
+  "output_fps": 30,
+  "resolution": "1440x1000",
+  "scenes": [
+    {
+      "source": "welcome/timing-v5/result.mp4",
+      "start_s": 5.7095,
+      "source_sha256": "26751ba9a3448ae08b390ebd1a528ee87657d4a377d8ce86641acbaee8ae906c"
+    },
+    {
+      "source": "playful/timing-v5/result.mp4",
+      "start_s": 10.1048,
+      "source_sha256": "5a4c678e22da439f65ad9f4a30acf0e6a654936421b66eb2c77c08fedc86c0e0"
+    },
+    {
+      "source": "soft/timing-v5/result.mp4",
+      "start_s": 14.1669,
+      "source_sha256": "a36bfc97d00691346cbbe9bb2eba5e1357740f92d91e9d2c97307f0d33959bf7"
+    }
+  ],
+  "note": "Real viewport recording; original clip audio aligned from observed media clocks, not a microphone/system-audio recording. Encoded frame rate does not imply 30 unique captured frames per second."
+}

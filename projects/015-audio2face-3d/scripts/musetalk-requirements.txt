@@ -1,0 +1,6 @@
+# Additional packages in the existing SadTalker Python 3.10 environment.
+diffusers==0.30.2
+transformers==4.44.2
+accelerate==0.34.2
+huggingface-hub==0.25.2
+einops==0.8.1

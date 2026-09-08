@@ -1,0 +1,27 @@
+[
+  {
+    "name": "r_choroid",
+    "vertices": 3522,
+    "triangles": 7040
+  },
+  {
+    "name": "r_lens",
+    "vertices": 282,
+    "triangles": 560
+  },
+  {
+    "name": "l_choroid",
+    "vertices": 3522,
+    "triangles": 7040
+  },
+  {
+    "name": "l_lens",
+    "vertices": 282,
+    "triangles": 560
+  },
+  {
+    "name": "skin",
+    "vertices": 61520,
+    "triangles": 123036
+  }
+]

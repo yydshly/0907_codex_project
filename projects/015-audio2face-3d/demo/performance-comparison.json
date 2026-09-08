@@ -1,0 +1,117 @@
+{
+  "warm_worker": {
+    "status": "ready",
+    "startup_s": 5.047,
+    "pid": 55112,
+    "updated_at": 1788848000.4375029,
+    "pipeline_version": "performance-v2"
+  },
+  "fresh_tts": true,
+  "samples": [
+    {
+      "state": "comfort",
+      "text": "今天辛苦啦，先休息一下吧。",
+      "baseline_job": "9ec4adc81859416c9f97cbcb87fd7033",
+      "new_job": "96419bdc99564acb89f05300d0a15965",
+      "baseline_metrics": {
+        "audio_feature_s": 0.531,
+        "lip_inference_s": 5.719,
+        "encode_s": 1.5,
+        "render_s": 14.562,
+        "total_s": 16.842,
+        "media_duration_s": 4.36,
+        "gpu_peak_allocated_mb": 2326.2,
+        "resident_worker_startup_s": 4.828,
+        "processing_realtime_factor": 3.34,
+        "tts_s": 2.218
+      },
+      "new_metrics": {
+        "audio_feature_s": 0.532,
+        "lip_inference_s": 5.875,
+        "temporal_clean_s": 0.812,
+        "composite_encode_s": 2.266,
+        "encode_s": 0.094,
+        "postprocess_s": 3.078,
+        "pipeline_version": "performance-v2",
+        "render_s": 9.688,
+        "total_s": 12.116,
+        "media_duration_s": 4.36,
+        "gpu_peak_allocated_mb": 2326.2,
+        "resident_worker_startup_s": 5.047,
+        "processing_realtime_factor": 2.222,
+        "tts_s": 2.297
+      },
+      "total_wait_reduction_percent": 28.1
+    },
+    {
+      "state": "annoyed",
+      "text": "哼，又逗我。好啦，原谅你了。",
+      "baseline_job": "6aa4859971084806ae41adeaf6cbb883",
+      "new_job": "f2c40ba7dad14f15983f15cd2047b516",
+      "baseline_metrics": {
+        "audio_feature_s": 0.234,
+        "lip_inference_s": 5.297,
+        "encode_s": 1.641,
+        "render_s": 14.125,
+        "total_s": 16.562,
+        "media_duration_s": 4.8,
+        "gpu_peak_allocated_mb": 2326.6,
+        "resident_worker_startup_s": 4.828,
+        "processing_realtime_factor": 2.943,
+        "tts_s": 2.25
+      },
+      "new_metrics": {
+        "audio_feature_s": 0.25,
+        "lip_inference_s": 5.282,
+        "temporal_clean_s": 0.89,
+        "composite_encode_s": 2.422,
+        "encode_s": 0.109,
+        "postprocess_s": 3.312,
+        "pipeline_version": "performance-v2",
+        "render_s": 9.0,
+        "total_s": 11.305,
+        "media_duration_s": 4.8,
+        "gpu_peak_allocated_mb": 2326.6,
+        "resident_worker_startup_s": 5.047,
+        "processing_realtime_factor": 1.875,
+        "tts_s": 2.094
+      },
+      "total_wait_reduction_percent": 31.7
+    },
+    {
+      "state": "think",
+      "text": "我先想一下，等一下再慢慢告诉你。",
+      "baseline_job": "db79806c038546abafd46cb91924a724",
+      "new_job": "0e4071b1ed9846f8991db1d01ea96cd1",
+      "baseline_metrics": {
+        "audio_feature_s": 0.234,
+        "lip_inference_s": 5.437,
+        "encode_s": 1.61,
+        "render_s": 13.938,
+        "total_s": 16.807,
+        "media_duration_s": 4.52,
+        "gpu_peak_allocated_mb": 2326.4,
+        "resident_worker_startup_s": 4.828,
+        "processing_realtime_factor": 3.084,
+        "tts_s": 2.64
+      },
+      "new_metrics": {
+        "audio_feature_s": 0.235,
+        "lip_inference_s": 5.609,
+        "temporal_clean_s": 0.843,
+        "composite_encode_s": 2.516,
+        "encode_s": 0.094,
+        "postprocess_s": 3.359,
+        "pipeline_version": "performance-v2",
+        "render_s": 9.344,
+        "total_s": 11.446,
+        "media_duration_s": 4.52,
+        "gpu_peak_allocated_mb": 2326.4,
+        "resident_worker_startup_s": 5.047,
+        "processing_realtime_factor": 2.067,
+        "tts_s": 1.984
+      },
+      "total_wait_reduction_percent": 31.9
+    }
+  ]
+}

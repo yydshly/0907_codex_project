@@ -1,0 +1,9 @@
+{
+  "version": "timing-v5",
+  "timing": {"threshold_db": -60, "hold_s": 0.1, "release_s": 0.22, "attack_s": 0.08, "min_pause_s": 0.6},
+  "clips": [
+    {"id": "welcome", "input": ".cache/complete/welcome", "generated_frames": "mask-v3/frames", "output": ".cache/complete/welcome/timing-v5"},
+    {"id": "playful", "input": ".cache/complete/playful", "generated_frames": "mask-v3/frames", "output": ".cache/complete/playful/timing-v5"},
+    {"id": "soft", "input": ".cache/complete/soft", "generated_frames": "mask-v3/frames", "output": ".cache/complete/soft/timing-v5"}
+  ]
+}

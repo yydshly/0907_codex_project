@@ -1,0 +1,23 @@
+{
+  "model": "NVIDIA Audio2Face-3D v2.3 Mark",
+  "runtime": "ONNX Runtime 1.23.2",
+  "providers": [
+    "CUDAExecutionProvider",
+    "CPUExecutionProvider"
+  ],
+  "inference_seconds": 0.282,
+  "duration": 9.62,
+  "frames": 289,
+  "fps": 30,
+  "emotion": "neutral",
+  "window_samples": 8320,
+  "lookahead_seconds": 0.26,
+  "postprocessing": "PCA reconstruction; no full SDK regional smoothing, blendshape solve or eye/jaw renderer",
+  "vertices": 61520,
+  "rank": 24,
+  "motion_file": "phonemes-neutral.bin",
+  "audio_file": "phonemes-neutral.wav",
+  "compression": "per-clip SVD + int16 basis; full vertex topology",
+  "coefficient_variance_retained": 0.9998300075531006,
+  "coefficient_motion_max": 82.6148681640625
+}

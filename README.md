@@ -22,6 +22,7 @@
 | 012 | [Rome](projects/012-rome/README.md) | [rome-os/rome](https://github.com/rome-os/rome) | 多 Agent、工作流与应用能力封装；后续开发参考统一动作、任务状态和持久数据 | 已完成（架构研究，未部署实测） | 暂无 |
 | 013 | [FDE Interview Fieldbook](projects/013-fde-interview-fieldbook/README.md) | [dataPro-lgtm/fde-interview-fieldbook](https://github.com/dataPro-lgtm/fde-interview-fieldbook) | FDE 面试与工作准备资料、方法、案例和计划；按需参考 | 已完成（资料与价值整理；训练效果未实测） | [案例与技术导览](https://yydshly.github.io/0907_codex_project/demos/013-fde-interview-fieldbook/) |
 | 014 | [Claude Academy](projects/014-claude-academy/README.md) | [官方中文目录](https://academy.claude.com/zh-CN/all) | 293 项 AI 学习资源、五条建议路线、中文搜索与学习进度 | 已完成（初步整理，待深入研究） | [AI 学习地图](https://yydshly.github.io/0907_codex_project/demos/014-claude-academy/) |
+| 015 | [数字人物：3D 与视频两条路线](projects/015-audio2face-3d/README.md) | [NVIDIA/Audio2Face-3D](https://github.com/NVIDIA/Audio2Face-3D) | 音频驱动三维面部；照片结合动作视频与 MuseTalk 生成说话效果 | 已有演示与集成验证，通用质量持续优化 | [效果录像与整体架构](https://yydshly.github.io/0907_codex_project/demos/015-audio2face-3d/) |
 
 状态约定：`待研究` → `研究中` → `已完成`，暂时搁置使用 `已暂停`。
 

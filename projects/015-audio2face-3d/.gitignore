@@ -1,0 +1,12 @@
+# Generated Mark playback assets are published through the static allowlist.
+demo/assets/*.bin
+demo/assets/*.wav
+demo/assets/*.npy
+demo/assets/*.json
+# Runtime audits may contain user prompts and local identifiers.
+notes/*.json
+!notes/revisit-inventory.json
+notes/photo-runtime-lock.txt
+
+# Temporary local preview of the curated static site.
+demo/public-preview/
