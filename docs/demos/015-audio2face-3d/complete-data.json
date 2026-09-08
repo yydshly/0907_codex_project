@@ -1,0 +1,47 @@
+{
+  "version": "timing-v5",
+  "clips": [
+    {
+      "id": "welcome",
+      "name": "欢迎回来",
+      "text": "你來啦，今天還好嗎？",
+      "video": "media/welcome-result.mp4",
+      "before_video": "media/welcome-before.mp4",
+      "idle_video": "media/welcome-idle.mp4",
+      "source_video": "media/welcome-source.mp4",
+      "fps": 30.0,
+      "frames": 120,
+      "seconds": 5.891,
+      "media_duration_s": 4.0
+    },
+    {
+      "id": "playful",
+      "name": "调皮提醒",
+      "text": "被我發現了吧，你又熬夜喔！",
+      "video": "media/playful-result.mp4",
+      "before_video": "media/playful-before.mp4",
+      "idle_video": "media/playful-idle.mp4",
+      "source_video": "media/playful-source.mp4",
+      "fps": 30.0,
+      "frames": 120,
+      "seconds": 4.828,
+      "media_duration_s": 4.0
+    },
+    {
+      "id": "soft",
+      "name": "轻松回应",
+      "text": "好啦，逗你的，別緊張嘛。",
+      "video": "media/soft-result.mp4",
+      "before_video": "media/soft-before.mp4",
+      "idle_video": "media/soft-idle.mp4",
+      "source_video": "media/soft-source.mp4",
+      "fps": 30.0,
+      "frames": 120,
+      "seconds": 4.859,
+      "media_duration_s": 4.0
+    }
+  ],
+  "idle": "media/welcome-source.mp4",
+  "montage": "media/performance-clips.mp4",
+  "baseline_url": "complete.html"
+}

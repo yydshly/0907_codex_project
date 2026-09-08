@@ -135,6 +135,41 @@ flowchart LR
 
 [研究结论](projects/013-fde-interview-fieldbook/README.md) · [在线案例与技术导览](https://yydshly.github.io/0907_codex_project/demos/013-fde-interview-fieldbook/)
 
+### 015 · 数字人物：3D 与视频两条路线
+
+**3D 路线：音频驱动已适配的三维人物面部，再通过渲染器显示口型与表情。**<br>
+**视频路线：照片先生成动作视频，再配合音频和口型模型，合成会说话、带动作的人物视频。**
+
+```mermaid
+flowchart TB
+    subgraph three[路线一：3D 人物]
+        T0[适配好的三维角色 · 本地资产]
+        T1[录音或 TTS 音频] --> T2[Audio2Face Mark v2.3 · 本地 ONNX 模型]
+        T2 --> T3[面部动画还原与角色适配 · 自研]
+        T0 --> T3
+        T3 --> T4[Three.js · 浏览器渲染与音频同步]
+        T4 --> T5[最终效果：可旋转视角的三维人物说话]
+    end
+    subgraph video[路线二：照片人物视频]
+        V0[人物照片] --> V1[动作视频：Hailuo / LTX 远端，或 LivePortrait 本地]
+        V1 --> V2[RetinaFace / FAN / ParseNet 定位分割与缓存 · 本地]
+        V2 --> V3[MuseTalk · 本地音频驱动口型重绘]
+        V4[录音或 TTS 音频] --> V3
+        V3 --> V5[时序稳定与蒙版融合 · 自研 + FFmpeg]
+        V5 --> V6[最终效果：照片人物有声音、口型和已有身体动作]
+    end
+```
+
+两条路线可以共用对话和语音服务。当前本地视频工作台接入 MiniMax 对话/TTS；下方录像来自 8020 已保存版本，实际使用 **LTX-Video + Edge TTS + MuseTalk**。视频路线不是 Audio2Face 的照片生成能力，3D 身体动作则需要额外骨骼动画。
+
+**网页效果演示视频（约 20 秒，点击封面播放）：**
+
+[![点击播放：原照片、动作视频、三段说话效果与待机切换](docs/demos/015-audio2face-3d/media/showcase-poster.jpg)](https://yydshly.github.io/0907_codex_project/demos/015-audio2face-3d/media/showcase-8020.mp4)
+
+[播放 / 下载演示视频](https://yydshly.github.io/0907_codex_project/demos/015-audio2face-3d/media/showcase-8020.mp4) · [完整效果与原理导览](https://yydshly.github.io/0907_codex_project/demos/015-audio2face-3d/) · [从零实施指引](https://yydshly.github.io/0907_codex_project/demos/015-audio2face-3d/implementation-guide.html) · [项目总结与代码](projects/015-audio2face-3d/README.md)
+
+录像展示实际网页回放，不代表实时生成；人物为 AI 虚构成年角色。动作连续性、嘴部细节与跨人物质量仍在优化。
+
 ## 目录导航
 
 - [子项目目录](projects/README.md)：按编号组织的研究资料。

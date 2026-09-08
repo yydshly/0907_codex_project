@@ -1,0 +1,7 @@
+const $=s=>document.querySelector(s),before=$('#before'),after=$('#after');let selected=null,muted=false,epoch=0;
+function stop(){epoch++;before.pause();after.pause();}
+function choose(item){stop();selected=item;before.src=item.before;after.src=item.after;$('#chat').href='implementation-guide.html#reproduce';$('#status').textContent=item.text;$('#evidence').textContent='音频 SHA-256 一致：'+item.audio_sha256+'。新版视频 '+item.duration_s+' 秒。'+(item.note||'');document.querySelectorAll('#tabs button').forEach(b=>b.setAttribute('aria-pressed',String(b.dataset.id===item.avatar_id)));}
+$('#play').onclick=async()=>{stop();const token=epoch;before.currentTime=after.currentTime=0;before.muted=muted;after.muted=true;try{await Promise.all([before.play(),after.play()]);if(epoch===token)$('#status').textContent=selected.text;}catch{if(epoch===token){stop();$('#status').textContent='播放暂未开始，请再点一次。';}}};
+$('#stop').onclick=stop;$('#sound').onclick=()=>{muted=!muted;before.muted=muted;$('#sound').textContent=muted?'声音关':'声音开';};
+before.onended=()=>{after.pause();$('#status').textContent='已播完。可以重播观察句尾，或阅读本地对话说明。';};
+fetch('body-comparison.json').then(r=>{if(!r.ok)throw Error('对照样例还在生成');return r.json();}).then(data=>{for(const item of data.cases){const b=document.createElement('button');b.dataset.id=item.avatar_id;b.textContent=item.name;b.onclick=()=>choose(item);$('#tabs').append(b);}choose(data.cases[0]);if(data.scope)$('#evidence').append(document.createTextNode(' '+data.scope));}).catch(e=>$('#status').textContent=e.message);

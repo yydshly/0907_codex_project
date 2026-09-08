@@ -54,3 +54,8 @@ The 8020 screen recording and three-clip montage show an original AI-generated f
 This is a playback demonstration of generated media, not real-time dialogue generation. Browser frames were captured while operating the actual local page; original clip audio was aligned to observed media-clock events. The capture method and timing are described in `media/recording-report.json` on the published site.
 
 The newer local workflow also uses MiniMax conversation/TTS and Hailuo video generation; these are API services, not included weight files. Public assets do not include private conversation records, user-uploaded images, API credentials, or Camila assets/renders. Camila remains a local evaluation asset; no permission to redistribute it is implied.
+
+
+## Restored public effect comparisons
+
+The expanded static guide also includes the fictional AI character Ruoan, generated during this project. Its local facial sample uses LivePortrait; its natural half-body sample uses MiniMax Hailuo. Both comparison clips use the same MiniMax-generated voice audio and local MuseTalk lip synchronization. They are selected demonstration outputs, not user-uploaded portraits or chat history. The 8020 static player additionally includes the original generated motion, earlier mouth-treatment result and matching idle clips to preserve the four comparison modes. Camila remains unavailable on the public site; its explanatory text is retained.

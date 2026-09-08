@@ -1,0 +1,16 @@
+{
+  "cases": [
+    {
+      "name": "若安",
+      "avatar_id": "371ea1eac99f4bdfa994b7f8796d5e69",
+      "before": "media/ruoan-face.mp4",
+      "after": "media/ruoan-body.mp4",
+      "old_job": "e7a06c64995745aea2848f08a98a841f",
+      "new_job": "9359a6b01a5f40279be3e015779147ac",
+      "audio_sha256": "7edc5be8cc0e3d67ac874d361869f7c96c9ec6ff2a440861eeb5d512ee8dcf95",
+      "text": "你还好吗？今天辛苦了，慢慢来就好。",
+      "duration_s": 4.52
+    }
+  ],
+  "scope": "已完成若安的六种动作和同音频对照；小晴的第二人物验证受 MiniMax 2056 额度限制，尚未完成。"
+}
