@@ -12,6 +12,13 @@ def build(root,target,copy,repo):
   'http://127.0.0.1:8020/complete/welcome/timing-v5/result.mp4':'media/welcome-result.mp4',
   'http://127.0.0.1:8020/source.png':'media/portrait.jpg',
   'http://127.0.0.1:8022/body-comparison.html':'body-comparison.html',
+  'http://127.0.0.1:8022/characters':'experience.html',
+  'http://127.0.0.1:8022/chat-classic':'experience.html',
+  'http://127.0.0.1:8022/chat?avatar=371ea1eac99f4bdfa994b7f8796d5e69':'experience.html',
+  'http://127.0.0.1:8022/chat':'experience.html',
+  'http://127.0.0.1:8022/?avatar=8b119506a6dc48b5b4c74bf38204e940':'experience.html',
+  'http://127.0.0.1:8022/implementation-guide.html':'implementation-guide.html',
+  'http://127.0.0.1:8022/':'experience.html',
   'http://127.0.0.1:8020/':'complete.html',
  }
  def portable(text):
@@ -51,6 +58,11 @@ def build(root,target,copy,repo):
  full=re.sub(r'<nav>.*?</nav>','<nav><a href="#showcase">按效果浏览</a><a href="#architecture">完整架构</a><a href="implementation-guide.html">从零实施</a><a href="#recording-demo">网页录像</a></nav>',full,count=1)
  full=full.replace('href="effects.html"','href="./"')
  full=portable(full)
+ full=full.replace('人物库 / 上传 / 选择 ↗','人物选择与回放 ↗').replace('进入人物对话 ↗','人物回应回放 ↗').replace('进入 8022 工作台 ↗','六种动作工作台回放 ↗')
+ full=full.replace('历史页面需要对应本地服务运行；不代表每个旧版本都已达到当前质量。','公开版提供可播放样例；上传、新台词和自由对话需本地服务。历史版本链接提供实施说明，不代表该版本在线运行。')
+ full=full.replace('href="implementation-guide.html#reproduce">查看动作与新台词工作台','href="experience.html">查看动作与新台词工作台')
+ full=full.replace('href="implementation-guide.html#reproduce">用若安开始对话','href="experience.html">用若安开始对话')
+ full=full.replace('<section id="showcase">','<section class="notice"><h2>人物对话与 8022 工作台</h2><p>补充两个人物的已保存回应与十二段动作，可切换人物、播放声音、选择动作和停止。完整上传与自由对话在本地运行。</p><a class="action" href="experience.html">进入人物对话与六种动作体验 ↗</a></section><section id="showcase">',1)
  full=full.replace('上传人物 ↗','本地上传说明 ↗').replace('管理 / 上传人物 ↗','本地人物管理说明 ↗').replace('用若安开始对话 ↗','本地对话说明 ↗').replace('查看动作与新台词工作台 ↗','动作与新台词使用说明 ↗')
  full=full.replace('<button data-view="camila" aria-pressed="true">Camila 写实角色</button>','<button data-view="camila" aria-pressed="false" disabled>Camila · 仅本地评估</button>')
  full=full.replace('<button data-view="mark" aria-pressed="false">','<button data-view="mark" aria-pressed="true">')

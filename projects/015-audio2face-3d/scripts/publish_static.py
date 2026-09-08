@@ -41,6 +41,8 @@ def main():
  for name,source in media.items():copy(source,'media/'+name)
  from build_public_sections import build
  build(ROOT,TARGET,copy,REPO)
+ from build_experience import build as build_experience
+ build_experience(ROOT,TARGET,copy)
  (TARGET/'.gitattributes').write_text('* text=auto eol=lf\n*.bin binary\n*.wav binary\n*.mp4 binary\n*.png binary\n*.jpg binary\n',encoding='utf-8',newline='\n')
  manifest=[]
  for p in sorted(TARGET.rglob('*')):

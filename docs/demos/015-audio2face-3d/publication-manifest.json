@@ -220,14 +220,29 @@
     "sha256": "345f714648521b1661f485c3179ad1ed024b10d6d771e5e9adf0b7a65d96a0b6"
   },
   {
+    "path": "experience-data.json",
+    "bytes": 1076,
+    "sha256": "89efa23fe3d8170929c36c3ed549f64d5ef554553932c48dc2ea6581284568f4"
+  },
+  {
+    "path": "experience.html",
+    "bytes": 2571,
+    "sha256": "96cb4421e7f3a7dca63cfe19cfe21bca5084f426ee9eb7f7d6c8f13a8d7bc02e"
+  },
+  {
+    "path": "experience.js",
+    "bytes": 1622,
+    "sha256": "7bc3c4f2c9e64be81dc68ffa52d533c72c2e7f385db3a0147302bc7122c84824"
+  },
+  {
     "path": "implementation-guide.html",
     "bytes": 23708,
     "sha256": "3b74c2ba031bb00853e6bffde7298a5d109049ad46fb83be12474afdb5c6d1f4"
   },
   {
     "path": "index.html",
-    "bytes": 13681,
-    "sha256": "9d74a97e4028992950092f1cfbbc3aea804dbf0ddc6848f7812ba7dd43e5e1c3"
+    "bytes": 16007,
+    "sha256": "d6c66d3ac3fa355f1984f7c6097b3d9cd980bf32808ac5d43b0035c163d2ece7"
   },
   {
     "path": "licenses/Audio2Face-SDK-MIT.txt",
@@ -300,9 +315,49 @@
     "sha256": "50bdb686c959b1a37c25cff8d8abf1295bf81a376e7dbc6bcb38075719f78381"
   },
   {
+    "path": "media/qing-affirm.mp4",
+    "bytes": 168173,
+    "sha256": "9abb87192420dedd5b7f1d2f61a16f67634ae51ae4c4248ed746a97316ee3585"
+  },
+  {
+    "path": "media/qing-annoyed.mp4",
+    "bytes": 183998,
+    "sha256": "b155c5ad0dfacd182d243411386c03554cc23f5e415d2f748a917d6ae1bcf347"
+  },
+  {
+    "path": "media/qing-comfort.mp4",
+    "bytes": 187082,
+    "sha256": "db2edcc5b8354b5711e1549d0385c11965067b7905262af1a901434acce54c59"
+  },
+  {
+    "path": "media/qing-listen.mp4",
+    "bytes": 169513,
+    "sha256": "2b5e820ddccbe5b05c8b1e0ba47541dc0d792bf6ddf90228c5213769bcd8db35"
+  },
+  {
+    "path": "media/qing-playful.mp4",
+    "bytes": 176341,
+    "sha256": "f6ff06e9e8f2377d548c205ba87ffbfc5468ed656470a7ea310be5f1312ee7a5"
+  },
+  {
+    "path": "media/qing-think.mp4",
+    "bytes": 184373,
+    "sha256": "384df62deb505cd7de01283bbfa26a9e5113e9f313ff0b4cbdf09760fde9ce27"
+  },
+  {
     "path": "media/recording-report.json",
     "bytes": 1060,
     "sha256": "c0db0a0e9521ac3e848e6698f57a54e7579bfdae776a3f4f552817f99a89023d"
+  },
+  {
+    "path": "media/ruoan-affirm.mp4",
+    "bytes": 631785,
+    "sha256": "42215f5f6f7d92054fcf8a533885df9961a653b0b89c3cb98214b43e1e6ff771"
+  },
+  {
+    "path": "media/ruoan-annoyed.mp4",
+    "bytes": 664856,
+    "sha256": "676c61af4e83a905830b3a6fb185bcca8d6676cbd49537109189a829179192e4"
   },
   {
     "path": "media/ruoan-body.jpg",
@@ -315,6 +370,11 @@
     "sha256": "012882b8ba2076c4eb201bf91a5ee84d81fb06efefe77dd704079826c00cc611"
   },
   {
+    "path": "media/ruoan-comfort.mp4",
+    "bytes": 653989,
+    "sha256": "b6db87feda9d72896433aa558cd4949f98a55b88744457e2cffe5012ce573c7b"
+  },
+  {
     "path": "media/ruoan-face.jpg",
     "bytes": 96558,
     "sha256": "bedb342c23a05f0a9d770784446e8b24f7578fbe2f59f97c44705e032e64e23a"
@@ -323,6 +383,21 @@
     "path": "media/ruoan-face.mp4",
     "bytes": 277604,
     "sha256": "41f6b1e03fae4d4ef2cb7046bb048970ae4c6ddab8eb64a9c5326473b4dfb392"
+  },
+  {
+    "path": "media/ruoan-listen.mp4",
+    "bytes": 680575,
+    "sha256": "12f86f267bc3d3bdbf5ee3b3475806e6000036a80bb28aaee3664206057c97ac"
+  },
+  {
+    "path": "media/ruoan-playful.mp4",
+    "bytes": 748626,
+    "sha256": "a8991f2eab309f794cefbbe696e4c122aa45b2f175c9023c90921cbf052d71a9"
+  },
+  {
+    "path": "media/ruoan-think.mp4",
+    "bytes": 704602,
+    "sha256": "36534ce743d843dd26a099c7c54c31a1d98522964552fe8b5a7f982138dbc4d2"
   },
   {
     "path": "media/showcase-8020.mp4",
