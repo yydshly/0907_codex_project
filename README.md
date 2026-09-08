@@ -164,7 +164,7 @@ flowchart TB
 
 **网页效果演示视频（约 20 秒，点击封面播放）：**
 
-[六种动作与已有有声片段（交互回放）](https://yydshly.github.io/0907_codex_project/demos/015-audio2face-3d/experience.html)：可切换小晴 / 若安，播放已有有声回应，预览十二段动作。[人物对话是独立的本地页面](https://yydshly.github.io/0907_codex_project/demos/015-audio2face-3d/dialogue-entry.html)，具有消息输入框和发送按钮。上传人物、自由对话和新台词生成需启动本地 8022 服务；完整导览还保留各阶段效果与优化对照。
+[六种动作与已有有声片段（交互回放）](https://yydshly.github.io/0907_codex_project/demos/015-audio2face-3d/experience.html)：可切换小晴 / 若安，播放已有有声回应，预览十二段动作。远端保留[人物选择页](https://yydshly.github.io/0907_codex_project/demos/015-audio2face-3d/characters.html)和[人物对话页](https://yydshly.github.io/0907_codex_project/demos/015-audio2face-3d/chat.html)的静态界面，便于回顾人物选择、消息输入、回应播放的完整流程；后端操作禁用并标注原因。上传人物、自由对话和新台词生成需启动本地 8022 服务；完整导览还保留各阶段效果与优化对照。
 
 [![点击播放：原照片、动作视频、三段说话效果与待机切换](docs/demos/015-audio2face-3d/media/showcase-poster.jpg)](https://yydshly.github.io/0907_codex_project/demos/015-audio2face-3d/media/showcase-8020.mp4)
 

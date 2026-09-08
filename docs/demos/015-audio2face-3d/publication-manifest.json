@@ -190,6 +190,16 @@
     "sha256": "2c6ba14c6c54edee3deb0fa94b195948862a8b89196a9d371b7917e323e5ef25"
   },
   {
+    "path": "characters.html",
+    "bytes": 3203,
+    "sha256": "384fa62417f78623b44bd10687ebbbdbc09a03e46db92bf675e5baa391d5afe5"
+  },
+  {
+    "path": "chat.html",
+    "bytes": 3993,
+    "sha256": "db4fc3864e1965471d5987e7fcfb273bee42d2c2534c81b8b8dc97cff49fc087"
+  },
+  {
     "path": "complete-data.json",
     "bytes": 1354,
     "sha256": "731fe1e2859f0219f1e7eca5736ff7ef01b1a10604f49234e56a94f6c904538b"
@@ -215,6 +225,11 @@
     "sha256": "ec0e1a22d6a6c4e3d25e0b5f01b3ab331b04692d96816686535ce8b03f3ab873"
   },
   {
+    "path": "dialogue.css",
+    "bytes": 4326,
+    "sha256": "3f58a594a2aecd1976031178deeecbbe1da43901bcb72e4ffbf6a386dfedb9d5"
+  },
+  {
     "path": "effects.css",
     "bytes": 6128,
     "sha256": "81bad88446680f4899b013371f672634f1284d0006f3849588605b6f055e7e6b"
@@ -231,8 +246,8 @@
   },
   {
     "path": "experience.html",
-    "bytes": 2634,
-    "sha256": "78a94c261d29a03b69f280f0f9992bd9e750b883960e4f68a04a380e960653d3"
+    "bytes": 2654,
+    "sha256": "2ebacf91c4ce6e6e76a293e03bab555405659b4530c8f56fc5c54bf34ca7353a"
   },
   {
     "path": "experience.js",
@@ -246,8 +261,8 @@
   },
   {
     "path": "index.html",
-    "bytes": 16147,
-    "sha256": "1a4b3d607c8893489ffc6cc6452b8da68b45fc188c1ad7b3cc382c9cf1a02e3d"
+    "bytes": 16143,
+    "sha256": "73254a7405270a60db7b2e723a058230063ac88473a346487893609a9289613d"
   },
   {
     "path": "licenses/Audio2Face-SDK-MIT.txt",
@@ -453,6 +468,11 @@
     "path": "media/welcome-source.mp4",
     "bytes": 168075,
     "sha256": "85e3e52ac35f7936f325d9b65904131cf77c22faa75d7034d89904cde79db660"
+  },
+  {
+    "path": "public-workflow.js",
+    "bytes": 2115,
+    "sha256": "3ba8ee26631d0dbcc20a806270319ac1169c18252ba53f2c7cf023a153c7f087"
   },
   {
     "path": "style.css",
